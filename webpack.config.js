@@ -64,7 +64,11 @@ module.exports = {
         test: /\.html$/,
         use: [{
           loader: 'html-loader',
-          options: {},
+          options: {
+            minimize: false,
+            removeComments: false,
+            collapseWhitespace: false
+          },
         }],
       },
       {
@@ -78,7 +82,7 @@ module.exports = {
       * File loader for all but js/json/html/scss and fonts!
       */
       {
-        loader: require.resolve('file-loader'),
+        loader: 'file-loader',
         // Exclude `js` files to keep "css" loader working as it injects
         // its runtime that would otherwise be processed through "file" loader.
         // Also exclude `html` and `json` extensions so they get processed
@@ -101,7 +105,12 @@ module.exports = {
     new CleanWebpackPlugin(['dist']), //cleans the dist folder
     new ExtractTextPlugin('css/styles.css'), //etracts css to dist/css/styles.css
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: 'index.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'index-signed.html',
+      template: 'index-signed.html',
+    })
   ],
 }

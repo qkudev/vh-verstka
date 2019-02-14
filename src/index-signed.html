@@ -7,29 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- Roboto fonts CDN -->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>Dark Video Index Signed</title>
 </head>
 <body>
 
 <!--Navigation start-->
 <nav class="navbar navbar-expand-md navbar-light bg-white px-3 px-xl-5">
-  <a class="navbar-brand my-2" href="#">
+  <a class="navbar-brand" href="#">
     Dark Video
   </a>
 
   <!--Navbar collapsible start-->
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-    <!--<i class="icon-search mr-1"></i>-->
-    <!--<div class="container w-auto pr-0">-->
-    <!--<form class="form-inline">-->
-    <!--<input id="search" class="form-control mr-sm-2 w-100" type="search" placeholder="Search for videos"-->
-    <!--aria-label="Search">-->
-    <!--</form>-->
-    <!--</div>-->
 
     <!-- Search -->
     <div class="navbar-search">
@@ -37,17 +29,18 @@
       <input type="text" placeholder="Search for videos">
     </div>
 
-    <div class="d-inline-flex navbar-buttons">
-      <div class="nav-link ml-auto">
-        <button class="btn mx-1">Sign In</button>
-      </div>
+    <div class="d-inline-flex navbar-buttons flex-row-reverse">
       <div class="nav-link">
         <button class="btn btn-primary my-2 my-sm-0 btn-search" type="submit">
           <i class="fas fa-cloud mr-1"></i>
           Upload a video
         </button>
       </div>
+      <div class="nav-link navbar-buttons-item">
+        <button class="btn mx-1">Sign In</button>
+      </div>
     </div>
+
   </div>
   <!--Navbar collapsible finish-->
 
@@ -68,20 +61,16 @@
   <div class="d-block d-md-none pb-1">
     <ul class="nav nav-tabs menu-tabs" id="myTab" role="tablist">
       <li class="nav-item">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-           aria-selected="true"><i class="icon-home"></i></a>
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="icon-home"></i></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-           aria-selected="false"><i class="icon-star"></i></a>
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="icon-star"></i></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-           aria-selected="false"><i class="icon-certificate-outline"></i></a>
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="icon-certificate-outline"></i></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="random-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-           aria-selected="false"><i class="icon-random"></i></a>
+        <a class="nav-link" id="random-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="icon-random"></i></a>
       </li>
     </ul>
     <div class="tab-content" id="myTabContent">
@@ -93,7 +82,7 @@
   <!--Menu Mobile finish-->
 
   <!--Content start-->
-  <div class="row my-5">
+  <div class="row mx-0 my-5">
     <!--Layout Menu-->
     <div class="d-none d-md-block ml-5">
       <div class="menu-group d-flex flex-column sidebar">
@@ -171,14 +160,74 @@
 
     <!--Layout Content-->
     <div class="col-12 col-md-9 col-lg-10 container-fluid">
-      <div class="d-none d-md-block pl-5">
-        Featured videos
-        <div class="slick-videos">
-          <div>your content</div>
-          <div>your content</div>
-          <div>your content</div>
-          <div>your content</div>
-          <div>your content</div>
+      <div class="d-none d-md-block pl-5 playlist">
+        <div class="playlist__title">Featured videos</div>
+        <div class="slick-wrapper">
+          <div class="slick-videos">
+            <div class="playlist-big" style="background-image: url('https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg')">
+              <div class="playlist-big-info d-flex flex-column justify-content-end">
+                <div class="playlist-big-info__title">Video title</div>
+                <div class="playlist-big-info__nickname">Added by Nickname</div>
+                <div class="playlist-big-info-bottom d-flex justify-content-between align-items-end">
+                  <div class="playlist-big-info-bottom__date d-flex">
+                    <div>2 weeks ago</div>
+                    <div>Views: 2.1k</div>
+                  </div>
+                  <div class="playlist-big-info-bottom__time">
+                    16:05
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="playlist-big" style="background-image: url('https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg')">
+              <div class="playlist-big-info d-flex flex-column justify-content-end">
+                <div class="playlist-big-info__title">Video title</div>
+                <div class="playlist-big-info__nickname">Added by Nickname</div>
+                <div class="playlist-big-info-bottom d-flex justify-content-between align-items-end">
+                  <div class="playlist-big-info-bottom__date d-flex">
+                    <div>2 weeks ago</div>
+                    <div>Views: 2.1k</div>
+                  </div>
+                  <div class="playlist-big-info-bottom__time">
+                    16:05
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="playlist-big" style="background-image: url('https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg')">
+              <div class="playlist-big-info d-flex flex-column justify-content-end">
+                <div class="playlist-big-info__title">Video title</div>
+                <div class="playlist-big-info__nickname">Added by Nickname</div>
+                <div class="playlist-big-info-bottom d-flex justify-content-between align-items-end">
+                  <div class="playlist-big-info-bottom__date d-flex">
+                    <div>2 weeks ago</div>
+                    <div>Views: 2.1k</div>
+                  </div>
+                  <div class="playlist-big-info-bottom__time">
+                    16:05
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="playlist-big" style="background-image: url('https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg')">
+              <div class="playlist-big-info d-flex flex-column justify-content-end">
+                <div class="playlist-big-info__title">Video title</div>
+                <div class="playlist-big-info__nickname">Added by Nickname</div>
+                <div class="playlist-big-info-bottom d-flex justify-content-between align-items-end">
+                  <div class="playlist-big-info-bottom__date d-flex">
+                    <div>2 weeks ago</div>
+                    <div>Views: 2.1k</div>
+                  </div>
+                  <div class="playlist-big-info-bottom__time">
+                    16:05
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
