@@ -48,7 +48,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: 'xxx/'
+            outputPath: 'fonts/'
           }
         }]
       },
@@ -60,6 +60,13 @@ module.exports = {
             minimize: true
           }
         }],
+      },
+      {
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: "css-loader!sass-loader",
+        })
       },
     ]
   },
