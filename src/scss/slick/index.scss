@@ -1,0 +1,34 @@
+.slick-prev:before, .slick-next:before {
+  font-family: 'fontello', sans-serif !important;
+  font-size: 20px;
+  opacity: .75;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  //font-size: 4rem;
+}
+
+.slick-prev:before {
+  content: '\f104' !important;
+}
+
+.slick-next:before {
+  content: '\f105' !important;
+}
+
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
+  opacity: 0 !important;
+}
