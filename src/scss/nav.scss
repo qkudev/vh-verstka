@@ -46,16 +46,26 @@
   }
 
   &-brand {
-    padding: .5 * $spacer $spacer;
+    margin: .5 * $spacer 1.5 * $spacer;
   }
 
   &-buttons {
-    //margin-left: auto;
     width: 100% !important;
     outline: none !important;
 
     &-item {
       width: fit-content;
+    }
+
+    i {
+      font-size: 1.25rem;
+      margin: auto $spacer;
+      cursor: pointer;
+    }
+
+    .profile {
+      margin: auto $spacer;
+      cursor: pointer;
     }
   }
 }

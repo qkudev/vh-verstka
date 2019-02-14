@@ -9,9 +9,9 @@
 @import './sidebar/index';
 // Slick Slider
 @import './slick/index';
-
 // Play List
 @import './playlist/index';
+@import "./channels/index";
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -78,6 +78,6 @@ i {
   border: none;
 }
 
-*{
+* {
   outline-color: $primary;
 }

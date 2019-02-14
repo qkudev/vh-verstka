@@ -2,16 +2,22 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const path = require('path')
+const fs = require('fs')
+
+const images = fs.readdirSync('./src/static/img/')
+  .filter(file => file.match(/.*\.(jpg|jpeg|png|svg)$/))
+  .map(i => './static/img/' + i)
+
+const fonts = fs.readdirSync('./src/static/fonts')
+  .filter(file => file.match(/.*\.(eot|svg|ttf|woff|woff2)$/))
+  .map(f => './static/fonts/' + f)
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: [
     './js/index.js',
-    './fonts/fontello.eot',
-    './fonts/fontello.svg',
-    './fonts/fontello.ttf',
-    './fonts/fontello.woff',
-    './fonts/fontello.woff2',
+    ...images,
+    ...fonts,
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -30,47 +36,29 @@ module.exports = {
           },
         },
       },
-      {
-        test: /\.(sass|scss)$/,
-        include: path.resolve(__dirname, 'scss'),
-        use: ExtractTextPlugin.extract({
-          use: [
-            {
-              loader: 'css-loader',
-            },
-            {
-              loader: 'sass-loader',
-              options: {
-                sourceMap: true,
-              },
-            },
-          ],
-        }),
-      },
-      /*
-      * File loader for Fonts only!
-      */
+      // Fonts loader
       {
         test: /\.(woff(2)?|woff|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         use: [{
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: 'fonts/',
+            outputPath: 'static/fonts/',
           },
         }],
       },
+      // Images loader
       {
-        test: /\.(png|jp(e*)g|svg)$/,
-        include: path.resolve(__dirname, 'img'),
+        test: /\.(jpg|jpeg|png|svg)$/,
         use: [{
-          loader: 'url-loader',
+          loader: 'file-loader',
           options: {
-            // limit: 8000, // Convert images < 8kb to base64 strings
-            name: 'images/[hash]-[name].[ext]'
-          }
-        }]
+            name: '[name].[ext]',
+            outputPath: 'static/img/',
+          },
+        }],
       },
+      // HTML loader
       {
         test: /\.html$/,
         use: [{
@@ -78,10 +66,12 @@ module.exports = {
           options: {
             minimize: false,
             removeComments: false,
-            collapseWhitespace: false
+            collapseWhitespace: false,
+            attrs: false,
           },
         }],
       },
+      // Sass loader
       {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
@@ -89,17 +79,23 @@ module.exports = {
           use: 'css-loader!sass-loader',
         }),
       },
-      /*
-      * File loader for all but js/json/html/scss and fonts!
-      */
+      // File loader for all but not js, json, html, scss, images and fonts!
       {
         loader: 'file-loader',
         // Exclude `js` files to keep "css" loader working as it injects
         // its runtime that would otherwise be processed through "file" loader.
         // Also exclude `html` and `json` extensions so they get processed
         // by webpacks internal loaders.
-        include: path.resolve(__dirname, 'img/'),
-        exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/, /\.jpg/, /\.scss/, /\.(woff(2)?|woff|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/],
+        exclude: [
+          /\.(js|mjs|jsx|ts|tsx)$/,
+          /\.html$/,
+          /\.json$/,
+          /\.jpg/,
+          /\.jpeg/,
+          /\.png/,
+          /\.scss/,
+          /\.(woff(2)?|woff|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/
+        ],
         options: {
           name: 'static/media/[name].[ext]',
         },
@@ -110,7 +106,13 @@ module.exports = {
   devServer: {
     port: 3000,   //Tell dev-server which port to run
     open: true,   // to open the local server in browser
-    contentBase: path.resolve(__dirname, 'dist'), //serve from 'dist' folder
+    openPage: 'index-signed.html',
+
+    //serve from 'dist' and 'img' folder
+    contentBase: [
+      path.resolve(__dirname, 'dist'),
+      path.resolve(__dirname, 'dist/static')
+    ],
   },
   plugins: [
     new CleanWebpackPlugin(['dist']), //cleans the dist folder

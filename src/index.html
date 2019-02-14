@@ -1,272 +1,299 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <!-- Responsive display tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!-- Responsive display tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <!-- Roboto fonts CDN -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <title>Dark Video Index</title>
-  </head>
-  <body>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- Roboto fonts CDN -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>Dark Video Index</title>
+</head>
+<body>
 
-    <!--Navigation start-->
-    <nav class="navbar navbar-expand-md navbar-light bg-white px-3 px-xl-5">
-      <a class="navbar-brand" href="#">
-        Dark Video
-      </a>
+<!--Navigation start-->
+<nav class="navbar navbar-expand-md navbar-light bg-white px-3 px-xl-5">
+  <!-- Logo -->
+  <a class="navbar-brand" href="#">
+    <img src="static/img/logo_black@2x.png" alt="" width="170px" height="35px">
+  </a>
 
-      <!--Navbar collapsible start-->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!--Navbar collapsible start-->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <!-- Search -->
-        <div class="navbar-search">
-          <i class="icon-search"></i>
-          <input type="text" placeholder="Search for videos">
-        </div>
+    <!-- Search -->
+    <div class="navbar-search">
+      <i class="icon-search"></i>
+      <input type="text" placeholder="Search for videos">
+    </div>
 
-        <div class="d-inline-flex navbar-buttons flex-row-reverse">
-          <div class="nav-link">
-            <button class="btn btn-primary my-2 my-sm-0 btn-search" type="submit">
-              <i class="fas fa-cloud mr-1"></i>
-              Upload a video
-            </button>
-          </div>
-          <div class="nav-link navbar-buttons-item">
-            <button class="btn mx-1">Sign In</button>
-          </div>
-        </div>
-
+    <div class="d-inline-flex navbar-buttons flex-row-reverse">
+      <div class="nav-link">
+        <button class="btn btn-primary my-2 my-sm-0 btn-search" type="submit">
+          <i class="fas fa-cloud mr-1"></i>
+          Upload a video
+        </button>
       </div>
-      <!--Navbar collapsible finish-->
-
-      <!--Navbar mobile start-->
-      <div class="d-block d-md-none nav-mobile">
-        <i class="icon-search"></i>
-        <i class="icon-user"></i>
+      <div class="nav-link navbar-buttons-item">
+        <button class="btn mx-1">Sign In</button>
       </div>
-      <!--Navbar mobile finish-->
+    </div>
 
-    </nav>
-    <!--Navigation finish-->
+  </div>
+  <!--Navbar collapsible finish-->
 
-    <!--Layout start-->
-    <div class="container-fluid mt-1 mt-md-2 px-0 mb-0">
+  <!--Navbar mobile start-->
+  <div class="d-block d-md-none nav-mobile">
+    <i class="icon-search"></i>
+    <i class="icon-user"></i>
+  </div>
+  <!--Navbar mobile finish-->
 
-      <!--Menu Mobile start-->
-      <div class="d-block d-md-none pb-1">
-        <ul class="nav nav-tabs menu-tabs" id="myTab" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="icon-home"></i></a>
+</nav>
+<!--Navigation finish-->
+
+<!--Layout start-->
+<div class="container-fluid mt-1 mt-md-2 px-0 mb-0">
+
+  <!--Menu Mobile start-->
+  <div class="d-block d-md-none pb-1">
+    <ul class="nav nav-tabs menu-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+           aria-selected="true"><i class="icon-home"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+           aria-selected="false"><i class="icon-star"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+           aria-selected="false"><i class="icon-certificate-outline"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="random-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+           aria-selected="false"><i class="icon-random"></i></a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
+    </div>
+  </div>
+  <!--Menu Mobile finish-->
+
+  <!--Content start-->
+  <div class="row mx-0 my-5">
+    <!--Layout Menu-->
+    <div class="d-none d-md-block ml-5">
+      <div class="menu-group d-flex flex-column sidebar">
+        <div class="menu-group header sidebar__title">Main</div>
+        <ul>
+          <li>
+            <a class="sidebar__item sidebar__item--active" href="#">
+              <i class="icon-home"></i>
+              Home
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="icon-star"></i></a>
+          <li>
+            <a class="sidebar__item" href="#">
+              <i class="icon-star"></i>
+              Popular
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="icon-certificate-outline"></i></a>
+          <li>
+            <a class="sidebar__item" href="#">
+              <i class="icon-certificate-outline"></i>
+              New
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" id="random-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="icon-random"></i></a>
+          <li>
+            <a class="sidebar__item" href="#">
+              <i class="icon-random"></i>
+              Random
+            </a>
           </li>
         </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
-          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
-        </div>
       </div>
-      <!--Menu Mobile finish-->
 
-      <!--Content start-->
-      <div class="row mx-0 my-5">
-        <!--Layout Menu-->
-        <div class="d-none d-md-block ml-5">
-          <div class="menu-group d-flex flex-column sidebar">
-            <div class="menu-group header sidebar__title">Main</div>
-            <ul>
-              <li>
-                <a class="sidebar__item sidebar__item--active" href="#">
-                  <i class="icon-home"></i>
-                  Home
-                </a>
-              </li>
-              <li>
-                <a class="sidebar__item" href="#">
-                  <i class="icon-star"></i>
-                  Popular
-                </a>
-              </li>
-              <li>
-                <a class="sidebar__item" href="#">
-                  <i class="icon-certificate-outline"></i>
-                  New
-                </a>
-              </li>
-              <li>
-                <a class="sidebar__item" href="#">
-                  <i class="icon-random"></i>
-                  Random
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="menu-group d-flex flex-column sidebar">
-            <div class="menu-group header sidebar__title">Popular categories</div>
-            <ul>
-              <li>
-                <a class="sidebar__item" href="#">
-                  <i class="icon-onion"></i>
-                  Darknet
-                </a>
-              </li>
-              <li>
-                <a class="sidebar__item" href="#">
-                  <i class="icon-anon"></i>
-                  Anonymity
-                </a>
-              </li>
-              <li>
-                <a class="sidebar__item" href="#">
-                  <i class="icon-article-alt"></i>
-                  All categories
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="menu-group d-flex flex-column sidebar">
-            <div class="menu-group header sidebar__title">Info</div>
-            <ul>
-              <li>
-                <a class="sidebar__item" href="#">
-                  <i class="icon-rules"></i>
-                  Rules
-                </a>
-              </li>
-              <li>
-                <a class="sidebar__item" href="#">
-                  <i class="icon-plant"></i>
-                  Our Telegram
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!--Layout Content-->
-        <div class="col-12 col-md-9 col-lg-10 container-fluid">
-          <div class="d-none d-md-block pl-5 playlist">
-            <div class="playlist__title">Featured videos</div>
-            <div class="slick-wrapper">
-              <div class="slick-videos">
-                <div class="playlist-big" style="background-image: url('https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg')">
-                  <div class="playlist-big-info d-flex flex-column justify-content-end">
-                    <div class="playlist-big-info__title">Video title</div>
-                    <div class="playlist-big-info__nickname">Added by Nickname</div>
-                    <div class="playlist-big-info-bottom d-flex justify-content-between align-items-end">
-                      <div class="playlist-big-info-bottom__date d-flex">
-                        <div>2 weeks ago</div>
-                        <div>Views: 2.1k</div>
-                      </div>
-                      <div class="playlist-big-info-bottom__time">
-                        16:05
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="playlist-big" style="background-image: url('https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg')">
-                  <div class="playlist-big-info d-flex flex-column justify-content-end">
-                    <div class="playlist-big-info__title">Video title</div>
-                    <div class="playlist-big-info__nickname">Added by Nickname</div>
-                    <div class="playlist-big-info-bottom d-flex justify-content-between align-items-end">
-                      <div class="playlist-big-info-bottom__date d-flex">
-                        <div>2 weeks ago</div>
-                        <div>Views: 2.1k</div>
-                      </div>
-                      <div class="playlist-big-info-bottom__time">
-                        16:05
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="playlist-big" style="background-image: url('https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg')">
-                  <div class="playlist-big-info d-flex flex-column justify-content-end">
-                    <div class="playlist-big-info__title">Video title</div>
-                    <div class="playlist-big-info__nickname">Added by Nickname</div>
-                    <div class="playlist-big-info-bottom d-flex justify-content-between align-items-end">
-                      <div class="playlist-big-info-bottom__date d-flex">
-                        <div>2 weeks ago</div>
-                        <div>Views: 2.1k</div>
-                      </div>
-                      <div class="playlist-big-info-bottom__time">
-                        16:05
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="playlist-big" style="background-image: url('https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg')">
-                  <div class="playlist-big-info d-flex flex-column justify-content-end">
-                    <div class="playlist-big-info__title">Video title</div>
-                    <div class="playlist-big-info__nickname">Added by Nickname</div>
-                    <div class="playlist-big-info-bottom d-flex justify-content-between align-items-end">
-                      <div class="playlist-big-info-bottom__date d-flex">
-                        <div>2 weeks ago</div>
-                        <div>Views: 2.1k</div>
-                      </div>
-                      <div class="playlist-big-info-bottom__time">
-                        16:05
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="menu-group d-flex flex-column sidebar">
+        <div class="menu-group header sidebar__title">Popular categories</div>
+        <ul>
+          <li>
+            <a class="sidebar__item" href="#">
+              <i class="icon-onion"></i>
+              Darknet
+            </a>
+          </li>
+          <li>
+            <a class="sidebar__item" href="#">
+              <i class="icon-anon"></i>
+              Anonymity
+            </a>
+          </li>
+          <li>
+            <a class="sidebar__item" href="#">
+              <i class="icon-article-alt"></i>
+              All categories
+            </a>
+          </li>
+        </ul>
       </div>
-      <!--Content finish-->
 
-      <!--Footer start-->
-      <div class="footer d-flex flex-row">
-        <div class=" d-flex flex-column flex-md-row">
-          <a class="footer-item">
-            ©2018 dark.video
-          </a>
-          <div class="footer-item">
-            <div class="">
-              <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="icon-globe-1"></i>
-                Language: English
-              </div>
-              <div class="dropdown-menu">
-                <!-- Dropdown menu links -->
-                <a class="dropdown-item" href="#">Russian</a>
-                <a class="dropdown-item active" href="#">English</a>
-                <a class="dropdown-item" href="#">Germany</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row">
-          <a class="footer-item">
-            Rules and conditions
-          </a>
-          <a class="footer-item">
-            Telegram channel
-          </a>
-        </div>
+      <div class="menu-group d-flex flex-column sidebar">
+        <div class="menu-group header sidebar__title">Info</div>
+        <ul>
+          <li>
+            <a class="sidebar__item" href="#">
+              <i class="icon-rules"></i>
+              Rules
+            </a>
+          </li>
+          <li>
+            <a class="sidebar__item" href="#">
+              <i class="icon-plant"></i>
+              Our Telegram
+            </a>
+          </li>
+        </ul>
       </div>
-      <!--Footer finish-->
-
     </div>
-  </body>
+
+    <!--Layout Content-->
+    <div class="col-12 col-md-9 col-lg-10 container-fluid">
+
+      <div class="d-block pl-5 section playlist">
+        <div class="playlist__title">Featured videos</div>
+        <div class="slick-wrapper">
+          <div class="slick-videos">
+            <div class="playlist-big"
+                 style="background-image: url('https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg')">
+              <div class="playlist-big-info d-flex flex-column justify-content-end">
+                <div class="playlist-big-info__title">Video title</div>
+                <div class="playlist-big-info__nickname">Added by Nickname</div>
+                <div class="playlist-big-info-bottom d-flex justify-content-between align-items-end">
+                  <div class="playlist-big-info-bottom__date d-flex">
+                    <div>2 weeks ago</div>
+                    <div>Views: 2.1k</div>
+                  </div>
+                  <div class="playlist-big-info-bottom__time">
+                    16:05
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="playlist-big"
+                 style="background-image: url('https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg')">
+              <div class="playlist-big-info d-flex flex-column justify-content-end">
+                <div class="playlist-big-info__title">Video title</div>
+                <div class="playlist-big-info__nickname">Added by Nickname</div>
+                <div class="playlist-big-info-bottom d-flex justify-content-between align-items-end">
+                  <div class="playlist-big-info-bottom__date d-flex">
+                    <div>2 weeks ago</div>
+                    <div>Views: 2.1k</div>
+                  </div>
+                  <div class="playlist-big-info-bottom__time">
+                    16:05
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="playlist-big"
+                 style="background-image: url('https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg')">
+              <div class="playlist-big-info d-flex flex-column justify-content-end">
+                <div class="playlist-big-info__title">Video title</div>
+                <div class="playlist-big-info__nickname">Added by Nickname</div>
+                <div class="playlist-big-info-bottom d-flex justify-content-between align-items-end">
+                  <div class="playlist-big-info-bottom__date d-flex">
+                    <div>2 weeks ago</div>
+                    <div>Views: 2.1k</div>
+                  </div>
+                  <div class="playlist-big-info-bottom__time">
+                    16:05
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="playlist-big"
+                 style="background-image: url('https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg')">
+              <div class="playlist-big-info d-flex flex-column justify-content-end">
+                <div class="playlist-big-info__title">Video title</div>
+                <div class="playlist-big-info__nickname">Added by Nickname</div>
+                <div class="playlist-big-info-bottom d-flex justify-content-between align-items-end">
+                  <div class="playlist-big-info-bottom__date d-flex">
+                    <div>2 weeks ago</div>
+                    <div>Views: 2.1k</div>
+                  </div>
+                  <div class="playlist-big-info-bottom__time">
+                    16:05
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Slick channels -->
+      <div class="section">
+        <div class="slick-channels big">
+          <div class="channel-item"
+               style="background-image: url('/static/img/mask1.jpg')">
+          </div>
+          <div class="channel-item"
+               style="background-image: url('/static/img/mask2.jpg')">
+          </div>
+          <div class="channel-item"
+               style="background-image: url('https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg')">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Content finish-->
+
+  <!--Footer start-->
+  <div class="footer d-flex flex-row">
+    <div class=" d-flex flex-column flex-md-row">
+      <a class="footer-item">
+        ©2018 dark.video
+      </a>
+      <div class="footer-item">
+        <div class="">
+          <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="icon-globe-1"></i>
+            Language: English
+          </div>
+          <div class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <a class="dropdown-item" href="#">Russian</a>
+            <a class="dropdown-item active" href="#">English</a>
+            <a class="dropdown-item" href="#">Germany</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-md-row">
+      <a class="footer-item">
+        Rules and conditions
+      </a>
+      <a class="footer-item">
+        Telegram channel
+      </a>
+    </div>
+  </div>
+  <!--Footer finish-->
+
+</div>
+</body>
 </html>
