@@ -7,7 +7,12 @@ const path = require('path');
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: [
-    './js/index.js'
+    './js/index.js',
+      "./fonts/fontello.eot",
+      "./fonts/fontello.svg",
+      "./fonts/fontello.ttf",
+      "./fonts/fontello.woff",
+      "./fonts/fontello.woff2",
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -42,12 +47,16 @@ module.exports = {
           ]
         })
       },
+      /*
+      * File loader for Fonts only!
+      */
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|woff|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         use: [{
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
+            outputPath: 'fonts/',
           }
         }]
       },
@@ -67,13 +76,16 @@ module.exports = {
           use: "css-loader!sass-loader",
         })
       },
+      /*
+      * File loader for all but js/json/html/scss and fonts!
+      */
       {
-        loader: 'file-loader',
+        loader: require.resolve('file-loader'),
         // Exclude `js` files to keep "css" loader working as it injects
         // its runtime that would otherwise be processed through "file" loader.
         // Also exclude `html` and `json` extensions so they get processed
         // by webpacks internal loaders.
-        exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/, /\.scss/, /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,],
+        exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/, /\.scss/, /\.(woff(2)?|woff|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/, ],
         options: {
           name: 'static/media/[name].[hash:8].[ext]',
         },
