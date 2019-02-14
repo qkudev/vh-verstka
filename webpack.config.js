@@ -61,6 +61,17 @@ module.exports = {
         }],
       },
       {
+        test: /\.(png|jp(e*)g|svg)$/,
+        include: path.resolve(__dirname, 'img'),
+        use: [{
+          loader: 'url-loader',
+          options: {
+            // limit: 8000, // Convert images < 8kb to base64 strings
+            name: 'images/[hash]-[name].[ext]'
+          }
+        }]
+      },
+      {
         test: /\.html$/,
         use: [{
           loader: 'html-loader',
@@ -90,7 +101,7 @@ module.exports = {
         include: path.resolve(__dirname, 'img/'),
         exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/, /\.jpg/, /\.scss/, /\.(woff(2)?|woff|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/],
         options: {
-          name: 'static/media/[name].[hash:8].[ext]',
+          name: 'static/media/[name].[ext]',
         },
       },
     ],
