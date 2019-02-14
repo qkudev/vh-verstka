@@ -2,6 +2,43 @@ $primary: #F00;
 
 @import "~bootstrap/scss/bootstrap";
 
-body {
-  background: #000;
+
+.layout{
+  margin: $spacer * 2.5 $spacer;
+
+  &.menu{
+    width: 300px;
+    margin: 0;
+
+
+  }
+
+
+  &.content{
+    margin: 0;
+  }
+}
+
+.menu-group{
+  margin-bottom: $spacer;
+
+  &.header{
+    color: $primary;
+  }
+
+  &.item{
+    margin-bottom: $spacer * .5;
+  }
+
+  i{
+
+  }
+}
+
+.navbar{
+  border-bottom: 1px solid $border-color;
+}
+
+#search{
+  border: none;
 }
