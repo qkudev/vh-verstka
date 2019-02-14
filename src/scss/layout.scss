@@ -1,6 +1,11 @@
+@import "variables";
 @import "~bootstrap/scss/bootstrap";
 
 .footer {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between !important;
   border-top: 1px solid #DDD;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -8,4 +13,32 @@
 
   padding: 1.5 * $spacer $spacer;
   background-color: $gray-100;
+
+  &-item {
+    margin: 0 1.5rem;
+    cursor: pointer !important;
+  }
+}
+
+.navbar{
+
+  &-search {
+    padding: 0 $spacer;
+    margin: 0 .25 * $spacer;
+
+    i {
+      font-size: 1.1rem;
+      margin: 0 .25 * $spacer;
+    }
+
+    input {
+      font-size: 1.1rem;
+      border: none;
+    }
+  }
+
+  &-buttons {
+    margin-left: auto;
+    width: fit-content;
+  }
 }

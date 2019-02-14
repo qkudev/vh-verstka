@@ -3,13 +3,11 @@
 @import "nav";
 @import "layout";
 @import "~bootstrap/scss/bootstrap";
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
-@import './fonts.scss';
-
+//@import "~slick-carousel/slick/slick.css";
+//@import "~slick-carousel/slick/slick-theme.css";
+@import "./fonts.scss";
 // Sidebar
 @import './sidebar/index';
-
 // Slick Slider
 @import './slick/index';
 
@@ -70,4 +68,8 @@ i {
 
 #search {
   border: none;
+}
+
+*{
+  outline-color: $primary;
 }
