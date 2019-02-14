@@ -44,22 +44,27 @@
 
 
     <!---->
-    <div class="layout d-flex flex-row">
-
-      <!--Layout Menu-->
-      <div class="d-none d-md-block container layout menu">
-        <div class="menu-group d-flex flex-column">
-          <div class="menu-group header">Main</div>
-          <a>Home</a>
-          <a>Popular</a>
-          <a>New</a>
-          <a><i class="fas fa-random"></i> Random</a>
-        </div>
+    <div class="container-fluid my-1 my-md-2">
+      <div class="d-block d-md-none">
+        Tabs mobile
       </div>
 
-      <!--Layout Content-->
-      <div class="container layout content">
-        Layout content
+      <div class="row">
+        <!--Layout Menu-->
+        <div class="d-none d-md-block col-md-3">
+          <div class="menu-group d-flex flex-column">
+            <div class="menu-group header">Main</div>
+            <a>Home</a>
+            <a>Popular</a>
+            <a>New</a>
+            <a><i class="fas fa-random"></i> Random</a>
+          </div>
+        </div>
+
+        <!--Layout Content-->
+        <div class="col-12 col-md-9 container-fluid">
+          Layout content
+        </div>
       </div>
 
     </div>
