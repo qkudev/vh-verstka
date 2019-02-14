@@ -23,10 +23,12 @@
 
 .slick-prev:before {
   content: '\f104' !important;
+  font-size: 4rem;
 }
 
 .slick-next:before {
   content: '\f105' !important;
+  font-size: 4rem;
 }
 
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
@@ -37,7 +39,7 @@
   font-size: 0;
   line-height: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   display: block;
   width: 20px;
   height: 20px;
@@ -50,7 +52,7 @@
   border: none;
   outline: none;
   background: transparent;
-  left: -25px;
+  left: -75px;
 }
 
 .slick-next {
@@ -58,7 +60,7 @@
   font-size: 0;
   line-height: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   display: block;
   width: 20px;
   height: 20px;

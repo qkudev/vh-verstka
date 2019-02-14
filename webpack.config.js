@@ -86,7 +86,7 @@ module.exports = {
         // Also exclude `html` and `json` extensions so they get processed
         // by webpacks internal loaders.
         include: path.resolve(__dirname, 'img/'),
-        exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/, /\.scss/, /\.(woff(2)?|woff|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/],
+        exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/, /\.jpg/, /\.scss/, /\.(woff(2)?|woff|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/],
         options: {
           name: 'static/media/[name].[hash:8].[ext]',
         },
