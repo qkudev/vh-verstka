@@ -1,0 +1,17 @@
+.menu-tabs {
+  justify-content: space-between !important;
+
+  a{
+    color: $defaultColor;
+    border: none !important;
+
+    &.active{
+      color: $primary !important;
+      border-bottom: 2px solid #F00 !important;
+    }
+  }
+
+  li{
+    width: 25%;
+  }
+}

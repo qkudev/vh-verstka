@@ -1,8 +1,7 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const webpack = require('webpack');
-const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const path = require('path')
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -26,9 +25,10 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env']
-          }
-        }
+            presets: ['env'],
+            outputPath: 'js/'
+          },
+        },
       },
       {
         test: /\.(sass|scss)$/,
@@ -41,11 +41,11 @@ module.exports = {
             {
               loader: 'sass-loader',
               options: {
-                sourceMap: true
-              }
-            }
-          ]
-        })
+                sourceMap: true,
+              },
+            },
+          ],
+        }),
       },
       /*
       * File loader for Fonts only!
@@ -57,24 +57,24 @@ module.exports = {
           options: {
             name: '[name].[ext]',
             outputPath: 'fonts/',
-          }
-        }]
+          },
+        }],
       },
       {
         test: /\.html$/,
-            use: [{
+        use: [{
           loader: 'html-loader',
           options: {
-            minimize: true
-          }
+            minimize: true,
+          },
         }],
       },
       {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader!sass-loader",
-        })
+          fallback: 'style-loader',
+          use: 'css-loader!sass-loader',
+        }),
       },
       /*
       * File loader for all but js/json/html/scss and fonts!
@@ -85,24 +85,25 @@ module.exports = {
         // its runtime that would otherwise be processed through "file" loader.
         // Also exclude `html` and `json` extensions so they get processed
         // by webpacks internal loaders.
-        exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/, /\.scss/, /\.(woff(2)?|woff|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/, ],
+        include: path.resolve(__dirname, 'img/'),
+        exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/, /\.scss/, /\.(woff(2)?|woff|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/],
         options: {
           name: 'static/media/[name].[hash:8].[ext]',
         },
       },
-    ]
+    ],
   },
   devtool: 'inline-source-map',
   devServer: {
     port: 3000,   //Tell dev-server which port to run
     open: true,   // to open the local server in browser
-    contentBase: path.resolve(__dirname, 'dist') //serve from 'dist' folder
+    contentBase: path.resolve(__dirname, 'dist'), //serve from 'dist' folder
   },
   plugins: [
     new CleanWebpackPlugin(['dist']), //cleans the dist folder
-    new ExtractTextPlugin("css/styles.css"), //etracts css to dist/css/styles.css
+    new ExtractTextPlugin('css/styles.css'), //etracts css to dist/css/styles.css
     new HtmlWebpackPlugin({
-      template: 'index.html'
-    })
-  ]
+      template: 'index.html',
+    }),
+  ],
 }

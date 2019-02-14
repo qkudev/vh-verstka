@@ -1,7 +1,6 @@
 import $ from 'jquery'
 import popper from 'popper.js'
-import bootstrap from 'bootstrap'
-import style from '../scss'
+import '../scss'
 
 window.$ = $
 window.popper = popper
