@@ -1,100 +1,179 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
 
-<!--Navigation-->
-<nav class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-3 px-xl-5">
-  <a class="navbar-brand" href="#">
-    Dark Video
-  </a>
+    <!--Navigation start-->
+    <nav class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-3 px-xl-5">
+      <a class="navbar-brand" href="#">
+        Dark Video
+      </a>
 
-  <!--Navbar collapsible-->
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!--Navbar collapsible-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-    <i class="fas fa-search mr-1"></i>
-    <div class="container w-auto pr-0">
-      <form class="form-inline">
-        <input id="search" class="form-control mr-sm-2 w-100" type="search" placeholder="Search for videos"
-               aria-label="Search">
-      </form>
-    </div>
+        <i class="fas fa-search mr-1"></i>
+        <div class="container w-auto pr-0">
+          <form class="form-inline">
+            <input id="search" class="form-control mr-sm-2 w-100" type="search" placeholder="Search for videos"
+                   aria-label="Search">
+          </form>
+        </div>
 
-    <div class="d-inline-flex w-50">
-      <div class="nav-link ml-auto">
-        <button class="btn mx-1">Sign In</button>
+        <div class="d-inline-flex w-50">
+          <div class="nav-link ml-auto">
+            <button class="btn mx-1">Sign In</button>
+          </div>
+          <div class="nav-link">
+            <button class="btn btn-primary my-2 my-sm-0 btn-search" type="submit">
+              <i class="fas fa-cloud mr-1"></i>
+              Upload a video
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="nav-link">
-        <button class="btn btn-primary my-2 my-sm-0 btn-search" type="submit">
-          <i class="fas fa-cloud mr-1"></i>
-          Upload a video
-        </button>
+
+      <div class="d-block d-md-none nav-mobile">
+        <i class="icon-search"></i>
+        <i class="icon-user"></i>
       </div>
-    </div>
 
-  </div>
-</nav>
+    </nav>
+    <!--Navigation stop-->
 
+    <!--Layout start-->
+    <div class="container-fluid mt-1 mt-md-2 px-0 mb-0">
 
-<!---->
-<div class="container-fluid my-1 my-md-2 px-0">
-
-  <!--Menu Mobile-->
-  <div class="d-block d-md-none">
-    <ul class="nav nav-tabs menu-tabs" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Popular</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">New</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="random-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Random</a>
-      </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
-      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
-    </div>
-  </div>
-
-  <div class="row">
-
-    <!--Layout Menu-->
-    <div class="d-none d-md-block col-md-3 col-lg-2">
-      <div class="menu-group d-flex flex-column">
-        <div class="menu-group header">Main</div>
-        <a>Home</a>
-        <a>Popular</a>
-        <a>New</a>
-        <a><i class="fas fa-random"></i> Random</a>
+      <!--Menu Mobile start-->
+      <div class="d-block d-md-none pb-1">
+        <ul class="nav nav-tabs menu-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="icon-home"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="icon-star"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="icon-certificate-outline"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="random-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="icon-random"></i></a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
+        </div>
       </div>
+      <!--Menu Mobile finish-->
+
+      <!--Content start-->
+      <div class="row my-5">
+        <!--Layout Menu-->
+        <div class="d-none d-md-block ml-5 pl-xl-5">
+          <div class="menu-group d-flex flex-column sidebar">
+            <div class="menu-group header sidebar__title">Main</div>
+            <ul>
+              <li>
+                <a class="sidebar__item sidebar__item--active" href="#">
+                  <i class="icon-home"></i>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a class="sidebar__item" href="#">
+                  <i class="icon-star"></i>
+                  Popular
+                </a>
+              </li>
+              <li>
+                <a class="sidebar__item" href="#">
+                  <i class="icon-certificate-outline"></i>
+                  New
+                </a>
+              </li>
+              <li>
+                <a class="sidebar__item" href="#">
+                  <i class="icon-random"></i>
+                  Random
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-group d-flex flex-column sidebar">
+            <div class="menu-group header sidebar__title">Popular categories</div>
+            <ul>
+              <li>
+                <a class="sidebar__item" href="#">
+                  <i class="icon-onion"></i>
+                  Darknet
+                </a>
+              </li>
+              <li>
+                <a class="sidebar__item" href="#">
+                  <i class="icon-anon"></i>
+                  Anonymity
+                </a>
+              </li>
+              <li>
+                <a class="sidebar__item" href="#">
+                  <i class="icon-article-alt"></i>
+                  All categories
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-group d-flex flex-column sidebar">
+            <div class="menu-group header sidebar__title">Info</div>
+            <ul>
+              <li>
+                <a class="sidebar__item" href="#">
+                  <i class="icon-rules"></i>
+                  Rules
+                </a>
+              </li>
+              <li>
+                <a class="sidebar__item" href="#">
+                  <i class="icon-plant"></i>
+                  Our Telegram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Layout Content-->
+        <div class="col-12 col-md-9 col-lg-10 container-fluid">
+          <div class="d-none d-md-block pl-5">
+            Featured videos
+            <div class="slick-videos">
+              <div>your content</div>
+              <div>your content</div>
+              <div>your content</div>
+              <div>your content</div>
+              <div>your content</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Content finish-->
+
+      <!--Footer start-->
+      <div class="footer">
+        Footer
+      </div>
+      <!--Footer finish-->
+
     </div>
-
-    <!--Layout Content-->
-    <div class="col-12 col-md-9 col-lg-10 container-fluid">
-      Layout content
-    </div>
-  </div>
-
-</div>
-
-
-<div class="layout footer">
-
-</div>
-
-</body>
+  </body>
 </html>

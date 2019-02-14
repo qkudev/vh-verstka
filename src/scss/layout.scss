@@ -1,0 +1,11 @@
+@import "~bootstrap/scss/bootstrap";
+
+.footer {
+  border-top: 1px solid #DDD;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+
+  padding: 1.5 * $spacer $spacer;
+  background-color: $gray-100;
+}

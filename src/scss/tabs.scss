@@ -2,12 +2,18 @@
   justify-content: space-between !important;
 
   a{
+    display: grid;
     color: $defaultColor;
     border: none !important;
 
     &.active{
       color: $primary !important;
       border-bottom: 2px solid #F00 !important;
+    }
+
+    i{
+      justify-self: center;
+      font-size: 1.5rem;
     }
   }
 
