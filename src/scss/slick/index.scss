@@ -1,8 +1,35 @@
+@import "../variables";
+@import "~bootstrap/scss/bootstrap";
+
+.slick-arrow-category {
+  top: 30% !important;
+}
+
+.slick-arrow-popular {
+  top: 40% !important;
+}
+
+.slick-slider {
+  z-index: 7500;
+}
+
+.slick-list.draggable {
+  z-index: -1;
+}
+
+.slick-track {
+  z-index: 999;
+}
+
+.slick-slide.slick-active {
+  z-index: 9999;
+}
+
 .slick-prev:before, .slick-next:before {
   font-family: 'fontello', sans-serif !important;
   font-size: 20px;
-  opacity: .75;
-  color: #000;
+  opacity: .9;
+  color: #FFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
@@ -24,11 +51,15 @@
 .slick-prev:before {
   content: '\f104' !important;
   font-size: 4rem;
+
+  z-index: 7000;
 }
 
 .slick-next:before {
   content: '\f105' !important;
   font-size: 4rem;
+
+  z-index: 7000;
 }
 
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
@@ -39,7 +70,7 @@
   font-size: 0;
   line-height: 0;
   position: absolute;
-  top: 40%;
+  top: 15%;
   display: block;
   width: 20px;
   height: 20px;
@@ -52,15 +83,15 @@
   border: none;
   outline: none;
   background: transparent;
-  left: -75px;
+  left: -.5 * $spacer;
 }
 
 .slick-next {
-  right: -25px;
+  right: 2 * $spacer;
   font-size: 0;
   line-height: 0;
   position: absolute;
-  top: 40%;
+  top: 15%;
   display: block;
   width: 20px;
   height: 20px;

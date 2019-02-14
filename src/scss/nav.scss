@@ -52,11 +52,11 @@
   }
 
   &-brand {
-    margin: .5 * $spacer 1.5 * $spacer;
+    margin: .5 * $spacer 0;
   }
 
   &-buttons {
-    width: 100% !important;
+    width: fit-content;
     outline: none !important;
     white-space: nowrap;
 
@@ -74,6 +74,10 @@
       margin: auto $spacer;
       cursor: pointer;
       white-space: inherit;
+    }
+
+    img {
+      cursor: pointer;
     }
 
     .profile {
