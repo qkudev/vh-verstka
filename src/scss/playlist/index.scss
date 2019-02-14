@@ -20,6 +20,36 @@
     width: 425px;
     height: 260px;
     background-repeat: no-repeat;
+    &:hover {
+      cursor: pointer;
+    }
+    &-info {
+      height: 100%;
+      color: #ffffff;
+      padding: 18px;
+      &-bottom {
+        &__date {
+          flex: 1;
+          justify-content: space-between;
+          max-width: 43%;
+          font-size: 12px;
+        }
+        &__time {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+      &__title {
+        font-size: 18px;
+        padding-bottom: 5px;
+        font-weight: 600;
+      }
+      &__nickname {
+        padding-bottom: 5px;
+        font-size: 13px;
+      }
+    }
     &:before {
       content: '';
       display: block;
