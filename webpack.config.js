@@ -7,11 +7,11 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: [
     './js/index.js',
-      "./fonts/fontello.eot",
-      "./fonts/fontello.svg",
-      "./fonts/fontello.ttf",
-      "./fonts/fontello.woff",
-      "./fonts/fontello.woff2",
+    './fonts/fontello.eot',
+    './fonts/fontello.svg',
+    './fonts/fontello.ttf',
+    './fonts/fontello.woff',
+    './fonts/fontello.woff2',
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -26,7 +26,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['env'],
-            outputPath: 'js/'
+            outputPath: 'js/',
           },
         },
       },
@@ -64,9 +64,7 @@ module.exports = {
         test: /\.html$/,
         use: [{
           loader: 'html-loader',
-          options: {
-            minimize: true,
-          },
+          options: {},
         }],
       },
       {
