@@ -2,6 +2,15 @@ $primary: #F00;
 
 @import "~bootstrap/scss/bootstrap";
 
+body {
+  font-family: 'Conv_CircularStd-Medium', sans-serif;
+  background: #fff;
+  font-size: 14px;
+  color: #6A6A6A;
+  margin: 0;
+  padding: 0;
+}
+
 
 .layout{
   margin: $spacer * 2.5 $spacer;
