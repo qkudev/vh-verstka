@@ -19,26 +19,3 @@
     cursor: pointer !important;
   }
 }
-
-.navbar{
-
-  &-search {
-    padding: 0 $spacer;
-    margin: 0 .25 * $spacer;
-
-    i {
-      font-size: 1.1rem;
-      margin: 0 .25 * $spacer;
-    }
-
-    input {
-      font-size: 1.1rem;
-      border: none;
-    }
-  }
-
-  &-buttons {
-    margin-left: auto;
-    width: fit-content;
-  }
-}

@@ -1,7 +1,61 @@
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+
 .nav-mobile {
   font-size: 1.5rem;
 
-  i{
+  i {
     margin: 0 1rem;
+    cursor: pointer !important;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.navbar {
+
+  &-search {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    padding: 0 $spacer;
+    margin: 0 auto;
+
+    i {
+      font-size: 1.1rem;
+      margin: auto .25 * $spacer;
+    }
+
+    input {
+      width: 100%;
+      font-size: 1.1rem;
+      border: none;
+      padding: .25 * $spacer $spacer;
+      outline: none;
+      border-bottom: 2px solid rgba(0,0,0, 0);
+      transition: all .2s ease-in-out;
+
+      &:focus{
+        border-bottom: 2px solid $primary;
+      }
+    }
+  }
+
+  &-brand {
+    padding: .5 * $spacer $spacer;
+  }
+
+  &-buttons {
+    //margin-left: auto;
+    width: 100% !important;
+    outline: none !important;
+
+    &-item {
+      width: fit-content;
+    }
   }
 }
