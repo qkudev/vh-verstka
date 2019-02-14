@@ -48,7 +48,6 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: 'fonts/'
           }
         }]
       },
@@ -67,6 +66,17 @@ module.exports = {
           fallback: "style-loader",
           use: "css-loader!sass-loader",
         })
+      },
+      {
+        loader: 'file-loader',
+        // Exclude `js` files to keep "css" loader working as it injects
+        // its runtime that would otherwise be processed through "file" loader.
+        // Also exclude `html` and `json` extensions so they get processed
+        // by webpacks internal loaders.
+        exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/, /\.scss/, /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,],
+        options: {
+          name: 'static/media/[name].[hash:8].[ext]',
+        },
       },
     ]
   },

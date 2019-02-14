@@ -1,44 +1,42 @@
-$primary: #F00;
-
+@import "variables";
 @import "~bootstrap/scss/bootstrap";
 
 
-.layout{
+.layout {
   margin: $spacer * 2.5 $spacer;
 
-  &.menu{
+  &.menu {
     width: 300px;
     margin: 0;
 
 
   }
 
-
-  &.content{
+  &.content {
     margin: 0;
   }
 }
 
-.menu-group{
+.menu-group {
   margin-bottom: $spacer;
 
-  &.header{
+  &.header {
     color: $primary;
   }
 
-  &.item{
+  &.item {
     margin-bottom: $spacer * .5;
   }
 
-  i{
+  i {
 
   }
 }
 
-.navbar{
+.navbar {
   border-bottom: 1px solid $border-color;
 }
 
-#search{
+#search {
   border: none;
 }
