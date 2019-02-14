@@ -30,6 +30,12 @@
       margin: auto .25 * $spacer;
     }
 
+    button {
+      i {
+        margin: auto .5 * $spacer;
+      }
+    }
+
     input {
       width: 100%;
       font-size: 1.1rem;
@@ -52,20 +58,28 @@
   &-buttons {
     width: 100% !important;
     outline: none !important;
+    white-space: nowrap;
+
+    button {
+      white-space: inherit;
+    }
 
     &-item {
       width: fit-content;
+      white-space: inherit;
     }
 
     i {
       font-size: 1.25rem;
       margin: auto $spacer;
       cursor: pointer;
+      white-space: inherit;
     }
 
     .profile {
       margin: auto $spacer;
       cursor: pointer;
+      white-space: inherit;
     }
   }
 }

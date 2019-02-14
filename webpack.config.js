@@ -8,6 +8,8 @@ const images = fs.readdirSync('./src/static/img/')
   .filter(file => file.match(/.*\.(jpg|jpeg|png|svg)$/))
   .map(i => './static/img/' + i)
 
+console.log(images)
+
 const fonts = fs.readdirSync('./src/static/fonts')
   .filter(file => file.match(/.*\.(eot|svg|ttf|woff|woff2)$/))
   .map(f => './static/fonts/' + f)

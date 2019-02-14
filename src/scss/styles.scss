@@ -12,6 +12,8 @@
 // Play List
 @import './playlist/index';
 @import "./channels/index";
+@import "./categories/index";
+@import "./popular/index";
 
 body {
   font-family: 'Roboto', sans-serif;

@@ -1,0 +1,53 @@
+@import "../variables";
+@import "~bootstrap/scss/bootstrap";
+
+.popular {
+  width: 200px !important;
+  height: 225px !important;
+
+  &-wrapper {
+    background: $white;
+    padding-right: .5 * $spacer;
+  }
+
+  &-preview {
+    display: grid;
+    align-content: end;
+    justify-content: end;
+
+    width: 100%;
+    height: 50%;
+    padding: .25 * $spacer .5 * $spacer;
+
+    color: $white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  &-info {
+    margin: .5 * $spacer 0;
+
+    a {
+      color: $black;
+      font-weight: 600;
+    }
+
+    p {
+      font-weight: 600;
+      color: $gray-600;
+      margin: .25 * $spacer 0;
+    }
+
+    small {
+      font-weight: 600;
+      color: $gray-500;
+    }
+
+    &-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

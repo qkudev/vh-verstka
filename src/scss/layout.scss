@@ -1,6 +1,18 @@
 @import "variables";
 @import "~bootstrap/scss/bootstrap";
 
+.content {
+
+  .section {
+    margin-bottom: 1.5 * $spacer;
+    color: #000;
+
+    h6 {
+      margin-bottom: $spacer;
+    }
+  }
+}
+
 .footer {
   display: flex;
   flex-direction: row;

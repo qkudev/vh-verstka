@@ -21,5 +21,25 @@ $(document).ready(function () {
   })
 })
 
+$(document).ready(function () {
+  $('.slick-categories')
+    .slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      variableWidth: true,
+    })
+})
+
+$(document).ready(function () {
+  $('.slick-popular')
+    .slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      variableWidth: true,
+    })
+})
+
 window.$ = $
 window.popper = popper

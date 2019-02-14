@@ -1,0 +1,23 @@
+@import "../variables";
+@import "~bootstrap/scss/bootstrap";
+
+.slick-categories {
+
+  .category {
+    display: grid !important;
+    align-content: center;
+    justify-content: center;
+    width: 200px;
+    height: 120px;
+
+    color: $white;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    cursor: pointer;
+
+    &-wrap {
+      background-color: #FFF;
+      padding-right: .5 * $spacer;
+    }
+  }
+}
