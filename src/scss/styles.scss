@@ -2,6 +2,9 @@
 @import "~bootstrap/scss/bootstrap";
 @import './fonts.scss';
 
+// Sidebar
+@import './sidebar/index.scss';
+
 body {
   font-family: 'Roboto', sans-serif;
   background: #fff;
@@ -9,6 +12,27 @@ body {
   color: #6A6A6A;
   margin: 0;
   padding: 0;
+}
+
+i {
+  font-family: "fontello", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0;
+  text-align: center;
+  /* opacity: .8; */
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  /* margin-left: .2em; */
+  /* font-size: 120%; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
 .layout {
