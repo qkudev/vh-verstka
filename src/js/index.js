@@ -7,8 +7,9 @@ import slick from 'slick-carousel';
 $(document).ready(function(){
   $('.slick-videos').slick({
     infinite: false,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
+    variableWidth: true
   })
 });
 
