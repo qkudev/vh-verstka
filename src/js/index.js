@@ -4,5 +4,4 @@ import bootstrap from 'bootstrap'
 import style from '../scss'
 
 window.$ = $
-window.propper = propper
-window.bootstrap = bootstrap
+window.popper = popper
