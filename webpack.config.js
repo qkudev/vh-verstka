@@ -1,21 +1,23 @@
-const path = require('path')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
+  context: path.resolve(__dirname, 'src'),
   entry: [
-    './src/js/index.js',
-    './src/scss/styles.scss',
-    './src/html/index.html'
+    './js/index.js'
   ],
   output: {
-    filename: './js/bundle.js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].bundle.js',
   },
-  devtool: "source-map",
   module: {
     rules: [
       {
         test: /\.js$/,
-        include: path.resolve(__dirname, 'src/js'),
+        include: path.resolve(__dirname, 'js'),
         use: {
           loader: 'babel-loader',
           options: {
@@ -25,7 +27,7 @@ module.exports = {
       },
       {
         test: /\.(sass|scss)$/,
-        include: path.resolve(__dirname, 'src/scss'),
+        include: path.resolve(__dirname, 'scss'),
         use: ExtractTextPlugin.extract({
           use: [
             {
@@ -52,19 +54,33 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        use: [ {
+            use: [{
           loader: 'html-loader',
           options: {
             minimize: true
           }
         }],
-      }
+      },
+      {
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: "css-loader!sass-loader",
+        })
+      },
     ]
   },
+  devtool: 'inline-source-map',
+  devServer: {
+    port: 3000,   //Tell dev-server which port to run
+    open: true,   // to open the local server in browser
+    contentBase: path.resolve(__dirname, 'dist') //serve from 'dist' folder
+  },
   plugins: [
-    new ExtractTextPlugin({
-      filename: './css/style.bundle.css',
-      allChunks: true,
+    new CleanWebpackPlugin(['dist']), //cleans the dist folder
+    new ExtractTextPlugin("css/styles.css"), //etracts css to dist/css/styles.css
+    new HtmlWebpackPlugin({
+      template: 'index.html'
     })
   ]
 }
