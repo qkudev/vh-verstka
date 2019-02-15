@@ -34,10 +34,22 @@ $(document).ready(function () {
 })
 
 $(document).ready(function () {
+  $('.slick-categories-mobile')
+    .slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      variableWidth: true,
+      prevArrow: '<button class="slick-prev slick-arrow slick-arrow-category" aria-label="Previous" type="button"></button>',
+      nextArrow: '<button class="slick-next slick-arrow slick-arrow-category" aria-label="Next" type="button"></button>',
+    })
+})
+
+$(document).ready(function () {
   $('.slick-popular')
     .slick({
       infinite: true,
-      slidesToShow: 4,
+      slidesToShow: 3,
       slidesToScroll: 1,
       variableWidth: true,
     })

@@ -20,4 +20,89 @@
       padding-right: .5 * $spacer;
     }
   }
+
+  &-mobile {
+    .category {
+      display: grid !important;
+      align-content: center;
+      justify-content: center;
+      width: 200px;
+      height: 120px;
+
+      color: $white;
+      background-repeat: no-repeat;
+      background-size: cover !important;
+      cursor: pointer;
+
+      &-wrap {
+        background-color: #FFF;
+        padding-right: .5 * $spacer;
+      }
+    }
+  }
+}
+
+.page_avatar {
+  grid-row: 2/4;
+  grid-column: 2/4;
+
+  width: 55px;
+  height: 55px;
+  margin: auto 0;
+
+  background: $primary;
+  border-radius: 50%;
+  //border: 3px solid $white;
+
+  &.gray {
+    background: $gray-500;
+  }
+}
+
+.page-heading {
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+
+  height: 300px;
+  width: 100%;
+  margin-bottom: 2.5 * $spacer;
+
+  background: $gray-400;
+
+  &-heading {
+    grid-row: 4/9;
+    grid-column: 2/12;
+
+    margin: auto 0;
+    color: $white;
+  }
+
+  .header-panel {
+    grid-row: 10/11;
+    grid-column: 2/12;
+
+    background-color: $primary;
+  }
+}
+
+.subscription-btn {
+  grid-row: 2/4;
+  grid-column: 10/12;
+
+  padding: 0 .5 * $spacer;
+  white-space: nowrap;
+}
+
+.panel-btn {
+  display: block;
+  background-color: rgba(0,0,0, .01);
+  grid-row: 10/11;
+
+  &.home {
+    grid-column: 2/3;
+  }
+  &.about {
+    grid-column: 3/4;
+  }
 }

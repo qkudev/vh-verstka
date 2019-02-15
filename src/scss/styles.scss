@@ -18,7 +18,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background: #fff;
-  font-size: 14px;
+  font-size: 1rem;
   color: #6A6A6A;
   margin: 0 !important;
   padding: 0 !important;
@@ -66,20 +66,25 @@ i {
   &.item {
     margin-bottom: $spacer * .5;
   }
-
-  i {
-
-  }
 }
 
 .navbar {
   border-bottom: 1px solid $border-color;
 }
 
-#search {
-  border: none;
-}
+
 
 * {
   outline-color: $primary;
+}
+
+.show-btn {
+  width: fit-content;
+  color: $gray-500;
+  font-weight: 600;
+  margin: $spacer auto;
+
+  i {
+    font-size: 1.2 * $spacer;
+  }
 }

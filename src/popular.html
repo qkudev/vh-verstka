@@ -8,12 +8,12 @@
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <title>Dark Video Index</title>
+  <title>Popular videos</title>
 </head>
 <body>
 
 <!--Navigation start-->
-<nav class="navbar navbar-expand-md navbar-light bg-white">
+<nav class="navbar navbar-expand-md navbar-light bg-white  px-md-5">
   <!-- Logo -->
   <a class="navbar-brand" href="index.html">
     <img src="static/img/logo_black@2x.png" alt="" width="170px" height="35px">
@@ -49,16 +49,17 @@
 <!--Navigation finish-->
 
 <!--Layout start-->
-<div class="layout m-0 p-0">
+<div class="layout">
   <!--Menu Mobile start-->
   <div class="d-block d-md-none">
     <ul class="nav nav-tabs menu-tabs" id="myTab" role="tablist">
       <li class="nav-item">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="index.html" role="tab" aria-controls="home"
+        <a class="nav-link" id="home-tab" data-toggle="tab" href="index.html" role="tab" aria-controls="home"
            aria-selected="true"><i class="icon-home"></i></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="popular-tab" data-toggle="tab" href="popular.html" role="tab" aria-controls="popular"
+        <a class="nav-link active" id="popular-tab" data-toggle="tab" href="popular.html" role="tab"
+           aria-controls="popular"
            aria-selected="false"><i class="icon-star"></i></a>
       </li>
       <li class="nav-item ">
@@ -73,61 +74,146 @@
       </li>
     </ul>
     <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
         <!-- HOME MOBILE CONTENT START-->
-        <div class="row px-3 m-0">
+        <!--<div class="row">-->
+        <!--<div class="col-12 content pb-0">-->
+
+        <!--&lt;!&ndash; Featured videos &ndash;&gt;-->
+        <!--<div class="section mobile">-->
+        <!--<div class="section-heading px-3 mt-5">-->
+        <!--<h6 class="m-0">Featured videos</h6>-->
+        <!--<a href="#">See all</a>-->
+        <!--</div>-->
+
+        <!--<div class="playlist-mobile-wrap px-3 py-0">-->
+        <!--<div class="playlist-mobile mt-3">-->
+        <!--<img-->
+        <!--src="https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg">-->
+        <!--<div class="timing">16:07</div>-->
+        <!--</div>-->
+        <!--<a class="title" href="#">SOME TITLE</a>-->
+        <!--<div class="playlist-mobile-info mb-4">-->
+        <!--<a>channel name</a>-->
+        <!--Views: 2,1k-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="playlist-mobile-wrap px-3 py-0">-->
+        <!--<div class="playlist-mobile mt-4">-->
+        <!--<img-->
+        <!--src="https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg">-->
+        <!--<div class="timing">16:07</div>-->
+        <!--</div>-->
+        <!--<a class="title" href="#">SOME TITLE</a>-->
+        <!--<div class="playlist-mobile-info mb-4">-->
+        <!--<a>channel name</a>-->
+        <!--<small>Views: 2,1k</small>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="playlist-mobile-wrap px-3 py-0">-->
+        <!--<div class="playlist-mobile mt-4">-->
+        <!--<img-->
+        <!--src="https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg">-->
+        <!--<div class="timing">16:07</div>-->
+        <!--</div>-->
+        <!--<a class="title" href="#">SOME TITLE</a>-->
+        <!--<div class="playlist-mobile-info mb-4">-->
+        <!--<a>channel name</a>-->
+        <!--<small>Views: 2,1k</small>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--</div>-->
+
+        <!--&lt;!&ndash; Categories &ndash;&gt;-->
+        <!--<div class="section mobile px-3 border-bottom">-->
+        <!--<div class="section-heading my-4">-->
+        <!--<h6 class="m-0">Browse video categories</h6>-->
+        <!--</div>-->
+
+        <!--<div class="slick-categories-mobile mb-5">-->
+        <!--<div class="category-wrap">-->
+        <!--<div class="category" style="background: url('static/img/cat2.jpg')">-->
+        <!--Category-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="category-wrap">-->
+        <!--<div class="category" style="background: url('static/img/cat2.jpg')">-->
+        <!--Category-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="category-wrap">-->
+        <!--<div class="category" style="background: url('static/img/cat2.jpg')">-->
+        <!--Category-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="category-wrap">-->
+        <!--<div class="category" style="background: url('static/img/cat2.jpg')">-->
+        <!--Category-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--</div>-->
+
+        <!--&lt;!&ndash; Featured videos &ndash;&gt;-->
+        <!--<div class="section mobile mb-0 mt-5 border-bottom-0">-->
+        <!--<div class="section-heading px-3 mt-4 mb-3">-->
+        <!--<h6 class="my-0">Trending in News</h6>-->
+        <!--<a href="#">See all</a>-->
+        <!--</div>-->
+
+        <!--<div class="playlist-mobile-wrap px-3 py-0 pt-0">-->
+        <!--<div class="playlist-mobile">-->
+        <!--<img-->
+        <!--src="https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg">-->
+        <!--<div class="timing">16:07</div>-->
+        <!--</div>-->
+        <!--<a class="title" href="#">SOME TITLE</a>-->
+        <!--<div class="playlist-mobile-info mb-4">-->
+        <!--<a>channel name</a>-->
+        <!--<small>Views: 2,1k</small>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="playlist-mobile-wrap px-3 py-0">-->
+        <!--<div class="playlist-mobile mt-4">-->
+        <!--<img-->
+        <!--src="https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg">-->
+        <!--<div class="timing">16:07</div>-->
+        <!--</div>-->
+        <!--<a class="title" href="#">SOME TITLE</a>-->
+        <!--<div class="playlist-mobile-info mb-3">-->
+        <!--<a>channel name</a>-->
+        <!--<small>Views: 2,1k</small>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="playlist-mobile-wrap px-3 py-0 border-bottom-0">-->
+        <!--<div class="playlist-mobile mt-4">-->
+        <!--<img-->
+        <!--src="https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg">-->
+        <!--<div class="timing">16:07</div>-->
+        <!--</div>-->
+        <!--<a class="title" href="#">SOME TITLE</a>-->
+        <!--<div class="playlist-mobile-info mb-3">-->
+        <!--<a>channel name</a>-->
+        <!--<small>Views: 2,1k</small>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--</div>-->
+        <!--</div>-->
+      </div>
+      <div class="tab-pane fade show active px-3" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+        <!-- Mobile content-->
+        <div class="row">
           <div class="col-12 content">
-
-            <!-- Featured videos -->
-            <div class="section mobile">
-              <div class="section-heading mt-4">
-                <h6 class="m-0">Featured videos</h6>
-                <a href="#">See all</a>
-              </div>
-
-              <div class="playlist-mobile-wrap p-0">
-                <div class="playlist-mobile mt-3">
-                  <img
-                    src="https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg">
-                  <div class="timing">16:07</div>
-                </div>
-                <a class="title" href="#">SOME TITLE</a>
-                <div class="playlist-mobile-info mb-4">
-                  <a>channel name</a>
-                  Views: 2,1k
-                </div>
-              </div>
-
-              <div class="playlist-mobile-wrap p-0">
-                <div class="playlist-mobile mt-4">
-                  <img
-                    src="https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg">
-                  <div class="timing">16:07</div>
-                </div>
-                <a class="title" href="#">SOME TITLE</a>
-                <div class="playlist-mobile-info mb-4">
-                  <a>channel name</a>
-                  <small>Views: 2,1k</small>
-                </div>
-              </div>
-
-              <div class="playlist-mobile-wrap p-0">
-                <div class="playlist-mobile mt-4">
-                  <img
-                    src="https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg">
-                  <div class="timing">16:07</div>
-                </div>
-                <a class="title" href="#">SOME TITLE</a>
-                <div class="playlist-mobile-info mb-4">
-                  <a>channel name</a>
-                  <small>Views: 2,1k</small>
-                </div>
-              </div>
-
-            </div>
-
             <!-- Categories -->
-            <div class="section mobile border-bottom">
+            <div class="section mobile border-bottom px-3">
               <div class="section-heading my-4">
                 <h6 class="m-0">Browse video categories</h6>
               </div>
@@ -154,60 +240,55 @@
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div class="section mobile">
+
+              <div class="video-preview-wrapper">
+                <div class="video-preview">
+                  <div class="timing">16:07</div>
+                </div>
+                <div class="video-preview-info">
+                  <a class="video-title" href="#">Very very very very very long video title</a>
+                  <a class="channel" href="#">channel name</a>
+                  <small class="info">Views: 2,1k</small>
+                </div>
+              </div>
+
+              <div class="video-preview-wrapper">
+                <div class="video-preview">
+                  <div class="timing">16:07</div>
+                </div>
+                <div class="video-preview-info">
+                  <a class="video-title" href="#">Very very very very very long video title</a>
+                  <a class="channel" href="#">channel name</a>
+                  <small class="info">Views: 2,1k</small>
+                </div>
+              </div>
+
+              <div class="video-preview-wrapper">
+                <div class="video-preview">
+                  <div class="timing">16:07</div>
+                </div>
+                <div class="video-preview-info">
+                  <a class="video-title" href="#">Very very very very very long video title</a>
+                  <a class="channel" href="#">channel name</a>
+                  <small class="info">Views: 2,1k</small>
+                </div>
+              </div>
 
             </div>
 
-            <!-- Featured videos -->
-            <div class="section mobile mb-0 mt-5 border-bottom-0">
-              <div class="section-heading mt-4 mb-3">
-                <h6 class="my-0">Trending in News</h6>
-                <a href="#">See all</a>
-              </div>
-
-              <div class="playlist-mobile-wrap p-0 pt-0">
-                <div class="playlist-mobile">
-                  <img
-                    src="https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg">
-                  <div class="timing">16:07</div>
-                </div>
-                <a class="title" href="#">SOME TITLE</a>
-                <div class="playlist-mobile-info mb-4">
-                  <a>channel name</a>
-                  <small>Views: 2,1k</small>
-                </div>
-              </div>
-
-              <div class="playlist-mobile-wrap p-0">
-                <div class="playlist-mobile mt-4">
-                  <img
-                    src="https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg">
-                  <div class="timing">16:07</div>
-                </div>
-                <a class="title" href="#">SOME TITLE</a>
-                <div class="playlist-mobile-info mb-3">
-                  <a>channel name</a>
-                  <small>Views: 2,1k</small>
-                </div>
-              </div>
-
-              <div class="playlist-mobile-wrap p-0 border-bottom-0">
-                <div class="playlist-mobile mt-4">
-                  <img
-                    src="https://www.sevenstepswriting.com/wp-content/uploads/2016/08/Workshop-rectangle-1-425x260.jpg">
-                  <div class="timing">16:07</div>
-                </div>
-                <a class="title" href="#">SOME TITLE</a>
-                <div class="playlist-mobile-info mb-3">
-                  <a>channel name</a>
-                  <small>Views: 2,1k</small>
-                </div>
+            <div class="container-fluid">
+              <div class="show-btn">
+                Show more
+                <i class="icon-dot-3"></i>
               </div>
             </div>
 
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="popular" role="tabpanel" aria-labelledby="popular-tab"></div>
       <div class="tab-pane fade" id="new-videos" role="tabpanel" aria-labelledby="new-videos-tab"></div>
       <div class="tab-pane fade" id="categories" role="tabpanel" aria-labelledby="categories-tab"></div>
     </div>
@@ -215,7 +296,7 @@
   <!--Menu Mobile finish-->
 
   <!--Content start-->
-  <div class="row my-5 mx-3 mx-md-5">
+  <div class="d-none d-md-flex row my-5 mx-3 mx-md-5">
     <!--Layout Menu-->
     <div class="d-none d-md-block pr-3">
       <div class="menu-group d-flex flex-column sidebar">
@@ -482,7 +563,7 @@
               <div class="popular-preview">16:09</div>
               <div class="popular-info">
                 <a>Very very very very very long video title</a>
-                <p>channel name</p>
+                <p>Added by channel name</p>
                 <div class="popular-info-footer">
                   <small>2 weeks ago</small>
                   <small>Views: 2.1k</small>
@@ -496,7 +577,7 @@
               <div class="popular-preview">16:09</div>
               <div class="popular-info">
                 <a>Very very very very very long video title</a>
-                <p>channel name</p>
+                <p>Added by channel name</p>
                 <div class="popular-info-footer">
                   <small>2 weeks ago</small>
                   <small>Views: 2.1k</small>
@@ -510,7 +591,7 @@
               <div class="popular-preview">16:09</div>
               <div class="popular-info">
                 <a>Very very very very very long video title</a>
-                <p>channel name</p>
+                <p>Added by channel name</p>
                 <div class="popular-info-footer">
                   <small>2 weeks ago</small>
                   <small>Views: 2.1k</small>
@@ -524,7 +605,7 @@
               <div class="popular-preview">16:09</div>
               <div class="popular-info">
                 <a>Very very very very very long video title</a>
-                <p>channel name</p>
+                <p>Added by channel name</p>
                 <div class="popular-info-footer">
                   <small>2 weeks ago</small>
                   <small>Views: 2.1k</small>
@@ -538,7 +619,7 @@
               <div class="popular-preview">16:09</div>
               <div class="popular-info">
                 <a>Very very very very very long video title</a>
-                <p>channel name</p>
+                <p>Added by channel name</p>
                 <div class="popular-info-footer">
                   <small>2 weeks ago</small>
                   <small>Views: 2.1k</small>
@@ -606,7 +687,7 @@
               <div class="popular-preview">16:09</div>
               <div class="popular-info">
                 <a>Very very very very very long video title</a>
-                <p>channel name</p>
+                <p>Added by channel name</p>
                 <div class="popular-info-footer">
                   <small>2 weeks ago</small>
                   <small>Views: 2.1k</small>
@@ -620,7 +701,7 @@
               <div class="popular-preview">16:09</div>
               <div class="popular-info">
                 <a>Very very very very very long video title</a>
-                <p>channel name</p>
+                <p>Added by channel name</p>
                 <div class="popular-info-footer">
                   <small>2 weeks ago</small>
                   <small>Views: 2.1k</small>
@@ -634,7 +715,7 @@
               <div class="popular-preview">16:09</div>
               <div class="popular-info">
                 <a>Very very very very very long video title</a>
-                <p>channel name</p>
+                <p>Added by channel name</p>
                 <div class="popular-info-footer">
                   <small>2 weeks ago</small>
                   <small>Views: 2.1k</small>
@@ -648,7 +729,7 @@
               <div class="popular-preview">16:09</div>
               <div class="popular-info">
                 <a>Very very very very very long video title</a>
-                <p>channel name</p>
+                <p>Added by channel name</p>
                 <div class="popular-info-footer">
                   <small>2 weeks ago</small>
                   <small>Views: 2.1k</small>
@@ -662,7 +743,7 @@
               <div class="popular-preview">16:09</div>
               <div class="popular-info">
                 <a>Very very very very very long video title</a>
-                <p>channel name</p>
+                <p>Added by channel name</p>
                 <div class="popular-info-footer">
                   <small>2 weeks ago</small>
                   <small>Views: 2.1k</small>
@@ -685,7 +766,7 @@
               <div class="popular-preview">16:09</div>
               <div class="popular-info">
                 <a>Very very very very very long video title</a>
-                <p>channel name</p>
+                <p>Added by channel name</p>
                 <div class="popular-info-footer">
                   <small>2 weeks ago</small>
                   <small>Views: 2.1k</small>
@@ -699,7 +780,7 @@
               <div class="popular-preview">16:09</div>
               <div class="popular-info">
                 <a>Very very very very very long video title</a>
-                <p>channel name</p>
+                <p>Added by channel name</p>
                 <div class="popular-info-footer">
                   <small>2 weeks ago</small>
                   <small>Views: 2.1k</small>
@@ -713,7 +794,7 @@
               <div class="popular-preview">16:09</div>
               <div class="popular-info">
                 <a>Very very very very very long video title</a>
-                <p>channel name</p>
+                <p>Added by channel name</p>
                 <div class="popular-info-footer">
                   <small>2 weeks ago</small>
                   <small>Views: 2.1k</small>
@@ -727,7 +808,7 @@
               <div class="popular-preview">16:09</div>
               <div class="popular-info">
                 <a>Very very very very very long video title</a>
-                <p>channel name</p>
+                <p>Added by channel name</p>
                 <div class="popular-info-footer">
                   <small>2 weeks ago</small>
                   <small>Views: 2.1k</small>
@@ -741,7 +822,7 @@
               <div class="popular-preview">16:09</div>
               <div class="popular-info">
                 <a>Very very very very very long video title</a>
-                <p>channel name</p>
+                <p>Added by channel name</p>
                 <div class="popular-info-footer">
                   <small>2 weeks ago</small>
                   <small>Views: 2.1k</small>
@@ -775,7 +856,7 @@
       </div>
     </div>
 
-    <div class="d-flex flex-column flex-md-row">
+    <div class="flex-column flex-md-row">
       <a class="footer-item">
         Rules and conditions
       </a>

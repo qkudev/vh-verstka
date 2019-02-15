@@ -126,6 +126,26 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index-signed.html',
       template: 'index-signed.html',
-    })
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'mobile.html',
+      template: 'mobile.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'popular.html',
+      template: 'popular.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'new-videos.html',
+      template: 'new-videos.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'categories.html',
+      template: 'categories.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'category_page.html',
+      template: 'category_page.html',
+    }),
   ],
 }
