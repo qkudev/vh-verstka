@@ -106,3 +106,34 @@
     grid-column: 3/4;
   }
 }
+
+.category-about {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 9fr 3fr;
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+
+    color: $black;
+
+    button {
+      display: inline-flex;
+    }
+
+    h5 {
+      font-weight: 500;
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+
+    color: $black;
+    font-weight: 600;
+  }
+}

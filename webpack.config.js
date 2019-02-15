@@ -8,11 +8,28 @@ const images = fs.readdirSync('./src/static/img/')
   .filter(file => file.match(/.*\.(jpg|jpeg|png|svg)$/))
   .map(i => './static/img/' + i)
 
-console.log(images)
-
 const fonts = fs.readdirSync('./src/static/fonts')
   .filter(file => file.match(/.*\.(eot|svg|ttf|woff|woff2)$/))
   .map(f => './static/fonts/' + f)
+
+const htmlNames = [
+  'index.html',
+  'search.html',
+  'index-signed.html',
+  'category_page.html',
+  'categories.html',
+  'popular.html',
+  'new-videos.html',
+  'mobile.html',
+  'category_page_about.html',
+]
+
+const htmls = htmlNames.map(name =>
+  new HtmlWebpackPlugin({
+    filename: name,
+    template: name,
+  })
+)
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -117,35 +134,8 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']), //cleans the dist folder
-    new ExtractTextPlugin('css/styles.css'), //etracts css to dist/css/styles.css
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'index.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'index-signed.html',
-      template: 'index-signed.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'mobile.html',
-      template: 'mobile.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'popular.html',
-      template: 'popular.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'new-videos.html',
-      template: 'new-videos.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'categories.html',
-      template: 'categories.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'category_page.html',
-      template: 'category_page.html',
-    }),
+    new CleanWebpackPlugin(['dist']), // cleans the dist folder
+    new ExtractTextPlugin('css/styles.css'), // extracts css to dist/css/styles.css
+    ...htmls
   ],
 }
