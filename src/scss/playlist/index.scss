@@ -27,6 +27,8 @@
     width: 425px;
     height: 260px;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 
     &:hover {
       cursor: pointer;

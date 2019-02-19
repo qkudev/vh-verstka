@@ -25,7 +25,7 @@ $(document).ready(function () {
   $('.slick-categories')
     .slick({
       infinite: true,
-      slidesToShow: 3,
+      slidesToShow: 2,
       slidesToScroll: 1,
       variableWidth: true,
       prevArrow: '<button class="slick-prev slick-arrow slick-arrow-category" aria-label="Previous" type="button"></button>',
@@ -37,7 +37,7 @@ $(document).ready(function () {
   $('.slick-categories-mobile')
     .slick({
       infinite: true,
-      slidesToShow: 3,
+      slidesToShow: 2,
       slidesToScroll: 1,
       variableWidth: true,
       prevArrow: '<button class="slick-prev slick-arrow slick-arrow-category" aria-label="Previous" type="button"></button>',
@@ -49,7 +49,7 @@ $(document).ready(function () {
   $('.slick-popular')
     .slick({
       infinite: true,
-      slidesToShow: 3,
+      slidesToShow: 2,
       slidesToScroll: 1,
       variableWidth: true,
     })

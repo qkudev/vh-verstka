@@ -15,6 +15,7 @@
 @import "./categories/index";
 @import "./popular/index";
 @import "./search/index";
+@import "./videoplayer/index";
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -87,3 +88,32 @@ i {
     font-size: 1.2 * $spacer;
   }
 }
+
+.time {
+  color: $white;
+  //font-weight: 500;
+
+  margin: .5 * $spacer $spacer;
+}
+
+a {
+  &.video-name {
+    color: $black;
+    overflow: hidden;
+    //white-space: nowrap;
+    text-overflow: ellipsis;
+    //font-weight: 600;
+  }
+
+  &.channel-name {
+    color: $gray-600;
+    font-weight: 400;
+  }
+}
+
+.player-example {
+  height: 400px;
+  width: 100%;
+  background: $gray-500;
+}
+

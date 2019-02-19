@@ -5,3 +5,10 @@ import './slicks'
 
 window.$ = $
 window.popper = popper
+
+function toggleMenu () {
+  let menu = document.getElementById('layout-menu')
+  if (menu) {
+    menu.style.display = 'block'
+  }
+}

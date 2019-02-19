@@ -12,24 +12,14 @@ const fonts = fs.readdirSync('./src/static/fonts')
   .filter(file => file.match(/.*\.(eot|svg|ttf|woff|woff2)$/))
   .map(f => './static/fonts/' + f)
 
-const htmlNames = [
-  'index.html',
-  'search.html',
-  'index-signed.html',
-  'category_page.html',
-  'categories.html',
-  'popular.html',
-  'new-videos.html',
-  'mobile.html',
-  'category_page_about.html',
-]
-
-const htmls = htmlNames.map(name =>
-  new HtmlWebpackPlugin({
-    filename: name,
-    template: name,
-  })
-)
+const htmls = fs.readdirSync('./src')
+  .filter(file => file.match(/.*\.html$/))
+  .map(name =>
+    new HtmlWebpackPlugin({
+      filename: name,
+      template: name,
+    })
+  )
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -125,7 +115,7 @@ module.exports = {
   devServer: {
     port: 3000,   //Tell dev-server which port to run
     open: true,   // to open the local server in browser
-    openPage: 'index-signed.html',
+    openPage: 'single_video.html',
 
     //serve from 'dist' and 'img' folder
     contentBase: [
