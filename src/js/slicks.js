@@ -4,8 +4,9 @@ import $ from 'jquery'
 $(document).ready(function () {
   $('.slick-videos').slick({
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     variableWidth: true,
     prevArrow: '<button class="slick-prev slick-arrow slick-arrow-popular" aria-label="Previous" type="button"></button>',
     nextArrow: '<button class="slick-next slick-arrow slick-arrow-popular" aria-label="Next" type="button"></button>',
@@ -15,8 +16,9 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.slick-channels').slick({
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     variableWidth: true
   })
 })

@@ -1,23 +1,26 @@
+@import "~bootstrap/scss/bootstrap";
+@import "variables";
+
 .menu-tabs {
   justify-content: space-between !important;
 
-  a{
+  a {
     display: grid;
     color: $defaultColor;
     border: none !important;
 
-    &.active{
+    &.active {
       color: $primary !important;
       border-bottom: 2px solid #F00 !important;
     }
 
-    i{
+    i {
       justify-self: center;
       font-size: 1.5rem;
     }
   }
 
-  li{
+  li {
     width: 25%;
   }
 }

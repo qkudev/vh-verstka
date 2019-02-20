@@ -57,9 +57,21 @@
 .layout {
   padding-top: 1.5rem;
 
+  &.h100 {
+    display: grid;
+    grid-template-rows: auto 7em;
+    height: 100vh !important;
+  }
+
   &-menu {
   }
 
   &-content {
+  }
+
+  &-login {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto auto;
   }
 }
