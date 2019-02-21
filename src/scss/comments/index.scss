@@ -1,0 +1,65 @@
+@import "../variables";
+@import "~bootstrap/scss/bootstrap";
+
+.comments {
+
+}
+
+.comment {
+  display: grid;
+
+  color: $black;
+
+  &-header {
+    display: grid;
+    grid-gap: .25 * $spacer;
+    grid-template-columns: 3 * $spacer auto 5 * $spacer;
+  }
+
+  &.content {
+    display: block;
+    margin-left: 3.5 * $spacer;
+  }
+
+  &.avatar {
+    display: block;
+    min-height:  3 * $spacer;
+    min-width:  3 * $spacer;
+    height: 3 * $spacer;
+    width: 3 * $spacer;
+
+    margin-right: .5 * $spacer;
+
+    background-color: $gray-500;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  &.time {
+    display: block;
+    width: fit-content;
+    margin: 0 0 0 auto;
+    justify-self: end;
+    white-space: nowrap;
+
+    color: $gray-500;
+  }
+
+  &.actions {
+    display: flex;
+    flex-direction: row;
+    margin: .5*$spacer 0;
+
+    color: $gray-500;
+
+    button {
+      color: $gray-500 !important;
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+    }
+  }
+}

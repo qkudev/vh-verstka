@@ -8,17 +8,14 @@
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <title>Single Video Page</title>
+  <title>Dark Video Index</title>
 </head>
 <body>
 
 <!--Navigation start-->
 <nav class="navbar navbar-expand-md navbar-light bg-white px-3 px-md-5">
   <!-- Logo -->
-  <a href="#" class="d-md-none">
-    <i class="icon-menu"></i>
-  </a>
-  <a class="d-none d-md-block navbar-brand" href="index.html">
+  <a class="navbar-brand" href="index.html">
     <img src="static/img/logo_black@2x.png" alt="" width="170px" height="35px">
   </a>
   <!--Navbar collapsible start-->
@@ -58,7 +55,7 @@
   <!--Content start-->
   <div class="row my-4 my-lg-5 mx-3 mx-md-5">
     <!--Layout Menu-->
-    <div class="d-none d-lg-block">
+    <div class="d-none d-lg-block pr-3">
       <div class="menu-group d-flex flex-column sidebar">
         <div class="menu-group header sidebar__title">Main</div>
         <ul>
@@ -142,69 +139,18 @@
               <div class="player-example">PLAYER</div>
             </div>
             <div class="video-info">
-              <!-- VIDEO TITLE -->
-              <h3 class="mt-3">Video Title Video Title Video Title </h3>
-              <!-- VIDEO VIEWS-->
-              <div class="gray">Views: 10,1k</div>
-              <!-- VIDEO STATISTICS -->
-              <div class="d-flex flex-row video-info-stats border-bottom pb-3 my-3 justify-content-between">
-                <div class="d-flex flex-row">
-                  <div class="d-flex flex-row active align-items-baseline">
-                    <i class="icon-like mx-2 active"></i>
-                    768
-                  </div>
-                  <div class="d-flex flex-row align-items-baseline mx-2">
-                    <i class="icon-diss mx-2"></i>
-                    91
-                  </div>
-                </div>
-                <div class="d-flex flex-row">
-                  <div class="d-flex flex-row align-items-baseline ml-2">
-                    <i class="icon-addlist mx-3"></i>
-                    <div class="d-none d-lg-block">
-                      Add to playlist
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row align-items-baseline ml-2">
-                    <i class="icon-upload mx-2"></i>
-                    <div class="d-none d-lg-block">
-                      Share
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row align-items-baseline ml-2">
-                    <i class="icon-dot-3 mx-2"></i>
-                    <div class="d-none d-lg-block">
-                      More
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CHANNEL HEADING -->
+              <h3 class="my-3">Video Title Video Title Video Title </h3>
               <div class="channel-heading">
-                <a href="#" class="channel-heading avatar"></a>
-                <div class="channel-description">
-                  <a href="#">
-                    Channel Name
-                    <i class="m-1 icon-ok-circled"></i>
-                  </a>
-                  2,012 followers
-                </div>
+                <div class="channel-heading avatar"></div>
+                <div class="channel-description">Description</div>
                 <button class="btn btn-primary">Subscribe</button>
-              </div>
-              <!-- VIDEO DESCRIPTION -->
-              <div class="video-info description border-bottom my-2">
-                Video description Video description Video description Video description Video description Video description
-                <div class="d-flex flex-row justify-content-between gray align-items-baseline mt-1">
-                  <button class="btn gray">Hide description</button>
-                  Added 2 weeks ago
-                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-5">
           <!-- PLAYLIST -->
-          <div class="video-playlist border-bottom">
+          <div class="video-playlist">
             <div class="video-preview-wrapper">
               <div class="video-preview" style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
                 <div class="timing">16:07</div>
@@ -253,83 +199,6 @@
                 <a class="video-title" href="#">Very very very very very long video title</a>
                 <a class="channel" href="#">channel name</a>
                 <small class="info">Views: 2,1k</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- COMMENTS -->
-        <div class="container-fluid">
-          <h5>Comments</h5>
-          <!-- COMMENT ITEM -->
-          <div class="comment">
-            <!-- COMMENT HEADER-->
-            <div class="d-flex flex-row align-items-center">
-              <a href="#" class="comment avatar"></a>
-              Nickname
-              <div class="comment time">2 days ago</div>
-            </div>
-            <div class="comment content">
-              Text text text text text text text text text text text text text
-              <div class="comment actions">
-                <button class="icon-like">
-                  <div class="mx-2">35</div>
-                </button>
-                <button class="icon-diss">
-                  <div class="mx-2">9</div>
-                </button>
-                <button class="icon-replay">
-                  <div class="d-none d-md-block mx-2">Replay</div>
-                </button>
-                <button class="icon-dot-3 ml-auto"></button>
-              </div>
-            </div>
-          </div>
-          <!-- COMMENT ITEM -->
-          <div class="comment">
-            <!-- COMMENT HEADER-->
-            <div class="d-flex flex-row align-items-center">
-              <a href="#" class="comment avatar"></a>
-              Nickname
-              <div class="comment time">2 days ago</div>
-            </div>
-            <div class="comment content">
-              Text text text text text text text text text text text text text
-              <div class="comment actions">
-                <button class="icon-like">
-                  <div class="mx-2">35</div>
-                </button>
-                <button class="icon-diss">
-                  <div class="mx-2">9</div>
-                </button>
-                <button class="icon-replay">
-                  <div class="d-none d-md-block mx-2">Replay</div>
-                </button>
-                <button class="icon-dot-3 ml-auto"></button>
-              </div>
-            </div>
-          </div>
-          <!-- COMMENT ITEM -->
-          <div class="comment">
-            <!-- COMMENT HEADER-->
-            <div class="d-flex flex-row align-items-center">
-              <a href="#" class="comment avatar"></a>
-              Nickname
-              <div class="comment time">2 days ago</div>
-            </div>
-            <div class="comment content">
-              Text text text text text text text text text text text text text
-              <div class="comment actions">
-                <button class="icon-like">
-                  <div class="mx-2">35</div>
-                </button>
-                <button class="icon-diss">
-                  <div class="mx-2">9</div>
-                </button>
-                <button class="icon-replay">
-                  <div class="d-none d-md-block mx-2">Replay</div>
-                </button>
-                <button class="icon-dot-3 ml-auto"></button>
               </div>
             </div>
           </div>
@@ -340,10 +209,10 @@
   <!--Content finish-->
 
   <!--Footer start-->
-  <div class="footer d-flex flex-column flex-md-row px-1 px-md-3 px-lg-5">
+  <div class="footer d-flex flex-row">
     <div class=" d-flex flex-column flex-md-row">
-      <a class="footer-item mx-auto mx-md-2">©2018 dark.video</a>
-      <div class="footer-item mx-auto mx-md-2">
+      <a class="footer-item">©2018 dark.video</a>
+      <div class="footer-item">
         <div class="">
           <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="icon-globe-1"></i>
@@ -360,10 +229,10 @@
     </div>
 
     <div class="d-flex flex-column flex-md-row">
-      <a class="footer-item mx-auto mx-md-2">
+      <a class="footer-item">
         Rules and conditions
       </a>
-      <a class="footer-item mx-auto mx-md-2">
+      <a class="footer-item">
         Telegram channel
       </a>
     </div>

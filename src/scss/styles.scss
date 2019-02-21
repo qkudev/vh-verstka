@@ -16,6 +16,7 @@
 @import "./popular/index";
 @import "./search/index";
 @import "./videoplayer/index";
+@import "./comments/index";
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -126,14 +127,30 @@ a {
 .video-playlist {
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0 0 $spacer 0;
 }
 
 .video-info {
   color: $black;
 
+  &-stats {
+    align-content: baseline;
+    color: $gray-700;
+  }
+
   &.title {
+
+  }
+
+  &.description {
 
   }
 }
 
+.active {
+  color: $primary;
+}
+
+.gray {
+  color: $gray-500;
+}

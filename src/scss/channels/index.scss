@@ -241,11 +241,12 @@
 .channel-heading {
   display: grid;
   grid-gap: .5 * $spacer;
-  grid-template-columns: 5 * $spacer  auto 10 * $spacer;
+  grid-template-columns: 4 * $spacer  auto 7 * $spacer;
+  margin-bottom: .5 * $spacer;
 
   &.avatar {
-    height: 5 * $spacer;
-    width: 5 * $spacer;
+    height: 4 * $spacer;
+    width: 4 * $spacer;
 
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -261,4 +262,11 @@
     max-width: 10 * $spacer;
     height: fit-content;
   }
+}
+
+.channel-description {
+  display: flex;
+  flex-direction: column;
+
+  color: $gray-500;
 }
