@@ -5,7 +5,7 @@ const path = require('path')
 const fs = require('fs')
 
 const images = fs.readdirSync('./src/static/img/')
-  .filter(file => file.match(/.*\.(jpg|jpeg|png|svg)$/))
+  .filter(file => file.match(/.*\.(jpg|jpeg|png|svg|gif)$/))
   .map(i => './static/img/' + i)
 
 const fonts = fs.readdirSync('./src/static/fonts')
@@ -58,7 +58,7 @@ module.exports = {
       },
       // Images loader
       {
-        test: /\.(jpg|jpeg|png|svg)$/,
+        test: /\.(jpg|jpeg|png|svg|gif)$/,
         use: [{
           loader: 'file-loader',
           options: {
@@ -102,6 +102,7 @@ module.exports = {
           /\.jpg/,
           /\.jpeg/,
           /\.png/,
+          /\.gif/,
           /\.scss/,
           /\.(woff(2)?|woff|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/
         ],
@@ -115,7 +116,7 @@ module.exports = {
   devServer: {
     port: 3000,   //Tell dev-server which port to run
     open: true,   // to open the local server in browser
-    openPage: 'single_video.html',
+    openPage: 'upload_step_2.html',
 
     //serve from 'dist' and 'img' folder
     contentBase: [

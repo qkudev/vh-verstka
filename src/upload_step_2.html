@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Responsive display tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Dark Video Index</title>
+</head>
+<body>
+
+<!--Navigation start-->
+<nav class="navbar navbar-expand-md navbar-light bg-white px-3 px-md-5">
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+        <img src="static/img/logo_black@2x.png" alt="" width="170px" height="35px">
+    </a>
+    <!--Navbar collapsible start-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Search -->
+        <div class="navbar-search">
+            <i class="icon-search"></i>
+            <input type="text" placeholder="Search for videos">
+        </div>
+        <div class="d-inline-flex navbar-buttons flex-row-reverse">
+            <div class="nav-link pr-0">
+                <button class="btn btn-primary my-2 my-sm-0 btn-search" type="submit">
+                    <i class="fas fa-cloud mx-2 my-auto"></i>
+                    Upload a video
+                </button>
+            </div>
+            <div class="nav-link navbar-buttons-item">
+                <a href="index-signed.html" class="btn mx-1">Sign In</a>
+            </div>
+        </div>
+    </div>
+    <!--Navbar collapsible finish-->
+
+    <!--Navbar mobile start-->
+    <div class="d-block d-md-none nav-mobile">
+        <i class="icon-search"></i>
+        <i class="icon-user"></i>
+    </div>
+    <!--Navbar mobile finish-->
+</nav>
+<!--Navigation finish-->
+
+<!--Layout start-->
+<div class="layout m-0 p-0">
+
+    <div class="row">
+        <div class="custom-container container upload-post">
+            <!--Content start-->
+            <div class="row my-5 mx-3 mx-md-5">
+                <div class="col-md-9">
+                    <div class="title">Upload completed</div>
+                    <div class="upload-post-video d-flex">
+                        <img src="http://placehold.it/225x160" alt="" class="upload-post-video__img">
+                        <div class="upload-post-info">
+                            <h6>Growing cannabis at home</h6>
+                            <div class="upload-post-info__text">
+                                Growing marijuana from seed is a great way to get your garden going without risking bringing in pests or diseases. It is also a great way to get quality genetics that you may not be able to find in clone form or to start if you don't have access to clones.|
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-post-settings d-flex justify-content-between">
+                        <div class="upload-post-settings-item">
+                            <div class="upload-post-settings-item__title title">
+                                Choose video category
+                            </div>
+                            <div class="upload-post-settings-item__selector">
+                                <div class="d-flex align-items-center">
+                                    <i class="icon-home"></i>
+                                    <div>Category:</div>
+                                    <select class="select-settings">
+                                        <option selected>News</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-post-settings-item">
+                            <div class="upload-post-settings-item__title title">
+                                Allow comments on video
+                            </div>
+                            <div class="upload-post-settings-item__selector">
+                                <div class="d-flex align-items-center">
+                                    <div>Comments:</div>
+                                    <select class="select-settings">
+                                        <option selected>Allow</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-post-settings-item">
+                            <div class="upload-post-settings-item__title title">
+                                Notify subscribers
+                            </div>
+                            <div class="upload-post-settings-item__selector">
+                                <div class="d-flex align-items-center">
+                                    <i class="icon-home"></i>
+                                    <div>Notification:</div>
+                                    <select class="select-settings">
+                                        <option selected>Yes</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-post-settings d-flex justify-content-between">
+                        <div class="upload-post-settings-item">
+                            <div class="upload-post-settings-item__title title">
+                                Video tags (comma separated)
+                            </div>
+                            <div class="upload-post-settings-item__selector">
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-post-settings d-flex justify-content-between">
+                        <div class="upload-post-settings-item">
+                            <div class="upload-post-settings-item__title title">
+                                Video thumbnail
+                            </div>
+                            <div class="upload-post-settings-item__selector">
+                                <div class="d-flex">
+                                    <div class="upload-image upload-image-active" style="background-image: url('/static/img/jobs.png')"></div>
+                                    <div class="upload-image" style="background-image: url('/static/img/jobs.png')"></div>
+                                    <div class="upload-image upload-image-add" onclick="document.getElementById('file-input').click();" style="background: #f7f7f7">
+                                        <i class="icon-upload"></i>
+                                        <div>Upload custom</div>
+                                        <input id="file-input" type="file" name="name" style="display: none;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 upload-post-bar">
+                    <button class="btn-primary btn-block btn-publish">Publish your video now</button>
+                    <div class="upload-post-bar-status" style="background: #fcfcfc">
+                        <div class="d-flex justify-content-center">
+                            <i class="icon-info-circled-alt"></i>
+                        </div>
+                        <div class="upload-post-bar-status__text">
+                            Your video was successfully uploaded.
+                            Publish now and it will be available at:
+                        </div>
+                        <a href="#">https://dark.video/v/xfsdFA3</a>
+                    </div>
+                    <div class="upload-post-bar-settings">
+                        <div class="upload-post-settings-item">
+                            <div class="upload-post-settings-item__title title">
+                                Choose video category
+                            </div>
+                            <div class="upload-post-settings-item__selector">
+                                <div class="d-flex align-items-center">
+                                    <i class="icon-private_eye"></i>
+                                    <div>Privacy:</div>
+                                    <select class="select-settings">
+                                        <option selected>Public</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-post-settings-item">
+                            <div class="upload-post-settings-item__title title">
+                                Publication time
+                            </div>
+                            <div class="upload-post-settings-item__selector">
+                                <div class="d-flex align-items-center">
+                                    <i class="icon-calendar"></i>
+                                    <div>Publish:</div>
+                                    <select class="select-settings">
+                                        <option selected>Now</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-post-bar-info">
+                        By submitting your videos to Dark.Video, you acknowledge that you agree to <br> <span class="red">Rules an;tions</span>.
+                    </div>
+                    <div class="upload-post-bar-info">
+                        Please be sure that your uploaded material is not violate other's copyright or privacy rights;
+                    </div>
+                </div>
+            </div>
+            <!--Content finish-->
+        </div>
+    </div>
+
+    <!--Footer start-->
+    <div class="footer d-flex flex-row">
+        <div class=" d-flex flex-column flex-md-row">
+            <a class="footer-item">©2018 dark.video</a>
+            <div class="footer-item">
+                <div class="">
+                    <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-globe-1"></i>
+                        Language: English
+                    </div>
+                    <div class="dropdown-menu">
+                        <!-- Dropdown menu links -->
+                        <a class="dropdown-item" href="#">Russian</a>
+                        <a class="dropdown-item active" href="#">English</a>
+                        <a class="dropdown-item" href="#">Germany</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row">
+            <a class="footer-item">
+                Rules and conditions
+            </a>
+            <a class="footer-item">
+                Telegram channel
+            </a>
+        </div>
+    </div>
+    <!--Footer finish-->
+
+</div>
+</body>
+</html>
