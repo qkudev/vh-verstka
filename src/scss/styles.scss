@@ -150,3 +150,9 @@ a {
   }
 }
 
+.no-outline, .no-outline:focus {
+  border: none !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #000 !important;
+}
+
