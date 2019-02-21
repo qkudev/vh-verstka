@@ -116,7 +116,7 @@ module.exports = {
   devServer: {
     port: 3000,   //Tell dev-server which port to run
     open: true,   // to open the local server in browser
-    openPage: 'upload_step_2.html',
+    openPage: 'signin.html',
 
     //serve from 'dist' and 'img' folder
     contentBase: [

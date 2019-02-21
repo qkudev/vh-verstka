@@ -17,6 +17,7 @@
 @import "./search/index";
 @import "./videoplayer/index";
 @import "./upload/index";
+@import "./signin/index";
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -25,6 +26,13 @@ body {
   color: #6A6A6A;
   margin: 0 !important;
   padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-top: auto;
 }
 
 .custom-container {

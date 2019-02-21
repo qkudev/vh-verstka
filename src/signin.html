@@ -12,35 +12,42 @@
 </head>
 <body>
 <div class="layout h100 m-0 p-0">
-  <!--Content finish-->
-  <div class="row p-0 m-0">
-    <div class="col-12 col-sm-7 col-md-3 my-4 px-4 d-flex flex-column align-content-center">
-      <form class="form-group">
-        <div class="d-flex justify-content-center mx-auto my-4">
-          <img class="" src="static/img/logo_black@2x.png">
+
+  <div class="row">
+    <div class="custom-container container">
+      <!--Content finish-->
+      <div class="row p-0 m-0">
+        <div class="col-12 col-sm-7 col-md-4 my-4 px-4 d-flex flex-column align-content-center">
+          <form class="form-group">
+            <div class="d-flex justify-content-center mx-auto my-4">
+              <img class="logo-small" src="static/img/logo_black@2x.png">
+            </div>
+            <div class="signin-left-title">
+              <h5 class="text-center">Sign In to your account</h5>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Username</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="@username">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+            </div>
+            <button type="submit" class="btn btn-block btn-primary mt-4">
+              Sign In
+            </button>
+          </form>
+          <div class="d-flex mt-4 mb-auto">
+            <div class="d-flex flex-column flex-wrap mx-auto">
+              Don't have an account?
+              <a href="#">Sign Up now</a>
+            </div>
+          </div>
         </div>
-        <h5 class="text-center">Sign In to your account</h5>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Username</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="@username">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
-        </div>
-        <button type="submit" class="btn btn-block btn-primary mt-4">
-          Sign In
-        </button>
-      </form>
-      <div class="d-flex mt-4 mb-auto">
-        <div class="d-flex flex-column flex-wrap mx-auto">
-          Don't have an account?
-          <a href="#">Sign Up now</a>
+        <div class="col-0 col-sm-5 col-md-8">
+          <img class="" src="static/img/login_bg.jpg">
         </div>
       </div>
-    </div>
-    <div class="col-0 col-sm-5 col-md-9">
-      <img class="" src="static/img/login_bg.jpg">
     </div>
   </div>
   <!--Footer start-->
