@@ -31,7 +31,7 @@
     //padding: 0 .5 * $spacer;
 
     background-color: $body-bg;
-    z-index: $zindex-modal;
+    z-index: 10000 !important;
     box-shadow: $box-shadow;
   }
 }
