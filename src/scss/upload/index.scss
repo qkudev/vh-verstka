@@ -211,3 +211,62 @@
     }
   }
 }
+
+@media screen and (max-width: 990px) {
+  .upload-post-video__img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .upload-post-info {
+    padding-left: 0;
+    padding-top: 15px;
+  }
+  .upload-post-bar-settings .upload-post-settings-item {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  .upload-post-bar-settings {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .upload-post-bar-status {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .upload-post .title {
+    font-size: 11px;
+    padding-bottom: 0;
+    div {
+      font-size: 10px;
+    }
+  }
+  .upload-post-info {
+    h6 {
+      font-size: 14px;
+    }
+    .upload-post-info__text {
+      font-size: 11px;
+    }
+  }
+  .upload-post-settings {
+    flex-direction: column;
+  }
+  .upload-post-settings-item__selector {
+    font-size: 11px;
+  }
+  .upload-post-settings-item {
+    margin-bottom: 10px;
+  }
+  .upload-post-settings-item__selector {
+    flex-direction: column;
+  }
+  .upload-post .upload-image {
+    width: 100%;
+    background-size: cover;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

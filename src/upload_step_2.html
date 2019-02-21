@@ -55,9 +55,9 @@
         <div class="custom-container container upload-post">
             <!--Content start-->
             <div class="row my-5 mx-3 mx-md-5">
-                <div class="col-md-9">
+                <div class="col-lg-9 col-md-12">
                     <div class="title">Upload completed</div>
-                    <div class="upload-post-video d-flex">
+                    <div class="upload-post-video d-flex flex-lg-row flex-column">
                         <img src="http://placehold.it/225x160" alt="" class="upload-post-video__img">
                         <div class="upload-post-info">
                             <h6>Growing cannabis at home</h6>
@@ -133,21 +133,19 @@
                             <div class="upload-post-settings-item__title title">
                                 Video thumbnail
                             </div>
-                            <div class="upload-post-settings-item__selector">
-                                <div class="d-flex">
-                                    <div class="upload-image upload-image-active" style="background-image: url('/static/img/jobs.png')"></div>
-                                    <div class="upload-image" style="background-image: url('/static/img/jobs.png')"></div>
-                                    <div class="upload-image upload-image-add" onclick="document.getElementById('file-input').click();" style="background: #f7f7f7">
-                                        <i class="icon-upload"></i>
-                                        <div>Upload custom</div>
-                                        <input id="file-input" type="file" name="name" style="display: none;" />
-                                    </div>
+                            <div class="upload-post-settings-item__selector d-flex">
+                                <div class="upload-image upload-image-active" style="background-image: url('/static/img/jobs.png')"></div>
+                                <div class="upload-image" style="background-image: url('/static/img/jobs.png')"></div>
+                                <div class="upload-image upload-image-add" onclick="document.getElementById('file-input').click();" style="background: #f7f7f7">
+                                    <i class="icon-upload"></i>
+                                    <div>Upload custom</div>
+                                    <input id="file-input" type="file" name="name" style="display: none;" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 upload-post-bar">
+                <div class="col-lg-3 col-md-12 upload-post-bar">
                     <button class="btn-primary btn-block btn-publish">Publish your video now</button>
                     <div class="upload-post-bar-status" style="background: #fcfcfc">
                         <div class="d-flex justify-content-center">
@@ -159,7 +157,43 @@
                         </div>
                         <a href="#">https://dark.video/v/xfsdFA3</a>
                     </div>
-                    <div class="upload-post-bar-settings">
+                    <div class="upload-post-bar-settings d-md-none d-sm-none d-lg-block">
+                        <div class="upload-post-settings-item">
+                            <div class="upload-post-settings-item__title title">
+                                Choose video category
+                            </div>
+                            <div class="upload-post-settings-item__selector">
+                                <div class="d-flex align-items-center">
+                                    <i class="icon-private_eye"></i>
+                                    <div>Privacy:</div>
+                                    <select class="select-settings">
+                                        <option selected>Public</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-post-settings-item">
+                            <div class="upload-post-settings-item__title title">
+                                Publication time
+                            </div>
+                            <div class="upload-post-settings-item__selector">
+                                <div class="d-flex align-items-center">
+                                    <i class="icon-calendar"></i>
+                                    <div>Publish:</div>
+                                    <select class="select-settings">
+                                        <option selected>Now</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-post-bar-settings d-none d-md-flex d-sm-flex d-lg-none">
                         <div class="upload-post-settings-item">
                             <div class="upload-post-settings-item__title title">
                                 Choose video category
