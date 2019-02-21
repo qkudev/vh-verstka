@@ -113,17 +113,27 @@ a {
 
 .player-example {
   height: 400px;
-  width: 600px;
+  width: 100%;
   background: $gray-500;
 }
 
+.player-wrapper {
+  width: auto;
+  margin: .5 * $spacer 0;
+  //padding: 0  $spacer;
+}
+
 .video-playlist {
-  width: 400px;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
 
 .video-info {
-  padding: 0 .5 * $spacer;
+  color: $black;
+
+  &.title {
+
+  }
 }
 

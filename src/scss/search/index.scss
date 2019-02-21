@@ -22,4 +22,16 @@
   &-options {
     cursor: pointer;
   }
+
+  &-results {
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    margin: $spacer 0;
+    //padding: 0 .5 * $spacer;
+
+    background-color: $body-bg;
+    z-index: $zindex-dropdown;
+    box-shadow: $box-shadow;
+  }
 }

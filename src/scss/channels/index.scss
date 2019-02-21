@@ -237,3 +237,28 @@
   background-color: $gray-400 !important;
   color: $gray-600;
 }
+
+.channel-heading {
+  display: grid;
+  grid-gap: .5 * $spacer;
+  grid-template-columns: 5 * $spacer  auto 10 * $spacer;
+
+  &.avatar {
+    height: 5 * $spacer;
+    width: 5 * $spacer;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    background-color: $gray-500;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  button {
+    max-width: 10 * $spacer;
+    height: fit-content;
+  }
+}

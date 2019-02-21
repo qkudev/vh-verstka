@@ -18,6 +18,7 @@
 .navbar {
 
   &-search {
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
