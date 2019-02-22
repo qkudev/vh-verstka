@@ -8,14 +8,17 @@
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <title>Dark Video Index</title>
+  <title>Single Video Page</title>
 </head>
 <body>
 
 <!--Navigation start-->
-<nav class="navbar navbar-expand-md navbar-light bg-white px-3 px-md-5">
+<nav class="navbar navbar-expand-md px-3 px-md-5">
   <!-- Logo -->
-  <a class="navbar-brand" href="index.html">
+  <a href="#" class="d-md-none">
+    <i class="icon-menu" style="font-size: 1.25rem;"></i>
+  </a>
+  <a class="d-none d-md-block navbar-brand" href="index.html">
     <img src="static/img/logo_black@2x.png" alt="" width="170px" height="35px">
   </a>
   <!--Navbar collapsible start-->
@@ -24,6 +27,8 @@
     <div class="navbar-search">
       <i class="icon-search"></i>
       <input type="text" placeholder="Search for videos">
+      <ul class="search-results list-group">
+      </ul>
     </div>
     <div class="d-inline-flex navbar-buttons flex-row-reverse">
       <div class="nav-link pr-0">
@@ -50,463 +55,144 @@
 
 <!--Layout start-->
 <div class="layout">
-  <!--Menu Mobile start-->
-  <div class="d-block d-md-none">
-    <ul class="nav nav-tabs menu-tabs" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link" id="home-tab" data-toggle="tab" href="index.html" role="tab" aria-controls="home"
-           aria-selected="true"><i class="icon-home"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="popular-tab" data-toggle="tab" href="popular.html" role="tab" aria-controls="popular"
-           aria-selected="false"><i class="icon-star"></i></a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" id="new-videos-tab" data-toggle="tab" href="new-videos.html" role="tab"
-           aria-controls="new-videos"
-           aria-selected="false"><i class="icon-certificate-outline"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" id="categories-tab" data-toggle="tab" href="categories.html" role="tab"
-           aria-controls="categories"
-           aria-selected="false"><i class="icon-grid"></i></a>
-      </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
-      </div>
-      <div class="tab-pane fade" id="popular" role="tabpanel" aria-labelledby="popular-tab"></div>
-      <div class="tab-pane fade" id="new-videos" role="tabpanel" aria-labelledby="new-videos-tab"></div>
-      <div class="tab-pane fade show active" id="categories" role="tabpanel" aria-labelledby="categories-tab">
-        <!-- HOME MOBILE CONTENT START-->
-        <div class="row m-0">
-          <div class="col-12 content">
+  <!--Layout Menu-->
+  <div class="d-none d-lg-block">
+    <div class="menu-group d-flex flex-column sidebar">
+      <div class="menu-group header sidebar__title">Main</div>
+      <ul>
+        <li>
+          <a class="sidebar__item sidebar__item--active" href="#">
+            <i class="icon-home"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-star"></i>
+            Popular
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-certificate-outline"></i>
+            New
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-random"></i>
+            Random
+          </a>
+        </li>
+      </ul>
+    </div>
 
-            <!-- Featured videos -->
-            <div class="section mobile border-bottom">
-              <div class="section-heading px-3 mt-4">
-                <h6 class="m-0">Top Newson Dark Video</h6>
-              </div>
+    <div class="menu-group d-flex flex-column sidebar">
+      <div class="menu-group header sidebar__title">Popular categories</div>
+      <ul>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-onion"></i>
+            Darknet
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-anon"></i>
+            Anonymity
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-article-alt"></i>
+            All categories
+          </a>
+        </li>
+      </ul>
+    </div>
 
-              <div class="slick-categories-mobile mb-5 px-3">
-                <div class="category-wrap">
-                  <div class="category" style="background: url('static/img/cat2.jpg')">
-                    Some Title
-                  </div>
-                </div>
-                <div class="category-wrap">
-                  <div class="category" style="background: url('static/img/cat2.jpg')">
-                    Some Title
-                  </div>
-                </div>
-                <div class="category-wrap">
-                  <div class="category" style="background: url('static/img/cat2.jpg')">
-                    Some Title
-                  </div>
-                </div>
-                <div class="category-wrap">
-                  <div class="category" style="background: url('static/img/cat2.jpg')">
-                    Some Title
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- TOP IN DARKWEB CATEGORY -->
-            <div class="section mobile border-bottom">
-              <div class="section-heading px-3 mt-4">
-                <h6>Most popular channels</h6>
-              </div>
-              <div class="slick-channels px-3">
-
-                <div class="channel-wrapper mb-3">
-                  <div class="channel-item-middle">
-                    <div class="channel-preview"></div>
-                    <div class="channel-avatar-middle"></div>
-                    <div class="channel-info middle">
-                      <a>channel name</a>
-                      <small>2,012 followers</small>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="channel-wrapper mb-3">
-                  <div class="channel-item-middle">
-                    <div class="channel-preview"></div>
-                    <div class="channel-avatar-middle"></div>
-                    <div class="channel-info middle">
-                      <a>channel name</a>
-                      <small>2,012 followers</small>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="channel-wrapper mb-3">
-                  <div class="channel-item-middle">
-                    <div class="channel-preview"></div>
-                    <div class="channel-avatar-middle"></div>
-                    <div class="channel-info middle">
-                      <a>channel name</a>
-                      <small>2,012 followers</small>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="channel-wrapper mb-3">
-                  <div class="channel-item-middle">
-                    <div class="channel-preview"></div>
-                    <div class="channel-avatar-middle"></div>
-                    <div class="channel-info middle">
-                      <a>channel name</a>
-                      <small>2,012 followers</small>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="channel-wrapper mb-3">
-                  <div class="channel-item-middle">
-                    <div class="channel-preview"></div>
-                    <div class="channel-avatar-middle"></div>
-                    <div class="channel-info middle">
-                      <a>channel name</a>
-                      <small>2,012 followers</small>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="channel-wrapper mb-3">
-                  <div class="channel-item-middle">
-                    <div class="channel-preview"></div>
-                    <div class="channel-avatar-middle"></div>
-                    <div class="channel-info middle">
-                      <a>channel name</a>
-                      <small>2,012 followers</small>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="section mobile border-bottom pb-3">
-              <div class="section-heading p-0 px-3 m-0 mt-4">
-                <h6 class="m-0 p-0">New videos</h6>
-              </div>
-
-              <div class="video-preview-wrapper">
-                <div class="video-preview">
-                  <div class="timing">16:07</div>
-                </div>
-                <div class="video-preview-info">
-                  <a class="video-title" href="#">Very very very very very long video title</a>
-                  <a class="channel" href="#">channel name</a>
-                  <small class="info">Views: 2,1k</small>
-                </div>
-              </div>
-
-              <div class="video-preview-wrapper">
-                <div class="video-preview">
-                  <div class="timing">16:07</div>
-                </div>
-                <div class="video-preview-info">
-                  <a class="video-title" href="#">Very very very very very long video title</a>
-                  <a class="channel" href="#">channel name</a>
-                  <small class="info">Views: 2,1k</small>
-                </div>
-              </div>
-
-              <div class="video-preview-wrapper">
-                <div class="video-preview">
-                  <div class="timing">16:07</div>
-                </div>
-                <div class="video-preview-info">
-                  <a class="video-title" href="#">Very very very very very long video title</a>
-                  <a class="channel" href="#">channel name</a>
-                  <small class="info">Views: 2,1k</small>
-                </div>
-              </div>
-
-              <div class="container-fluid">
-                <div class="show-btn">
-                  Show more
-                  <i class="icon-dot-3"></i>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- TOP IN DARKWEB CATEGORY -->
-            <div class="section mobile border-bottom">
-              <div class="section-heading px-3 mt-4">
-                <h6>Most popular channels</h6>
-              </div>
-              <div class="slick-channels px-3">
-
-                <div class="channel-wrapper mb-3">
-                  <div class="channel-item-middle">
-                    <div class="channel-preview"></div>
-                    <div class="channel-avatar-middle"></div>
-                    <div class="channel-info middle">
-                      <a>channel name</a>
-                      <small>2,012 followers</small>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="channel-wrapper mb-3">
-                  <div class="channel-item-middle">
-                    <div class="channel-preview"></div>
-                    <div class="channel-avatar-middle"></div>
-                    <div class="channel-info middle">
-                      <a>channel name</a>
-                      <small>2,012 followers</small>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="channel-wrapper mb-3">
-                  <div class="channel-item-middle">
-                    <div class="channel-preview"></div>
-                    <div class="channel-avatar-middle"></div>
-                    <div class="channel-info middle">
-                      <a>channel name</a>
-                      <small>2,012 followers</small>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="channel-wrapper mb-3">
-                  <div class="channel-item-middle">
-                    <div class="channel-preview"></div>
-                    <div class="channel-avatar-middle"></div>
-                    <div class="channel-info middle">
-                      <a>channel name</a>
-                      <small>2,012 followers</small>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="channel-wrapper mb-3">
-                  <div class="channel-item-middle">
-                    <div class="channel-preview"></div>
-                    <div class="channel-avatar-middle"></div>
-                    <div class="channel-info middle">
-                      <a>channel name</a>
-                      <small>2,012 followers</small>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="channel-wrapper mb-3">
-                  <div class="channel-item-middle">
-                    <div class="channel-preview"></div>
-                    <div class="channel-avatar-middle"></div>
-                    <div class="channel-info middle">
-                      <a>channel name</a>
-                      <small>2,012 followers</small>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="section mobile border-bottom pb-3">
-              <div class="section-heading p-0 px-3 m-0 mt-4">
-                <h6 class="m-0 p-0">New videos</h6>
-              </div>
-
-              <div class="video-preview-wrapper">
-                <div class="video-preview">
-                  <div class="timing">16:07</div>
-                </div>
-                <div class="video-preview-info">
-                  <a class="video-title" href="#">Very very very very very long video title</a>
-                  <a class="channel" href="#">channel name</a>
-                  <small class="info">Views: 2,1k</small>
-                </div>
-              </div>
-
-              <div class="video-preview-wrapper">
-                <div class="video-preview">
-                  <div class="timing">16:07</div>
-                </div>
-                <div class="video-preview-info">
-                  <a class="video-title" href="#">Very very very very very long video title</a>
-                  <a class="channel" href="#">channel name</a>
-                  <small class="info">Views: 2,1k</small>
-                </div>
-              </div>
-
-              <div class="video-preview-wrapper">
-                <div class="video-preview">
-                  <div class="timing">16:07</div>
-                </div>
-                <div class="video-preview-info">
-                  <a class="video-title" href="#">Very very very very very long video title</a>
-                  <a class="channel" href="#">channel name</a>
-                  <small class="info">Views: 2,1k</small>
-                </div>
-              </div>
-
-              <div class="container-fluid">
-                <div class="show-btn">
-                  Show more
-                  <i class="icon-dot-3"></i>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
+    <div class="menu-group d-flex flex-column sidebar">
+      <div class="menu-group header sidebar__title">Info</div>
+      <ul>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-rules"></i>
+            Rules
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-plant"></i>
+            Our Telegram
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
-  <!--Menu Mobile finish-->
-
   <!--Content start-->
-  <div class="d-none d-md-flex row my-5 mx-3 mx-md-5">
-    <!--Layout Menu-->
-    <div class="d-none d-md-block pr-3">
-      <div class="menu-group d-flex flex-column sidebar">
-        <div class="menu-group header sidebar__title">Main</div>
-        <ul>
-          <li>
-            <a class="sidebar__item sidebar__item--active" href="#">
-              <i class="icon-home"></i>
-              Home
-            </a>
-          </li>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-star"></i>
-              Popular
-            </a>
-          </li>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-certificate-outline"></i>
-              New
-            </a>
-          </li>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-random"></i>
-              Random
-            </a>
-          </li>
-        </ul>
+  <div class="col-12 col-lg-10 container-fluid content ml-auto mr-0 px-0">
+
+    <img src="https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="category-bg">
+    <div class="category-header">
+      <a href="#" class="category-heading avatar"></a>
+      <div class="category-heading">
+        <div class="category-heading info">
+          <a href="#">Category Name</a>
+          2,012 followers
+        </div>
+        <button class="btn btn-primary">Subscribe</button>
       </div>
 
-      <div class="menu-group d-flex flex-column sidebar">
-        <div class="menu-group header sidebar__title">Popular categories</div>
-        <ul>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-onion"></i>
-              Darknet
-            </a>
-          </li>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-anon"></i>
-              Anonymity
-            </a>
-          </li>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-article-alt"></i>
-              All categories
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="menu-group d-flex flex-column sidebar">
-        <div class="menu-group header sidebar__title">Info</div>
-        <ul>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-rules"></i>
-              Rules
-            </a>
-          </li>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-plant"></i>
-              Our Telegram
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="nav nav-tabs category-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/category_page.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/category_page_popular.html">Popular</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/category_page_about.html">About</a>
+        </li>
+      </ul>
     </div>
-    <!--Layout Content-->
-    <div class="d-none d-md-block col-12 col-md-9 col-lg-10 container-fluid content ml-auto mr-0 px-0">
-      <!-- HEADING -->
-      <div class="page-heading">
-        <button class="btn btn-primary subscription-btn">Subscribe</button>
-        <div class="page_avatar"></div>
-        <div class="header-panel"></div>
-        <button class="btn btn-primary panel-btn home">Home</button>
-        <button class="btn btn-primary panel-btn about">About</button>
-        <div class="page-heading-heading">
-          <h1>Darknet Category</h1>
-          <p>801 followers</p>
-        </div>
-      </div>
 
-      <div class="category-about">
-        <div class="category-about-text">
-          <h5>About "Some Category" category</h5>
-          <p>Some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text</p>
-          <div>
-            <button class="btn btn-primary">Browse videos</button>
-          </div>
+    <div class="category-content">
+      <div class="d-flex flex-column flex-lg-row">
+        <div class="category-about-text mr-lg-3">
+          <h5 class="font-weight-bold">About "Category Name" category</h5>
+          <p>Some text some text some text some text some text some text some text some text some text some text some
+            text some text some text some text some text some text some text some text some text some text some text
+            some text some text some text some text some text some text some text some text some text some text some
+            text</p>
         </div>
-
         <div class="category-about-info">
           <div>Statistics</div>
           <div class="border-bottom my-2">Created Aug 10, 2018</div>
           <div>801 followers</div>
         </div>
       </div>
-
     </div>
+
   </div>
   <!--Content finish-->
-
-  <!--Footer start-->
-  <div class="footer d-flex flex-row">
-    <div class=" d-flex flex-column flex-md-row">
-      <a class="footer-item">©2018 dark.video</a>
-      <div class="footer-item">
-        <div class="">
-          <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="icon-globe-1"></i>
-            Language: English
-          </div>
-          <div class="dropdown-menu">
-            <!-- Dropdown menu links -->
-            <a class="dropdown-item" href="#">Russian</a>
-            <a class="dropdown-item active" href="#">English</a>
-            <a class="dropdown-item" href="#">Germany</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="d-flex flex-column flex-md-row">
-      <a class="footer-item">
-        Rules and conditions
-      </a>
-      <a class="footer-item">
-        Telegram channel
-      </a>
-    </div>
-  </div>
-  <!--Footer finish-->
-
 </div>
+
+<!--Footer start-->
+<div class="footer">
+  <a href="#">© 2018 dark.video</a>
+  <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="icon-globe-1"></i>
+    Language: English
+  </div>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Russian</a>
+    <a class="dropdown-item active" href="#">English</a>
+    <a class="dropdown-item" href="#">Germany</a>
+  </div>
+  <a href="#">Rules and conditions</a>
+  <a href="#">Telegram channel</a>
+</div>
+<!--Footer finish-->
+
 </body>
 </html>
