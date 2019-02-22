@@ -1,12 +1,31 @@
 @import "../variables";
 @import "~bootstrap/scss/bootstrap";
+@import "~slick-carousel/slick/slick.css";
 
 .slick-arrow-category {
   top: 30% !important;
 }
 
+.slick-arrow-channels-gray {
+  top: 30% !important;
+
+  &:before {
+    opacity: 100% !important;
+    color: $gray-700 !important;
+    background-color: #FFF !important;
+    border-radius: 50%;
+    box-shadow: $box-shadow;
+  }
+}
+
+@media (max-width: 768px) {
+  .slick-arrow {
+    display: none !important;
+  }
+}
+
 .slick-arrow-popular {
-  top: 40% !important;
+  top: 30% !important;
 }
 
 .slick-slider {

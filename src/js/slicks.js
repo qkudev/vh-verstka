@@ -1,6 +1,8 @@
 import slick from 'slick-carousel'
 import $ from 'jquery'
 
+window.$ = $
+
 $(document).ready(function () {
   $('.slick-videos').slick({
     infinite: true,
@@ -54,5 +56,17 @@ $(document).ready(function () {
       slidesToShow: 2,
       slidesToScroll: 1,
       variableWidth: true,
+    })
+})
+
+$(document).ready(function () {
+  $('.slicky-channels-gray')
+    .slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      variableWidth: true,
+      prevArrow: '<button class="slick-prev slick-arrow slick-arrow-channels-gray" aria-label="Previous" type="button"></button>',
+      nextArrow: '<button class="slick-next slick-arrow slick-arrow-channels-gray" aria-label="Next" type="button"></button>',
     })
 })

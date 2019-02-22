@@ -6,6 +6,7 @@
   margin: 1.5 * $spacer 0;
 
   .section {
+    width: 100%;
     margin-bottom: 1.5 * $spacer;
     color: #000;
 
@@ -20,7 +21,7 @@
       flex-direction: row;
       justify-content: space-between;
 
-      margin-bottom: $spacer;
+      margin-bottom: 1.5 * $spacer;
       font-weight: 600;
 
       h6 {
@@ -40,9 +41,11 @@
   display: flex;
   flex-direction: row;
 
-  padding: 0 $spacer;
+  //padding: 0 $spacer;
+  padding: 0;
   margin: 0 auto;
 
+  width: 100%;
   max-width: 1200px;
   height: 100%;
 
@@ -57,11 +60,26 @@
     grid-template-rows: 1fr;
     grid-template-columns: auto auto;
   }
+
+  &-content {
+    section {
+      margin-bottom: 2.5 * $spacer;
+    }
+  }
+
+  &.alt {
+    padding: 0!important;
+    margin: 0 $spacer;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .layout {
-    padding: 0 3 * $spacer;
+    padding: 0 2 * $spacer;
+
+    &.alt {
+      margin: 0 3 * $spacer;
+    }
   }
 }
 
