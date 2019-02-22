@@ -15,7 +15,7 @@
       //border-bottom: 1px solid $border-color;
     }
 
-    &-heading {
+    &-heading, .section-heading {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -34,6 +34,25 @@
         color: $gray-600;
       }
     }
+  }
+}
+
+.section-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-weight: 600;
+
+  h6 {
+    font-weight: inherit;
+    cursor: default;
+  }
+
+  a {
+    font-weight: inherit;
+    color: $gray-600;
   }
 }
 
