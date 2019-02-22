@@ -70,3 +70,25 @@ $(document).ready(function () {
       nextArrow: '<button class="slick-next slick-arrow slick-arrow-channels-gray" aria-label="Next" type="button"></button>',
     })
 })
+
+$(document).ready(function () {
+  $('.slick-channel-playlists')
+    .slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      variableWidth: true,
+      prevArrow: '<button class="slick-prev slick-arrow slick-arrow-playlists" aria-label="Previous" type="button"></button>',
+      nextArrow: '<button class="slick-next slick-arrow slick-arrow-playlists" aria-label="Next" type="button"></button>',
+    })
+})
+
+$(document).ready(function () {
+  $('.slick-category-preview')
+    .slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      variableWidth: true,
+    })
+})

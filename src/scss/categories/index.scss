@@ -221,3 +221,27 @@
     margin-top: 1.5 * $spacer;
   }
 }
+
+.category-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: fit-content;
+  margin-right: .5 * $spacer;
+
+  &.avatar {
+    min-width: 5 * $spacer;
+    min-height: 5 * $spacer;
+    width: 5 * $spacer;
+    height: 5 * $spacer;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $gray-500;
+  }
+}

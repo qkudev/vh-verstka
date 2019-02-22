@@ -275,3 +275,18 @@
 
   color: $gray-500;
 }
+
+.channel-search {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .channel-search {
+    max-width: 300px;
+    margin-left: auto;
+  }
+}

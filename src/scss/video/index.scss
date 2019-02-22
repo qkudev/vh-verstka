@@ -61,12 +61,21 @@
     border: none;
 
     &.vertical {
+      display: flex;
+      flex-direction: column;
       width: 200px !important;
-      margin: .5 * $spacer .25 * $spacer;
+      margin: .5 * $spacer .5 * $spacer;
       margin-left: 0;
 
       .video-playlist-item-info {
         grid-template-rows: 1.5rem 1.5rem 1.5rem;
+        grid-gap: 0;
+      }
+    }
+
+    &.playlist {
+      .video-playlist-item-info {
+        grid-template-rows: 1.5rem !important;
         grid-gap: 0;
       }
     }
@@ -129,4 +138,12 @@
       text-overflow: ellipsis;
     }
   }
+}
+
+.video-grid {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

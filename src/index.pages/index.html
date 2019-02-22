@@ -8,18 +8,15 @@
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <title>New Videos</title>
+  <title>Dark Video Index</title>
 </head>
 <body>
 
 <!--Navigation start-->
-<nav class="navbar navbar-expand-md px-3 px-md-5">
+<nav class="navbar navbar-expand-md navbar-light bg-white px-3 px-md-5">
   <!-- Logo -->
-  <a href="#" class="d-md-none">
-    <i class="icon-menu" style="font-size: 1.25rem;"></i>
-  </a>
-  <a class="d-none d-md-block navbar-brand" href="index.html">
-    <img src="static/img/logo_black@2x.png" alt="" width="170px" height="35px">
+  <a class="navbar-brand" href="index.html">
+    <img src="/static/img/logo_black@2x.png" alt="" width="170px" height="35px">
   </a>
   <!--Navbar collapsible start-->
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -27,8 +24,6 @@
     <div class="navbar-search">
       <i class="icon-search"></i>
       <input type="text" placeholder="Search for videos">
-      <ul class="search-results list-group">
-      </ul>
     </div>
     <div class="d-inline-flex navbar-buttons flex-row-reverse">
       <div class="nav-link pr-0">
@@ -38,7 +33,7 @@
         </button>
       </div>
       <div class="nav-link navbar-buttons-item">
-        <a href="index-signed.html" class="btn mx-1">Sign In</a>
+        <a href="/index/index_signed.html" class="btn mx-1">Sign In</a>
       </div>
     </div>
   </div>
@@ -55,26 +50,26 @@
 
 <!--Layout start-->
 <div class="layout">
+
   <!--Content start-->
-  <!--Layout Menu-->
   <div class="d-none d-lg-block col-lg-2">
     <div class="menu-group d-flex flex-column sidebar">
       <div class="menu-group header sidebar__title">Main</div>
       <ul>
         <li>
-          <a class="sidebar__item sidebar__item--active" href="#">
+          <a class="sidebar__item sidebar__item--active" href="/index">
             <i class="icon-home"></i>
             Home
           </a>
         </li>
         <li>
-          <a class="sidebar__item" href="#">
+          <a class="sidebar__item" href="/index/popular.html">
             <i class="icon-star"></i>
             Popular
           </a>
         </li>
         <li>
-          <a class="sidebar__item" href="#">
+          <a class="sidebar__item" href="/index/new_videos.html">
             <i class="icon-certificate-outline"></i>
             New
           </a>
@@ -213,6 +208,7 @@
         </div>
       </div>
     </section>
+
     <!-- MOST POPULAR CHANNELS -->
     <section>
       <div class="section-heading">
@@ -309,6 +305,7 @@
         </div>
       </div>
     </section>
+
     <!-- POPULAR RIGHT NOW -->
     <section>
       <div class="section-heading">
@@ -322,7 +319,7 @@
             <div class="popular-preview">16:09</div>
             <div class="popular-info">
               <a>Very very very very very long video title</a>
-              <p>Added by channel name</p>
+              <p>channel name</p>
               <div class="popular-info-footer">
                 <small>2 weeks ago</small>
                 <small>Views: 2.1k</small>
@@ -336,7 +333,7 @@
             <div class="popular-preview">16:09</div>
             <div class="popular-info">
               <a>Very very very very very long video title</a>
-              <p>Added by channel name</p>
+              <p>channel name</p>
               <div class="popular-info-footer">
                 <small>2 weeks ago</small>
                 <small>Views: 2.1k</small>
@@ -350,7 +347,7 @@
             <div class="popular-preview">16:09</div>
             <div class="popular-info">
               <a>Very very very very very long video title</a>
-              <p>Added by channel name</p>
+              <p>channel name</p>
               <div class="popular-info-footer">
                 <small>2 weeks ago</small>
                 <small>Views: 2.1k</small>
@@ -364,7 +361,7 @@
             <div class="popular-preview">16:09</div>
             <div class="popular-info">
               <a>Very very very very very long video title</a>
-              <p>Added by channel name</p>
+              <p>channel name</p>
               <div class="popular-info-footer">
                 <small>2 weeks ago</small>
                 <small>Views: 2.1k</small>
@@ -378,7 +375,7 @@
             <div class="popular-preview">16:09</div>
             <div class="popular-info">
               <a>Very very very very very long video title</a>
-              <p>Added by channel name</p>
+              <p>channel name</p>
               <div class="popular-info-footer">
                 <small>2 weeks ago</small>
                 <small>Views: 2.1k</small>
@@ -388,6 +385,7 @@
         </div>
       </div>
     </section>
+
     <!-- BROWSE VIDEO CATEGORIES -->
     <section>
       <div class="section-heading">
@@ -397,42 +395,43 @@
 
       <div class="slick-categories">
         <div class="category-wrap">
-          <div class="category" style="background: url('static/img/cat1.jpg')">
+          <div class="category" style="background: url('/static/img/cat1.jpg')">
             Category
           </div>
         </div>
         <div class="category-wrap">
-          <div class="category" style="background: url('static/img/cat2.jpg')">
+          <div class="category" style="background: url('/static/img/cat2.jpg')">
             Category
           </div>
         </div>
         <div class="category-wrap">
-          <div class="category" style="background: url('static/img/cat3.jpg')">
+          <div class="category" style="background: url('/static/img/cat3.jpg')">
             Category
           </div>
         </div>
         <div class="category-wrap">
-          <div class="category" style="background: url('static/img/cat4.jpg')">
+          <div class="category" style="background: url('/static/img/cat4.jpg')">
             Category
           </div>
         </div>
         <div class="category-wrap">
-          <div class="category" style="background: url('static/img/cat1.jpg')">
+          <div class="category" style="background: url('/static/img/cat1.jpg')">
             Category
           </div>
         </div>
         <div class="category-wrap">
-          <div class="category" style="background: url('static/img/cat2.jpg')">
+          <div class="category" style="background: url('/static/img/cat2.jpg')">
             Category
           </div>
         </div>
         <div class="category-wrap">
-          <div class="category" style="background: url('static/img/cat3.jpg')">
+          <div class="category" style="background: url('/static/img/cat3.jpg')">
             Category
           </div>
         </div>
       </div>
     </section>
+
     <!-- TRENDING IN CATEGORY 1 -->
     <section>
       <div class="section-heading">
@@ -446,7 +445,7 @@
             <div class="popular-preview">16:09</div>
             <div class="popular-info">
               <a>Very very very very very long video title</a>
-              <p>Added by channel name</p>
+              <p>channel name</p>
               <div class="popular-info-footer">
                 <small>2 weeks ago</small>
                 <small>Views: 2.1k</small>
@@ -460,7 +459,7 @@
             <div class="popular-preview">16:09</div>
             <div class="popular-info">
               <a>Very very very very very long video title</a>
-              <p>Added by channel name</p>
+              <p>channel name</p>
               <div class="popular-info-footer">
                 <small>2 weeks ago</small>
                 <small>Views: 2.1k</small>
@@ -474,7 +473,7 @@
             <div class="popular-preview">16:09</div>
             <div class="popular-info">
               <a>Very very very very very long video title</a>
-              <p>Added by channel name</p>
+              <p>channel name</p>
               <div class="popular-info-footer">
                 <small>2 weeks ago</small>
                 <small>Views: 2.1k</small>
@@ -488,7 +487,7 @@
             <div class="popular-preview">16:09</div>
             <div class="popular-info">
               <a>Very very very very very long video title</a>
-              <p>Added by channel name</p>
+              <p>channel name</p>
               <div class="popular-info-footer">
                 <small>2 weeks ago</small>
                 <small>Views: 2.1k</small>
@@ -502,7 +501,7 @@
             <div class="popular-preview">16:09</div>
             <div class="popular-info">
               <a>Very very very very very long video title</a>
-              <p>Added by channel name</p>
+              <p>channel name</p>
               <div class="popular-info-footer">
                 <small>2 weeks ago</small>
                 <small>Views: 2.1k</small>
@@ -512,6 +511,7 @@
         </div>
       </div>
     </section>
+
     <!-- TRENDING IN CATEGORY 2 -->
     <section>
       <div class="section-heading">
@@ -525,7 +525,7 @@
             <div class="popular-preview">16:09</div>
             <div class="popular-info">
               <a>Very very very very very long video title</a>
-              <p>Added by channel name</p>
+              <p>channel name</p>
               <div class="popular-info-footer">
                 <small>2 weeks ago</small>
                 <small>Views: 2.1k</small>
@@ -539,7 +539,7 @@
             <div class="popular-preview">16:09</div>
             <div class="popular-info">
               <a>Very very very very very long video title</a>
-              <p>Added by channel name</p>
+              <p>channel name</p>
               <div class="popular-info-footer">
                 <small>2 weeks ago</small>
                 <small>Views: 2.1k</small>
@@ -553,7 +553,7 @@
             <div class="popular-preview">16:09</div>
             <div class="popular-info">
               <a>Very very very very very long video title</a>
-              <p>Added by channel name</p>
+              <p>channel name</p>
               <div class="popular-info-footer">
                 <small>2 weeks ago</small>
                 <small>Views: 2.1k</small>
@@ -567,7 +567,7 @@
             <div class="popular-preview">16:09</div>
             <div class="popular-info">
               <a>Very very very very very long video title</a>
-              <p>Added by channel name</p>
+              <p>channel name</p>
               <div class="popular-info-footer">
                 <small>2 weeks ago</small>
                 <small>Views: 2.1k</small>
@@ -581,7 +581,7 @@
             <div class="popular-preview">16:09</div>
             <div class="popular-info">
               <a>Very very very very very long video title</a>
-              <p>Added by channel name</p>
+              <p>channel name</p>
               <div class="popular-info-footer">
                 <small>2 weeks ago</small>
                 <small>Views: 2.1k</small>
@@ -591,8 +591,10 @@
         </div>
       </div>
     </section>
+
   </div>
   <!--Content finish-->
+
 </div>
 
 <!--Footer start-->

@@ -23,6 +23,7 @@
   &.content {
     display: block;
     margin: 0 0 0 3.5 * $spacer;
+    padding: 0;
     border: none;
   }
 
@@ -93,6 +94,7 @@
 
     .comment.content {
       margin: 0 0 0 2.5 * $spacer;
+      padding: 0;
     }
     .avatar {
       min-height: 2 * $spacer;
@@ -107,6 +109,11 @@
 
     .comment {
       border: none;
+    }
+
+    .comment.content {
+      padding: 0;
+      margin: 0 0 0 2.5 * $spacer;
     }
 
     .comment.avatar {
@@ -152,5 +159,11 @@
     justify-self: end;
     grid-row: 2/3;
     grid-column: 2/3;
+  }
+
+  &.replay {
+    margin-bottom: 0;
+
+    border: none;
   }
 }

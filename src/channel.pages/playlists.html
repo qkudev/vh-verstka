@@ -8,7 +8,7 @@
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <title>Category Page</title>
+  <title>Channel Playlists</title>
 </head>
 <body>
 
@@ -19,7 +19,7 @@
     <i class="icon-menu" style="font-size: 1.25rem;"></i>
   </a>
   <a class="d-none d-md-block navbar-brand" href="index.html">
-    <img src="static/img/logo_black@2x.png" alt="" width="170px" height="35px">
+    <img src="/static/img/logo_black@2x.png" alt="" width="170px" height="35px">
   </a>
   <!--Navbar collapsible start-->
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -132,34 +132,49 @@
   <!--Content start-->
   <div class="layout-content col-12 col-lg-10">
 
-    <img src="https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="category-bg">
+    <img src="https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+         class="category-bg">
     <div class="category-header">
       <a href="#" class="category-heading avatar"></a>
       <div class="category-heading">
         <div class="category-heading info">
-          <a href="#">Category Name</a>
+          <a href="#">Channel Name</a>
           2,012 followers
         </div>
         <button class="btn btn-primary">Subscribe</button>
       </div>
 
-      <ul class="nav nav-tabs category-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="/category_page.html">Home</a>
+      <div class="d-flex flex-column-reverse flex-lg-row">
+        <ul class="nav nav-tabs category-nav" style="min-width: fit-content;">
+          <li class="nav-item">
+            <a class="nav-link" href="/channel/art_board.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/channel/videos.html">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/channel/playlists.html">Playlists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/channel/community.html">Community</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/channel/about.html">About</a>
+          </li>
+        </ul>
+        <li class="channel-search">
+          <i class="icon-search mx-2"></i>
+          <input placeholder="Search on channel" style="width: 100%;">
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/category_page_popular.html">Popular</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/category_page_about.html">About</a>
-        </li>
-      </ul>
+      </div>
     </div>
 
     <div class="category-content">
+
       <section>
         <div class="section-heading px-0 mt-4 mb-0">
-          <h6>Some Category 1</h6>
+          <h6>Sample playlist 1</h6>
+          <a href="#"><i class="icon-play-1"></i>Play all</a>
         </div>
         <div class="slick-videos">
           <!-- VIDEO ITEM -->
@@ -212,9 +227,11 @@
           </div>
         </div>
       </section>
+
       <section>
-        <div class="section-heading px-0 mt-4 mb-0">
-          <h6>Some Category 2</h6>
+        <div class="section-heading">
+          <h6>Sample playlist 2</h6>
+          <a href="#"><i class="icon-play-1"></i>Play all</a>
         </div>
         <div class="slick-videos">
           <!-- VIDEO ITEM -->
@@ -267,140 +284,68 @@
           </div>
         </div>
       </section>
+
       <section>
-        <div class="section-heading px-0 mt-4 mb-0">
-          <h6>Some Category 3</h6>
+        <div class="section-heading">
+          <h6>All playlists</h6>
         </div>
-        <div class="slick-videos">
-          <!-- VIDEO ITEM -->
-          <div class="video-playlist item vertical">
+        <div class="slick-channel-playlists">
+          <!-- PLAYLIST -->
+          <div class="video-playlist item vertical playlist">
             <a href="#" class="video-playlist preview"
-               style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
-              16:07
+               style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg');">
+              <div class="m-auto" style="font-size: 2rem;">
+                <i class="fas fa-list"></i>
+                14
+              </div>
             </a>
             <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
+              <a href="#">Playlist title</a>
             </div>
           </div>
-          <!-- VIDEO ITEM -->
-          <div class="video-playlist item vertical">
+          <!-- PLAYLIST -->
+          <div class="video-playlist item vertical playlist">
             <a href="#" class="video-playlist preview"
-               style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
-              16:07
+               style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg');">
+              <div class="m-auto" style="font-size: 2rem;">
+                <i class="fas fa-list"></i>
+                14
+              </div>
             </a>
             <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
+              <a href="#">Playlist title</a>
             </div>
           </div>
-          <!-- VIDEO ITEM -->
-          <div class="video-playlist item vertical">
+          <!-- PLAYLIST -->
+          <div class="video-playlist item vertical playlist">
             <a href="#" class="video-playlist preview"
-               style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
-              16:07
+               style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg');">
+              <div class="m-auto" style="font-size: 2rem;">
+                <i class="fas fa-list"></i>
+                14
+              </div>
             </a>
             <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
+              <a href="#">Playlist title</a>
             </div>
           </div>
-          <!-- VIDEO ITEM -->
-          <div class="video-playlist item vertical">
+          <!-- PLAYLIST -->
+          <div class="video-playlist item vertical playlist">
             <a href="#" class="video-playlist preview"
-               style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
-              16:07
+               style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg');">
+              <div class="m-auto" style="font-size: 2rem;">
+                <i class="fas fa-list"></i>
+                14
+              </div>
             </a>
             <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
+              <a href="#">Playlist title</a>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <!-- TOP IN DARKWEB CATEGORY -->
-        <div class="section mobile px-0">
-          <div class="section-heading px-0 mt-4 mb-2">
-            <h6>Most popular channels</h6>
-          </div>
-          <div class="slick-channels">
 
-            <div class="channel-wrapper mb-3">
-              <div class="channel-item-middle">
-                <div class="channel-preview"></div>
-                <div class="channel-avatar-middle"></div>
-                <div class="channel-info middle">
-                  <a>channel name</a>
-                  <small>2,012 followers</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="channel-wrapper mb-3">
-              <div class="channel-item-middle">
-                <div class="channel-preview"></div>
-                <div class="channel-avatar-middle"></div>
-                <div class="channel-info middle">
-                  <a>channel name</a>
-                  <small>2,012 followers</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="channel-wrapper mb-3">
-              <div class="channel-item-middle">
-                <div class="channel-preview"></div>
-                <div class="channel-avatar-middle"></div>
-                <div class="channel-info middle">
-                  <a>channel name</a>
-                  <small>2,012 followers</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="channel-wrapper mb-3">
-              <div class="channel-item-middle">
-                <div class="channel-preview"></div>
-                <div class="channel-avatar-middle"></div>
-                <div class="channel-info middle">
-                  <a>channel name</a>
-                  <small>2,012 followers</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="channel-wrapper mb-3">
-              <div class="channel-item-middle">
-                <div class="channel-preview"></div>
-                <div class="channel-avatar-middle"></div>
-                <div class="channel-info middle">
-                  <a>channel name</a>
-                  <small>2,012 followers</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="channel-wrapper mb-3">
-              <div class="channel-item-middle">
-                <div class="channel-preview"></div>
-                <div class="channel-avatar-middle"></div>
-                <div class="channel-info middle">
-                  <a>channel name</a>
-                  <small>2,012 followers</small>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
     </div>
-
   </div>
   <!--Content finish-->
 </div>

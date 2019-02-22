@@ -4,6 +4,32 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const path = require('path')
 const fs = require('fs')
 
+let moreHtmls = []
+
+const htmlRegExp = /.*\.html$/
+const pagesRegExp = /.*\.pages$/
+
+fs.readdirSync('./src')
+  .forEach(name => {
+    if (htmlRegExp.test(name)) {
+      moreHtmls.push(new HtmlWebpackPlugin({
+        filename: name,
+        template: name
+      }))
+    }
+    if (pagesRegExp.test(name)) {
+      fs.readdirSync(`./src/${name}`)
+        .forEach(subName => {
+          if (htmlRegExp.test(subName)) {
+            moreHtmls.push(new HtmlWebpackPlugin({
+              filename: `${name.replace('.pages', '')}/${subName}`,
+              template: `${name}/${subName}`
+            }))
+          }
+        })
+    }
+  })
+
 const images = fs.readdirSync('./src/static/img/')
   .filter(file => file.match(/.*\.(jpg|jpeg|png|svg)$/))
   .map(i => './static/img/' + i)
@@ -11,15 +37,6 @@ const images = fs.readdirSync('./src/static/img/')
 const fonts = fs.readdirSync('./src/static/fonts')
   .filter(file => file.match(/.*\.(eot|svg|ttf|woff|woff2)$/))
   .map(f => './static/fonts/' + f)
-
-const htmls = fs.readdirSync('./src')
-  .filter(file => file.match(/.*\.html$/))
-  .map(name =>
-    new HtmlWebpackPlugin({
-      filename: name,
-      template: name,
-    })
-  )
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -126,6 +143,6 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']), // cleans the dist folder
     new ExtractTextPlugin('css/styles.css'), // extracts css to dist/css/styles.css
-    ...htmls
+    ...moreHtmls
   ],
 }

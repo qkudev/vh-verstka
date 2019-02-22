@@ -8,7 +8,7 @@
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <title>Single Video Page</title>
+  <title>Channel About</title>
 </head>
 <body>
 
@@ -19,7 +19,7 @@
     <i class="icon-menu" style="font-size: 1.25rem;"></i>
   </a>
   <a class="d-none d-md-block navbar-brand" href="index.html">
-    <img src="static/img/logo_black@2x.png" alt="" width="170px" height="35px">
+    <img src="/static/img/logo_black@2x.png" alt="" width="170px" height="35px">
   </a>
   <!--Navbar collapsible start-->
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -131,160 +131,50 @@
   </div>
   <!--Content start-->
   <div class="layout-content col-12 col-lg-10">
-    <!-- POPULAR RIGHT NOW -->
-    <div class="row">
-      <div class="col-12 col-lg-7">
-        <!-- PLAYER -->
-        <div class="video-content">
-          <!-- VIDEO.JS PLAYER-->
-          <div class="player-wrapper"></div>
 
-          <div class="video-info">
-            <!-- VIDEO TITLE -->
-            <h3 class="mt-3">Video Title Video Title Video Title</h3>
-            <!-- VIDEO VIEWS-->
-            <div class="d-flex flex-row justify-content-between gray">
-              Views: 10,1k
-              <div>Added 2 weeks ago</div>
-            </div>
-            <!-- VIDEO STATISTICS -->
-            <div class="d-flex flex-row video-info-stats pb-3 my-3 justify-content-between">
-              <div class="d-flex flex-row">
-                <div class="d-flex flex-row active align-items-baseline active">
-                  <i class="icon-like mx-2"></i>768
-                </div>
-                <div class="d-flex flex-row align-items-baseline mx-2">
-                  <i class="icon-diss mx-2"></i>91
-                </div>
-              </div>
-              <div class="d-flex flex-row">
-                <div class="d-flex flex-row align-items-baseline ml-2">
-                  <i class="icon-addlist mx-3"></i>
-                  <div class="d-none d-lg-block">Add to playlist</div>
-                </div>
-                <div class="d-flex flex-row align-items-baseline ml-2">
-                  <i class="icon-upload mx-2"></i>
-                  <div class="d-none d-lg-block">Share</div>
-                </div>
-                <div class="d-flex flex-row align-items-baseline ml-2">
-                  <i class="icon-dot-3 mx-2"></i>
-                  <div class="d-none d-lg-block">More</div>
-                </div>
-              </div>
-            </div>
-            <!-- CHANNEL HEADING -->
-            <div class="channel-heading">
-              <a href="#" class="channel-heading avatar"></a>
-              <div class="channel-description">
-                <a href="#" class="primary">
-                  Channel Name
-                  <i class="m-1 icon-ok-circled"></i>
-                </a>
-                2,012 followers
-              </div>
-              <button class="btn btn-primary">Subscribe</button>
-            </div>
-            <div class="video-description">
-              <!-- VIDEO DESCRIPTION -->
-              <div id="video-text" class="video-text hidden">
-                Video description Video description Video description Video description Video description
-                Video description Video description Video description Video description Video Video description
-                Video description Video description Video description
-                <div id="video-description" class="collapse">
-                  <!-- VIDEO TAGS -->
-                  <div class="video-tags">
-                    <a href="#">#tag1</a>
-                    <a href="#">#tag2</a>
-                    <a href="#">#tag3</a>
-                  </div>
-                </div>
-              </div>
-              <button id="description-toggler" class="btn primary" onclick="toggleVideoDescription()">show more</button>
-            </div>
-          </div>
+    <img src="https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="category-bg">
+    <div class="category-header">
+      <a href="#" class="category-heading avatar"></a>
+      <div class="category-heading">
+        <div class="category-heading info">
+          <a href="#">Channel Name</a>
+          2,012 followers
         </div>
-      </div>
-      <div class="col-12 col-lg-5">
-        <!-- PLAYLIST -->
-        <div class="video-playlist">
-          <div class="d-flex flex-row justify-content-between align-items-baseline">
-            Next videos
-            <div class="dropleft">
-              Autoplay
-              <button class="btn btn dropdown-toggle" type="button" id="dropdownAutoplay" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">On
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownAutoplay">
-                <a class="dropdown-item active" href="#">On</a>
-                <a class="dropdown-item" href="#">Off</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="video-playlist item">
-            <a href="#" class="video-playlist preview"
-               style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
-              16:07
-            </a>
-            <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
-            </div>
-          </div>
-
-          <div class="video-playlist item">
-            <a href="#" class="video-playlist preview"
-               style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
-              16:07
-            </a>
-            <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
-            </div>
-          </div>
-
-          <div class="video-playlist item">
-            <a href="#" class="video-playlist preview"
-               style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
-              16:07
-            </a>
-            <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
-            </div>
-          </div>
-
-          <div class="video-playlist item">
-            <a href="#" class="video-playlist preview"
-               style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
-              16:07
-            </a>
-            <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
-            </div>
-          </div>
-        </div>
+        <button class="btn btn-primary">Subscribe</button>
       </div>
 
-      <!-- COMMENTS -->
+      <div class="d-flex flex-column-reverse flex-lg-row">
+        <ul class="nav nav-tabs category-nav" style="min-width: fit-content;">
+          <li class="nav-item">
+            <a class="nav-link" href="/channel/art_board.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/channel/videos.html">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/channel/playlists.html">Playlists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/channel/community.html">Community</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/channel/about.html">About</a>
+          </li>
+        </ul>
+        <li class="channel-search">
+          <i class="icon-search mx-2"></i>
+          <input placeholder="Search on channel" style="width: 100%;">
+        </li>
+      </div>
+    </div>
+
+    <div class="category-content">
       <div class="container-fluid my-3">
         <div class="d-flex flex-row justify-content-between">
           <h5>Comments</h5>
-          <div class="dropdown">
-            <i class="icon-filters mx-2"></i>
-            <button class="btn dropdown-toggle px-0 gray-7" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              popularity
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">popularity</a>
-              <a class="dropdown-item" href="#">date</a>
-            </div>
+          <div>
+            <button class="btn btn-gray mr-2">Add video</button>
+            <button class="btn btn-gray">Add photo</button>
           </div>
         </div>
         <!--COMMENT-INPUT-->
@@ -451,6 +341,7 @@
         </div>
       </div>
     </div>
+
   </div>
   <!--Content finish-->
 </div>
