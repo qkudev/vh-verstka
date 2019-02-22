@@ -211,8 +211,8 @@
 }
 
 a.video-title {
-  color: $black !important;
-  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 a.channel {

@@ -47,8 +47,60 @@
 
 .video-playlist {
   width: 100%;
-  padding: 0;
   margin: 0 0 $spacer 0;
 
   border-bottom: 1px solid $border-color;
+
+  &.item {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: .5 * $spacer 0;
+    width: 100%;
+
+    border: none;
+  }
+
+  &.preview {
+    display: grid;
+    align-items: end;
+    justify-items: end;
+
+    min-height: 112.5px;
+    min-width: 200px;
+    height: 112.5px;
+    width: 200px;
+
+    margin: 0 .5 * $spacer 0 0;
+
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none !important;
+
+    &:first-child {
+      color: $white;
+      padding: .25 * $spacer .5 * $spacer;
+    }
+  }
+
+  &-item-info {
+    display: grid;
+    grid-template-rows: 3rem 1.5rem 1.5rem;
+    grid-gap: .5rem;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    a {
+      font-weight: 600;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
 }
