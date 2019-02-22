@@ -236,6 +236,10 @@
 .btn-gray {
   background-color: $gray-400 !important;
   color: $gray-600;
+
+  &:hover {
+    background-color: $gray-500 !important;
+  }
 }
 
 .channel-heading {

@@ -2,7 +2,8 @@
 @import "~bootstrap/scss/bootstrap";
 
 .content {
-  padding: 0 !important;
+  padding: 0 $spacer;
+  margin: 1.5 * $spacer 0;
 
   .section {
     margin-bottom: 1.5 * $spacer;
