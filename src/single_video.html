@@ -13,10 +13,10 @@
 <body>
 
 <!--Navigation start-->
-<nav class="navbar navbar-expand-md navbar-light bg-white px-3 px-md-5">
+<nav class="navbar navbar-expand-md px-3 px-md-5">
   <!-- Logo -->
   <a href="#" class="d-md-none">
-    <i class="icon-menu"></i>
+    <i class="icon-menu" style="font-size: 1.25rem;"></i>
   </a>
   <a class="d-none d-md-block navbar-brand" href="index.html">
     <img src="static/img/logo_black@2x.png" alt="" width="170px" height="35px">
@@ -54,283 +54,392 @@
 <!--Navigation finish-->
 
 <!--Layout start-->
-<div class="layout m-0 p-0">
-  <!--Content start-->
-  <div class="row my-4 my-lg-5 mx-3 mx-md-5">
-    <!--Layout Menu-->
-    <div class="d-none d-lg-block">
-      <div class="menu-group d-flex flex-column sidebar">
-        <div class="menu-group header sidebar__title">Main</div>
-        <ul>
-          <li>
-            <a class="sidebar__item sidebar__item--active" href="#">
-              <i class="icon-home"></i>
-              Home
-            </a>
-          </li>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-star"></i>
-              Popular
-            </a>
-          </li>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-certificate-outline"></i>
-              New
-            </a>
-          </li>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-random"></i>
-              Random
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="menu-group d-flex flex-column sidebar">
-        <div class="menu-group header sidebar__title">Popular categories</div>
-        <ul>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-onion"></i>
-              Darknet
-            </a>
-          </li>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-anon"></i>
-              Anonymity
-            </a>
-          </li>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-article-alt"></i>
-              All categories
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="menu-group d-flex flex-column sidebar">
-        <div class="menu-group header sidebar__title">Info</div>
-        <ul>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-rules"></i>
-              Rules
-            </a>
-          </li>
-          <li>
-            <a class="sidebar__item" href="#">
-              <i class="icon-plant"></i>
-              Our Telegram
-            </a>
-          </li>
-        </ul>
-      </div>
+<div class="layout">
+  <!--Layout Menu-->
+  <div class="d-none d-lg-block">
+    <div class="menu-group d-flex flex-column sidebar">
+      <div class="menu-group header sidebar__title">Main</div>
+      <ul>
+        <li>
+          <a class="sidebar__item sidebar__item--active" href="#">
+            <i class="icon-home"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-star"></i>
+            Popular
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-certificate-outline"></i>
+            New
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-random"></i>
+            Random
+          </a>
+        </li>
+      </ul>
     </div>
-    <!--Layout Content-->
-    <div class="col-12 col-lg-10 container-fluid content ml-auto mr-0 px-0">
-      <!-- POPULAR RIGHT NOW -->
-      <div class="row">
-        <div class="col-12 col-lg-7">
-          <!-- PLAYER -->
-          <div class="video-content">
-            <div class="player-wrapper">
-              <div class="player-example">PLAYER</div>
-            </div>
-            <div class="video-info">
-              <!-- VIDEO TITLE -->
-              <h3 class="mt-3">Video Title Video Title Video Title </h3>
-              <!-- VIDEO VIEWS-->
-              <div class="gray">Views: 10,1k</div>
-              <!-- VIDEO STATISTICS -->
-              <div class="d-flex flex-row video-info-stats border-bottom pb-3 my-3 justify-content-between">
-                <div class="d-flex flex-row">
-                  <div class="d-flex flex-row active align-items-baseline">
-                    <i class="icon-like mx-2 active"></i>
-                    768
-                  </div>
-                  <div class="d-flex flex-row align-items-baseline mx-2">
-                    <i class="icon-diss mx-2"></i>
-                    91
-                  </div>
-                </div>
-                <div class="d-flex flex-row">
-                  <div class="d-flex flex-row align-items-baseline ml-2">
-                    <i class="icon-addlist mx-3"></i>
-                    <div class="d-none d-lg-block">
-                      Add to playlist
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row align-items-baseline ml-2">
-                    <i class="icon-upload mx-2"></i>
-                    <div class="d-none d-lg-block">
-                      Share
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row align-items-baseline ml-2">
-                    <i class="icon-dot-3 mx-2"></i>
-                    <div class="d-none d-lg-block">
-                      More
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CHANNEL HEADING -->
-              <div class="channel-heading">
-                <a href="#" class="channel-heading avatar"></a>
-                <div class="channel-description">
-                  <a href="#">
-                    Channel Name
-                    <i class="m-1 icon-ok-circled"></i>
-                  </a>
-                  2,012 followers
-                </div>
-                <button class="btn btn-primary">Subscribe</button>
-              </div>
-              <!-- VIDEO DESCRIPTION -->
-              <div class="video-info description border-bottom my-2">
-                Video description Video description Video description Video description Video description Video description
-                <div class="d-flex flex-row justify-content-between gray align-items-baseline mt-1">
-                  <button class="btn gray">Hide description</button>
-                  Added 2 weeks ago
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-5">
-          <!-- PLAYLIST -->
-          <div class="video-playlist border-bottom">
-            <div class="video-preview-wrapper">
-              <div class="video-preview" style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
-                <div class="timing">16:07</div>
-              </div>
-              <div class="video-preview-info">
-                <a class="video-title" href="#">Very very very very very long video title</a>
-                <a class="channel" href="#">channel name</a>
-                <small class="info">Views: 2,1k</small>
-              </div>
-            </div>
-            <div class="video-preview-wrapper">
-              <div class="video-preview" style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
-                <div class="timing">16:07</div>
-              </div>
-              <div class="video-preview-info">
-                <a class="video-title" href="#">Very very very very very long video title</a>
-                <a class="channel" href="#">channel name</a>
-                <small class="info">Views: 2,1k</small>
-              </div>
-            </div>
-            <div class="video-preview-wrapper">
-              <div class="video-preview" style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
-                <div class="timing">16:07</div>
-              </div>
-              <div class="video-preview-info">
-                <a class="video-title" href="#">Very very very very very long video title</a>
-                <a class="channel" href="#">channel name</a>
-                <small class="info">Views: 2,1k</small>
-              </div>
-            </div>
-            <div class="video-preview-wrapper">
-              <div class="video-preview" style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
-                <div class="timing">16:07</div>
-              </div>
-              <div class="video-preview-info">
-                <a class="video-title" href="#">Very very very very very long video title</a>
-                <a class="channel" href="#">channel name</a>
-                <small class="info">Views: 2,1k</small>
-              </div>
-            </div>
-            <div class="video-preview-wrapper">
-              <div class="video-preview" style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
-                <div class="timing">16:07</div>
-              </div>
-              <div class="video-preview-info">
-                <a class="video-title" href="#">Very very very very very long video title</a>
-                <a class="channel" href="#">channel name</a>
-                <small class="info">Views: 2,1k</small>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- COMMENTS -->
-        <div class="container-fluid">
+    <div class="menu-group d-flex flex-column sidebar">
+      <div class="menu-group header sidebar__title">Popular categories</div>
+      <ul>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-onion"></i>
+            Darknet
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-anon"></i>
+            Anonymity
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-article-alt"></i>
+            All categories
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu-group d-flex flex-column sidebar">
+      <div class="menu-group header sidebar__title">Info</div>
+      <ul>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-rules"></i>
+            Rules
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-plant"></i>
+            Our Telegram
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--Content start-->
+  <div class="col-12 col-lg-10 container-fluid content ml-auto mr-0 px-0">
+    <!-- POPULAR RIGHT NOW -->
+    <div class="row">
+      <div class="col-12 col-lg-7">
+        <!-- PLAYER -->
+        <div class="video-content">
+          <!-- VIDEO.JS PLAYER-->
+          <div class="player-wrapper"></div>
+
+          <div class="video-info">
+            <!-- VIDEO TITLE -->
+            <h3 class="mt-3">Video Title Video Title Video Title</h3>
+            <!-- VIDEO VIEWS-->
+            <div class="d-flex flex-row justify-content-between gray">
+              Views: 10,1k
+              <div>Added 2 weeks ago</div>
+            </div>
+            <!-- VIDEO STATISTICS -->
+            <div class="d-flex flex-row video-info-stats pb-3 my-3 justify-content-between">
+              <div class="d-flex flex-row">
+                <div class="d-flex flex-row active align-items-baseline active">
+                  <i class="icon-like mx-2"></i>768
+                </div>
+                <div class="d-flex flex-row align-items-baseline mx-2">
+                  <i class="icon-diss mx-2"></i>91
+                </div>
+              </div>
+              <div class="d-flex flex-row">
+                <div class="d-flex flex-row align-items-baseline ml-2">
+                  <i class="icon-addlist mx-3"></i>
+                  <div class="d-none d-lg-block">Add to playlist</div>
+                </div>
+                <div class="d-flex flex-row align-items-baseline ml-2">
+                  <i class="icon-upload mx-2"></i>
+                  <div class="d-none d-lg-block">Share</div>
+                </div>
+                <div class="d-flex flex-row align-items-baseline ml-2">
+                  <i class="icon-dot-3 mx-2"></i>
+                  <div class="d-none d-lg-block">More</div>
+                </div>
+              </div>
+            </div>
+            <!-- CHANNEL HEADING -->
+            <div class="channel-heading">
+              <a href="#" class="channel-heading avatar"></a>
+              <div class="channel-description">
+                <a href="#" class="primary">
+                  Channel Name
+                  <i class="m-1 icon-ok-circled"></i>
+                </a>
+                2,012 followers
+              </div>
+              <button class="btn btn-primary">Subscribe</button>
+            </div>
+            <div class="video-description">
+              <!-- VIDEO DESCRIPTION -->
+              <div id="video-text" class="video-text hidden">
+                Video description Video description Video description Video description Video description
+                Video description Video description Video description Video description Video Video description
+                Video description Video description Video description
+                <div id="video-description" class="collapse">
+                  <!-- VIDEO TAGS -->
+                  <div class="video-tags">
+                    <a href="#">#tag1</a>
+                    <a href="#">#tag2</a>
+                    <a href="#">#tag3</a>
+                  </div>
+                </div>
+              </div>
+              <button id="description-toggler" class="btn primary" onclick="toggleVideoDescription()">show more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <!-- PLAYLIST -->
+        <div class="video-playlist">
+          <div class="video-preview-wrapper">
+            <div class="video-preview"
+                 style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
+              <div class="timing">16:07</div>
+            </div>
+            <div class="video-preview-info">
+              <a class="video-title" href="#">Very very very very very long video title</a>
+              <a class="channel" href="#">channel name</a>
+              <small class="info">Views: 2,1k</small>
+            </div>
+          </div>
+          <div class="video-preview-wrapper">
+            <div class="video-preview"
+                 style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
+              <div class="timing">16:07</div>
+            </div>
+            <div class="video-preview-info">
+              <a class="video-title" href="#">Very very very very very long video title</a>
+              <a class="channel" href="#">channel name</a>
+              <small class="info">Views: 2,1k</small>
+            </div>
+          </div>
+          <div class="video-preview-wrapper">
+            <div class="video-preview"
+                 style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
+              <div class="timing">16:07</div>
+            </div>
+            <div class="video-preview-info">
+              <a class="video-title" href="#">Very very very very very long video title</a>
+              <a class="channel" href="#">channel name</a>
+              <small class="info">Views: 2,1k</small>
+            </div>
+          </div>
+          <div class="video-preview-wrapper">
+            <div class="video-preview"
+                 style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
+              <div class="timing">16:07</div>
+            </div>
+            <div class="video-preview-info">
+              <a class="video-title" href="#">Very very very very very long video title</a>
+              <a class="channel" href="#">channel name</a>
+              <small class="info">Views: 2,1k</small>
+            </div>
+          </div>
+          <div class="video-preview-wrapper">
+            <div class="video-preview"
+                 style="background-image: url('http://mirpozitiva.ru/uploads/posts/2016-09/medium/1474011210_15.jpg')">
+              <div class="timing">16:07</div>
+            </div>
+            <div class="video-preview-info">
+              <a class="video-title" href="#">Very very very very very long video title</a>
+              <a class="channel" href="#">channel name</a>
+              <small class="info">Views: 2,1k</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMMENTS -->
+      <div class="container-fluid my-3">
+        <div class="d-flex flex-row justify-content-between">
           <h5>Comments</h5>
-          <!-- COMMENT ITEM -->
-          <div class="comment">
-            <!-- COMMENT HEADER-->
-            <div class="d-flex flex-row align-items-center">
-              <a href="#" class="comment avatar"></a>
-              Nickname
-              <div class="comment time">2 days ago</div>
-            </div>
-            <div class="comment content">
-              Text text text text text text text text text text text text text
-              <div class="comment actions">
-                <button class="icon-like">
-                  <div class="mx-2">35</div>
-                </button>
-                <button class="icon-diss">
-                  <div class="mx-2">9</div>
-                </button>
-                <button class="icon-replay">
-                  <div class="d-none d-md-block mx-2">Replay</div>
-                </button>
-                <button class="icon-dot-3 ml-auto"></button>
-              </div>
+          <div class="dropdown">
+            <i class="icon-filters mx-2"></i>
+            <button class="btn dropdown-toggle px-0 gray-7" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              popularity
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">popularity</a>
+              <a class="dropdown-item" href="#">date</a>
             </div>
           </div>
-          <!-- COMMENT ITEM -->
-          <div class="comment">
-            <!-- COMMENT HEADER-->
-            <div class="d-flex flex-row align-items-center">
-              <a href="#" class="comment avatar"></a>
-              Nickname
-              <div class="comment time">2 days ago</div>
-            </div>
-            <div class="comment content">
-              Text text text text text text text text text text text text text
-              <div class="comment actions">
-                <button class="icon-like">
-                  <div class="mx-2">35</div>
-                </button>
-                <button class="icon-diss">
-                  <div class="mx-2">9</div>
-                </button>
-                <button class="icon-replay">
-                  <div class="d-none d-md-block mx-2">Replay</div>
-                </button>
-                <button class="icon-dot-3 ml-auto"></button>
+        </div>
+        <!--COMMENT-INPUT-->
+        <div class="comment-input">
+          <a class="comment avatar primary" href="#"></a>
+          <textarea placeholder="Comment text"></textarea>
+          <button class="btn btn-primary">Post comment</button>
+        </div>
+        <!-- COMMENT ITEM -->
+        <div class="comment">
+          <!-- COMMENT HEADER-->
+          <div class="d-flex flex-row align-items-center">
+            <a href="#" class="comment avatar"></a>
+            Nickname_1
+            <div class="comment time">2 days ago</div>
+          </div>
+          <div class="comment content">
+            Text text text text text text text text text text text text text
+            <div class="comment actions">
+              <button class="icon-like">
+                <div class="mx-2">35</div>
+              </button>
+              <button class="icon-diss">
+                <div class="mx-2">9</div>
+              </button>
+              <button class="icon-replay" data-toggle="collapse" data-target="#replyComment1"
+                      aria-expanded="false"></button>
+              <button type="button" data-toggle="collapse" data-target="#replays1" aria-expanded="false"
+                      aria-controls="collapseExample">
+                Replays
+              </button>
+              <div class="dropleft ml-auto my-auto">
+                <button class="icon-dot-3 px-2" type="button" id="commentDropdown1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"></button>
+                <div class="dropdown-menu" aria-labelledby="commentDropdown1">
+                  <a class="dropdown-item" href="#">Edit comment</a>
+                  <a class="dropdown-item" href="#">Report comment</a>
+                </div>
               </div>
+            </div>
+            <!-- REPLAYS -->
+            <div class="collapse show comment replays" id="replays1">
+              <!-- COMMENT ITEM -->
+              <div class="comment">
+                <!-- COMMENT HEADER-->
+                <div class="d-flex flex-row align-items-center">
+                  <a href="#" class="comment avatar"></a>
+                  Nickname_4
+                  <div class="comment time">2 days ago</div>
+                </div>
+                <div class="comment content">
+                  Text text text text text text text text text text text text text
+                  <div class="comment actions">
+                    <button class="icon-like">
+                      <div class="mx-2">35</div>
+                    </button>
+                    <button class="icon-diss">
+                      <div class="mx-2">9</div>
+                    </button>
+                    <button class="icon-replay" data-toggle="collapse" data-target="#replyComment4"
+                            aria-expanded="false"></button>
+                    <div class="dropleft ml-auto my-auto">
+                      <button class="icon-dot-3 px-2" type="button" id="commentDropdown4" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false"></button>
+                      <div class="dropdown-menu" aria-labelledby="commentDropdown4">
+                        <a class="dropdown-item" href="#">Edit comment</a>
+                        <a class="dropdown-item" href="#">Report comment</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--REPLAY INPUT -->
+                  <div id="replyComment4" class="collapse show comment-input replay">
+                    <a class="comment avatar primary" href="#"></a>
+                    <textarea placeholder="Comment text"></textarea>
+                    <button class="btn btn-primary">Reply</button>
+                    <small>reply to <a href="#">@Nickname_4</a></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--REPLAY INPUT -->
+            <div id="replyComment1" class="collapse show comment-input replay">
+              <a class="comment avatar primary" href="#"></a>
+              <textarea placeholder="Comment text"></textarea>
+              <button class="btn btn-primary">Reply</button>
+              <small>reply to <a href="#">@Nickname_1</a></small>
             </div>
           </div>
-          <!-- COMMENT ITEM -->
-          <div class="comment">
-            <!-- COMMENT HEADER-->
-            <div class="d-flex flex-row align-items-center">
-              <a href="#" class="comment avatar"></a>
-              Nickname
-              <div class="comment time">2 days ago</div>
-            </div>
-            <div class="comment content">
-              Text text text text text text text text text text text text text
-              <div class="comment actions">
-                <button class="icon-like">
-                  <div class="mx-2">35</div>
-                </button>
-                <button class="icon-diss">
-                  <div class="mx-2">9</div>
-                </button>
-                <button class="icon-replay">
-                  <div class="d-none d-md-block mx-2">Replay</div>
-                </button>
-                <button class="icon-dot-3 ml-auto"></button>
+        </div>
+        <!-- COMMENT ITEM -->
+        <div class="comment">
+          <!-- COMMENT HEADER-->
+          <div class="d-flex flex-row align-items-center">
+            <a href="#" class="comment avatar"></a>
+            Nickname_2
+            <div class="comment time">2 days ago</div>
+          </div>
+          <div class="comment content">
+            Text text text text text text text text text text text text text
+            <div class="comment actions">
+              <button class="icon-like">
+                <div class="mx-2">35</div>
+              </button>
+              <button class="icon-diss">
+                <div class="mx-2">9</div>
+              </button>
+              <button class="icon-replay" data-toggle="collapse" data-target="#replyComment2"
+                      aria-expanded="false"></button>
+              <div class="dropleft ml-auto my-auto">
+                <button class="icon-dot-3 px-2" type="button" id="commentDropdown2" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"></button>
+                <div class="dropdown-menu" aria-labelledby="commentDropdown2">
+                  <a class="dropdown-item" href="#">Edit comment</a>
+                  <a class="dropdown-item" href="#">Report comment</a>
+                </div>
               </div>
+            </div>
+            <!-- REPLAYS -->
+            <!--REPLAY INPUT -->
+            <div id="replyComment2" class="collapse comment-input replay">
+              <a class="comment avatar primary" href="#"></a>
+              <textarea placeholder="Comment text"></textarea>
+              <button class="btn btn-primary">Reply</button>
+              <small>reply to <a href="#">@Nickname_2</a></small>
+            </div>
+          </div>
+        </div>
+        <!-- COMMENT ITEM -->
+        <div class="comment">
+          <!-- COMMENT HEADER-->
+          <div class="d-flex flex-row align-items-center">
+            <a href="#" class="comment avatar"></a>
+            Nickname_3
+            <div class="comment time">2 days ago</div>
+          </div>
+          <div class="comment content">
+            Text text text text text text text text text text text text text
+            <div class="comment actions">
+              <button class="icon-like">
+                <div class="mx-2">35</div>
+              </button>
+              <button class="icon-diss">
+                <div class="mx-2">9</div>
+              </button>
+              <button class="icon-replay" data-toggle="collapse" data-target="#replyComment3"
+                      aria-expanded="false"></button>
+              <div class="dropleft ml-auto my-auto">
+                <button class="icon-dot-3 px-2" type="button" id="commentDropdown3" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"></button>
+                <div class="dropdown-menu" aria-labelledby="commentDropdown3">
+                  <a class="dropdown-item" href="#">Edit comment</a>
+                  <a class="dropdown-item" href="#">Report comment</a>
+                </div>
+              </div>
+            </div>
+            <!--REPLAY INPUT -->
+            <div id="replyComment3" class="collapse comment-input replay">
+              <a class="comment avatar primary" href="#"></a>
+              <textarea placeholder="Comment text"></textarea>
+              <button class="btn btn-primary">Reply</button>
+              <small>reply to <a href="#">@Nickname_3</a></small>
             </div>
           </div>
         </div>
@@ -338,38 +447,24 @@
     </div>
   </div>
   <!--Content finish-->
-
-  <!--Footer start-->
-  <div class="footer d-flex flex-column flex-md-row px-1 px-md-3 px-lg-5">
-    <div class=" d-flex flex-column flex-md-row">
-      <a class="footer-item mx-auto mx-md-2">©2018 dark.video</a>
-      <div class="footer-item mx-auto mx-md-2">
-        <div class="">
-          <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="icon-globe-1"></i>
-            Language: English
-          </div>
-          <div class="dropdown-menu">
-            <!-- Dropdown menu links -->
-            <a class="dropdown-item" href="#">Russian</a>
-            <a class="dropdown-item active" href="#">English</a>
-            <a class="dropdown-item" href="#">Germany</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="d-flex flex-column flex-md-row">
-      <a class="footer-item mx-auto mx-md-2">
-        Rules and conditions
-      </a>
-      <a class="footer-item mx-auto mx-md-2">
-        Telegram channel
-      </a>
-    </div>
-  </div>
-  <!--Footer finish-->
-
 </div>
+
+<!--Footer start-->
+<div class="footer">
+  <a href="#">© 2018 dark.video</a>
+  <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="icon-globe-1"></i>
+    Language: English
+  </div>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Russian</a>
+    <a class="dropdown-item active" href="#">English</a>
+    <a class="dropdown-item" href="#">Germany</a>
+  </div>
+  <a href="#">Rules and conditions</a>
+  <a href="#">Telegram channel</a>
+</div>
+<!--Footer finish-->
+
 </body>
 </html>

@@ -1,0 +1,56 @@
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+
+.footer {
+  position: relative;
+  width: 100vw;
+  padding: .5 * $spacer $spacer;
+  margin-top: $spacer;
+
+  display: grid;
+  grid-gap: .25 * $spacer;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
+
+  background-color: $gray-100;
+  border-top: 1px solid #DDD;
+
+  &:nth-child(n) {
+    color: $black;
+  }
+
+  a {
+    color: $black;
+  }
+}
+
+.footer-language {
+  width: fit-content;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// small devices
+@media screen and (min-width: 768px) {
+  .footer {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    padding: $spacer 2.5 * $spacer;
+  }
+}
+
+// medium devices
+@media screen and (min-width: 992px) {
+  .footer {
+    flex-direction: row;
+  }
+}
+
+// large devices
+@media (min-width: 1200px) {
+
+}

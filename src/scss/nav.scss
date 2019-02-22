@@ -16,12 +16,14 @@
 }
 
 .navbar {
+  margin-bottom: $spacer;
 
   &-search {
     position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
+    max-width: 50 * $spacer;
 
     padding: 0 $spacer;
     margin: 0 auto;
@@ -87,5 +89,25 @@
       cursor: pointer;
       white-space: inherit;
     }
+  }
+}
+
+.navigation {
+  padding: $spacer $spacer;
+  margin-bottom: $spacer;
+
+  border-bottom: 1px solid $border-color;
+  transition: all .2s ease-in-out;
+
+  a {
+    i {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    padding: $spacer 2.5 * $spacer;
   }
 }

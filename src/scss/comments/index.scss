@@ -7,18 +7,23 @@
 
 .comment {
   display: grid;
-
   color: $black;
+  border-bottom: 1px solid $border-color;
+
+  margin: .5 * $spacer 0;
 
   &-header {
     display: grid;
     grid-gap: .25 * $spacer;
     grid-template-columns: 3 * $spacer auto 5 * $spacer;
+
+    border: none;
   }
 
   &.content {
     display: block;
-    margin-left: 3.5 * $spacer;
+    margin: 0 0 0 3.5 * $spacer;
+    border: none;
   }
 
   &.avatar {
@@ -36,16 +41,24 @@
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+
+    border: none;
+
+    &.primary {
+      background-color: $primary;
+    }
   }
 
   &.time {
     display: block;
     width: fit-content;
-    margin: 0 0 0 auto;
+    margin: 0 0 0 .5 * $spacer;
     justify-self: end;
     white-space: nowrap;
 
     color: $gray-500;
+
+    border: none;
   }
 
   &.actions {
@@ -54,12 +67,90 @@
     margin: .5*$spacer 0;
 
     color: $gray-500;
+    border: none;
 
     button {
       color: $gray-500 !important;
       display: flex;
       flex-direction: row;
       align-items: baseline;
+
+      border: none;
+      background: inherit;
+
+      &:hover {
+        color: $primary-darken !important;
+      }
     }
+  }
+
+  &.replay {
+    border: none;
+
+    .comment-header {
+      grid-template-columns: 2 * $spacer auto 5 * $spacer;
+    }
+
+    .comment.content {
+      margin: 0 0 0 2.5 * $spacer;
+    }
+    .avatar {
+      min-height: 2 * $spacer;
+      min-width: 2 * $spacer;
+      height: 2 * $spacer;
+      width: 2 * $spacer;
+    }
+  }
+
+  &.replays {
+    border-bottom: none;
+
+    .comment {
+      border: none;
+    }
+
+    .comment.avatar {
+      min-height:  2 * $spacer;
+      min-width:  2 * $spacer;
+      height: 2 * $spacer;
+      width: 2 * $spacer;
+    }
+  }
+}
+
+.comment-input {
+  display: grid;
+  grid-template-columns: 3 * $spacer auto;
+  grid-gap: .5 * $spacer;
+
+  margin-bottom: $spacer;
+  padding: $spacer 0;
+
+  border-bottom: 1px solid $border-color;
+
+  .avatar {
+    min-height:  3 * $spacer !important;
+    min-width:  3 * $spacer !important;
+    height: 3 * $spacer;
+    width: 3 * $spacer;
+  }
+
+  textarea {
+    padding: .25 * $spacer .5 * $spacer;
+    border: none;
+    border-bottom: 1px solid $border-color;
+    background-color: $gray-200;
+  }
+
+  button {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: fit-content;
+  }
+
+  small {
+    justify-self: end;
+    grid-row: 2/3;
+    grid-column: 2/3;
   }
 }

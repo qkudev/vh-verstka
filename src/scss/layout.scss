@@ -35,26 +35,15 @@
   }
 }
 
-.footer {
+.layout {
   display: flex;
   flex-direction: row;
 
-  justify-content: space-between !important;
-  border-top: 1px solid #DDD;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
+  padding: 0 $spacer;
+  margin: 0 auto;
 
-  padding: 1.5 * $spacer $spacer;
-  background-color: $gray-100;
-
-  &-item {
-    cursor: pointer !important;
-  }
-}
-
-.layout {
-  padding-top: 1.5rem;
+  max-width: 1200px;
+  height: 100%;
 
   &.h100 {
     display: grid;
@@ -62,15 +51,27 @@
     height: 100vh !important;
   }
 
-  &-menu {
-  }
-
-  &-content {
-  }
-
   &-login {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .layout {
+    padding: 0 3 * $spacer;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .layout {
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .layout {
+
   }
 }

@@ -4,6 +4,7 @@
 @import "layout";
 @import "~bootstrap/scss/bootstrap";
 @import "~slick-carousel/slick/slick.css";
+@import "~video.js/dist/video-js.min.css";
 @import "./fonts.scss";
 // Sidebar
 @import './sidebar/index';
@@ -17,6 +18,9 @@
 @import "./search/index";
 @import "./videoplayer/index";
 @import "./comments/index";
+@import "footer";
+@import "./video/index";
+@import "player/index";
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -25,6 +29,9 @@ body {
   color: #6A6A6A;
   margin: 0 !important;
   padding: 0 !important;
+
+  height: 100%;
+  min-height: 100%;
 }
 
 button {
@@ -76,7 +83,8 @@ i {
 }
 
 * {
-  outline-color: $primary;
+  outline: unset !important;
+  //outline-color: $primary;
 }
 
 .show-btn {
@@ -98,6 +106,12 @@ i {
 }
 
 a {
+  color: $black;
+
+  &.primary {
+    color: $primary;
+  }
+
   &.video-name {
     color: $black;
     overflow: hidden;
@@ -118,32 +132,14 @@ a {
   background: $gray-500;
 }
 
-.player-wrapper {
-  width: auto;
-  margin: .5 * $spacer 0;
-  //padding: 0  $spacer;
-}
-
-.video-playlist {
-  width: 100%;
-  padding: 0;
-  margin: 0 0 $spacer 0;
-}
-
 .video-info {
   color: $black;
+  border-bottom: 1px solid $border-color;
+  margin-bottom: $spacer;
 
   &-stats {
     align-content: baseline;
     color: $gray-700;
-  }
-
-  &.title {
-
-  }
-
-  &.description {
-
   }
 }
 
@@ -151,6 +147,18 @@ a {
   color: $primary;
 }
 
+.primary {
+  color: $primary;
+}
+
 .gray {
   color: $gray-500;
+}
+
+.gray-6 {
+  color: $gray-600;
+}
+
+.gray-7 {
+  color: $gray-700;
 }

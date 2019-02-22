@@ -1,0 +1,54 @@
+@import "../variables";
+@import "~bootstrap/scss/bootstrap";
+
+.video {
+
+  &-text {
+    white-space: unset;
+
+    &.hidden {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &-tags {
+    margin-top: 1.5 * $spacer;
+    margin-bottom: .5 * $spacer;
+
+   a {
+     padding: .25 * $spacer .5 * $spacer;
+     margin: 0 .25 * $spacer;
+
+     background-color: $gray-200;
+     color: $gray-700;
+     transition: all .2s ease-in-out;
+
+     &:hover {
+       text-decoration: none;
+       background-color: $gray-400;
+     }
+   }
+  }
+
+  &-description {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+#description-toggler {
+  white-space: nowrap;
+  padding: 0 !important;
+  margin: 0 .25 * $spacer 0 auto;
+}
+
+.video-playlist {
+  width: 100%;
+  padding: 0;
+  margin: 0 0 $spacer 0;
+
+  border-bottom: 1px solid $border-color;
+}

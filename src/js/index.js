@@ -1,13 +1,34 @@
-import $ from 'jquery'
-import popper from 'popper.js'
+import 'jquery/dist/jquery.min'
+import 'popper.js/dist/popper.min'
+import 'popper.js/dist/popper-utils.min'
+import 'bootstrap/dist/js/bootstrap.min'
+import 'video.js/dist/video.min'
+
 import '../scss'
 import './slicks'
-import * as utils from './utils'
+import './video'
 
-window.shout = utils.shout
+window._v = '0.1.0'
 
-window.$ = $
-window.popper = popper
+window.toggleMenu = function () {
+  const iconClose = 'icon-cancel'
+  const iconMenu = 'icon-menu'
+
+  const toggler = document.getElementById('menu-toggler')
+  const sideBar = document.getElementById('side-bar')
+
+  if (!(toggler && sideBar)) {
+    throw new Error('Could not find toggler or side bar')
+  }
+
+  if (toggler.classList.contains(iconMenu)) {
+    toggler.classList.remove(iconMenu)
+    toggler.classList.add(iconClose)
+  } else {
+    toggler.classList.remove(iconClose)
+    toggler.classList.add(iconMenu)
+  }
+}
 
 function toggleMenu () {
   let menu = document.getElementById('layout-menu')

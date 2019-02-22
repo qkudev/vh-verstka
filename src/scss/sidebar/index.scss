@@ -43,3 +43,30 @@ i {
     }
   }
 }
+
+#side-bar {
+  position: absolute;
+  z-index: 10000;
+  left: 0;
+  right: 0;
+
+  padding: $spacer 1.5 * $spacer;
+
+  background-color: $body-bg;
+  //-webkit-box-shadow: 0 1rem .5rem;
+  //-moz-box-shadow: 0 1rem .5rem;
+  //box-shadow: 0 1rem .5rem;
+}
+
+@media (max-width: 767px) {
+  #side-bar {
+  }
+}
+
+@media (min-width: 768px) {
+  #side-bar {
+    position: relative;
+    left: unset;
+    right: unset;
+  }
+}
