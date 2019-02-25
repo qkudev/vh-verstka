@@ -16,6 +16,19 @@ $(document).ready(function () {
 })
 
 $(document).ready(function () {
+  $('.slick-videos-big')
+    .slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      variableWidth: true,
+      prevArrow: '<button class="slick-prev slick-arrow slick-arrow-big" aria-label="Previous" type="button"></button>',
+      nextArrow: '<button class="slick-next slick-arrow slick-arrow-big" aria-label="Next" type="button"></button>',
+    })
+})
+
+$(document).ready(function () {
   $('.slick-channels').slick({
     infinite: true,
     slidesToShow: 1,
