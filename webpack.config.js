@@ -31,7 +31,7 @@ fs.readdirSync('./src')
   })
 
 const images = fs.readdirSync('./src/static/img/')
-  .filter(file => file.match(/.*\.(jpg|jpeg|png|svg)$/))
+  .filter(file => file.match(/.*\.(jpg|jpeg|png|svg|gif)$/))
   .map(i => './static/img/' + i)
 
 const fonts = fs.readdirSync('./src/static/fonts')
@@ -75,7 +75,7 @@ module.exports = {
       },
       // Images loader
       {
-        test: /\.(jpg|jpeg|png|svg)$/,
+        test: /\.(jpg|jpeg|png|svg|gif)$/,
         use: [{
           loader: 'file-loader',
           options: {
@@ -119,6 +119,7 @@ module.exports = {
           /\.jpg/,
           /\.jpeg/,
           /\.png/,
+          /\.gif/,
           /\.scss/,
           /\.(woff(2)?|woff|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/
         ],
