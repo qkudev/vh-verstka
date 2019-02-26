@@ -9,10 +9,10 @@
   .login-form {
     display: flex;
     flex-direction: column;
-    width: 475px;
+    width: 100%;
     margin-top: 9vh;
     background: #fff;
-    padding: 30px 30px 50px;
+    padding: 0 30px 50px;
     box-sizing: border-box;
   }
 
@@ -66,6 +66,14 @@
     text-align: center;
     color: #9d9d9d;
     line-height: 1.5;
+    padding-top: 80px;
+    font-size: 13px;
+    a {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1.69;
+      color: #ff0000;
+    }
   }
 
   span {
@@ -269,4 +277,9 @@
     margin-right: 0;
     margin-bottom: 20px;
   }
+}
+
+.layout-upload-step-one {
+  padding-top: 113px;
+  padding-bottom: 140px;
 }
