@@ -24,7 +24,7 @@
 @import "./signin/index";
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Conv_TTNorms-Medium';
   background: #fff;
   font-size: 1rem;
   color: #6A6A6A;
@@ -36,6 +36,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.layout-br {
+
 }
 
 .footer {
@@ -90,8 +94,16 @@ i {
   }
 }
 
-.navbar {
+.layout-br {
   border-bottom: 1px solid $border-color;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.btn {
+  border-radius: 3px;
 }
 
 * {
