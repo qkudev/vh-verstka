@@ -4,6 +4,7 @@
 
   &-text {
     white-space: unset;
+    font-weight: 300;
 
     &.hidden {
       white-space: nowrap;
@@ -35,6 +36,10 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
+
+    &-footer {
+      color: $gray-500;
+    }
   }
 }
 
@@ -47,8 +52,6 @@
 .video-playlist {
   width: 100%;
   margin: 0 0 $spacer 0;
-
-  border-bottom: 1px solid $border-color;
 
   &.item {
     display: flex;
@@ -91,6 +94,28 @@
 
       .video-playlist-item-info {
         grid-template-rows: 3rem 1.5rem 1.5rem auto;
+      }
+    }
+
+    &.small {
+      min-height: 90px;
+      height: 90px;
+      padding-bottom: .25 * $spacer;
+      margin-bottom: 1 * $spacer;
+
+      .video-playlist.preview {
+        min-height: 90px;
+        min-width: 145px;
+        height: 90px;
+        width: 145px;
+        margin-right: $spacer;
+
+        border-radius: .25rem;
+      }
+
+      .video-playlist-item-info {
+        grid-template-rows: 2.5rem 1.5rem 1.5rem auto;
+        grid-gap: 0;
       }
     }
   }
@@ -145,4 +170,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.video-actions {
+
 }

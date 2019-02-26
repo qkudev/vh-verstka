@@ -24,10 +24,11 @@
     max-width: 50 * $spacer;
 
     padding: 0 $spacer;
+    padding-left: .5 * $spacer;
     margin: 0 auto;
 
     i {
-      font-size: 1.1rem;
+      font-size: 1rem;
       margin: auto .25 * $spacer;
     }
 
@@ -39,9 +40,9 @@
 
     input {
       width: 100%;
-      font-size: 1.1rem;
+      font-size: 1rem;
       border: none;
-      padding: .25 * $spacer $spacer;
+      padding: .05 * $spacer .5 * $spacer;
       outline: none;
       border-bottom: 2px solid rgba(0,0,0, 0);
       transition: all .2s ease-in-out;
