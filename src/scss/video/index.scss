@@ -69,6 +69,7 @@
       .video-playlist-item-info {
         grid-template-rows: 1.5rem 1.5rem 1.5rem;
         grid-gap: 0;
+        padding-top: 5px;
       }
     }
 
@@ -102,9 +103,10 @@
 
     min-height: 112.5px;
     min-width: 200px;
-    height: 112.5px;
+    height: 127px;
     width: 200px;
 
+    border-radius: 5px;
     margin: 0 .5 * $spacer 0 0;
 
     -webkit-background-size: cover;
