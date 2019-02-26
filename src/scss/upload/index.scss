@@ -97,6 +97,7 @@
   }
   &-info {
     padding-left: 35px;
+    width: 100%;
     &__text {
       background: #fbfbfb;
       padding: 21px;
@@ -172,7 +173,7 @@
   }
   &-bar {
     .btn-publish {
-      margin-top: 12px;
+      margin-top: 7px;
     }
     &-status {
       padding: 15px;
@@ -183,10 +184,15 @@
         color: #a6a6a6;
       }
       &__text {
-        font-size: 13px;
+        font-size: 12px;
+        text-align: center;
       }
       a {
-        font-size: 14px;
+        font-size: 12px;
+        text-align: center;
+        display: block;
+        color: #ff0000;
+        padding-top: 12px;
       }
     }
     &-settings {
@@ -282,4 +288,13 @@
 .layout-upload-step-one {
   padding-top: 113px;
   padding-bottom: 140px;
+}
+
+.upload-post-info__text__area {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 13px;
+  line-height: 1.62;
+  color: #474747;
 }
