@@ -290,3 +290,108 @@
     margin-left: auto;
   }
 }
+
+.category-header-menu.category-header-menu__board {
+  box-shadow: 0px 8px 21px 0 rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+}
+
+.category-header-menu__board__link__active {
+  color: #000000 !important;
+}
+
+.category-header-menu__board__link {
+  color: #a9a9a9 !important;
+}
+
+.category-header-menu.category-header-menu__board {
+  display: flex;
+  justify-content: space-between;
+  height: auto !important;
+}
+
+.category-header-menu__board-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 59px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.category-bcg.category-header {
+  background-repeat: no-repeat;
+}
+
+.category-header-menu.category-header-menu__board {
+  align-items: baseline;
+}
+
+.category-header-menu__board-video__play {
+  padding-right: 30px;
+  img {
+    width: 379.6px;
+    height: 219.9px;
+  }
+}
+
+.category-header-menu.category-header-menu__board {
+  display: block;
+  padding: 0;
+}
+
+.category-header-menu__board-links {
+  padding-left: 33px;
+}
+
+.category-header-menu__board-search {
+  padding-right: 33px;
+}
+
+.category-header__board {
+  max-height: 591px !important;
+}
+
+.category-bcg.category-header.category-header__board {
+  background-repeat: no-repeat !important;
+}
+
+.category-header-menu__board-video {
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
+}
+
+.video-playlist-item-info-stats__channel {
+  font-size: 14px !important;
+}
+
+.category-header-menu__board-video__info__title {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  color: #000000;
+}
+
+.category-header-menu__board-video__info__desc {
+  font-size: 14px;
+  line-height: 1.57;
+  color: #000000;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.category-header-menu__board-video__info__more {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.47;
+  color: #959595;
+}
+
+.category-header-menu__board-video__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

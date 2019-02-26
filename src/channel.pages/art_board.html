@@ -9,48 +9,53 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <title>Channel Home</title>
+  <link rel="stylesheet" href="../scss/channels/index.scss">
 </head>
 <body>
 
 <!--Navigation start-->
-<nav class="navbar navbar-expand-md px-3 px-md-5">
-  <!-- Logo -->
-  <a href="#" class="d-md-none">
-    <i class="icon-menu" style="font-size: 1.25rem;"></i>
-  </a>
-  <a class="d-none d-md-block navbar-brand" href="index.html">
-    <img src="/static/img/logo_black@2x.png" alt="" width="170px" height="35px">
-  </a>
-  <!--Navbar collapsible start-->
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <!-- Search -->
-    <div class="navbar-search">
-      <i class="icon-search"></i>
-      <input type="text" placeholder="Search for videos">
-      <ul class="search-results list-group">
-      </ul>
-    </div>
-    <div class="d-inline-flex navbar-buttons flex-row-reverse">
-      <div class="nav-link pr-0">
-        <button class="btn btn-primary my-2 my-sm-0 btn-search" type="submit">
-          <i class="fas fa-cloud mx-2 my-auto"></i>
-          Upload a video
-        </button>
+<div class="layout-br">
+  <div class="layout">
+    <nav class="navbar navbar-expand-md">
+      <!-- Logo -->
+      <a href="#" class="d-md-none">
+        <i class="icon-menu" style="font-size: 1.25rem;"></i>
+      </a>
+      <a class="d-none d-md-block navbar-brand" href="../index.html">
+        <img src="/static/img/logo_black@2x.png" alt="" width="170px" height="35px">
+      </a>
+      <!--Navbar collapsible start-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Search -->
+        <div class="navbar-search">
+          <i class="icon-search"></i>
+          <input type="text" placeholder="Search for videos">
+          <ul class="search-results list-group">
+          </ul>
+        </div>
+        <div class="d-inline-flex navbar-buttons flex-row-reverse">
+          <div class="nav-link pr-0">
+            <button class="btn btn-primary my-2 my-sm-0 btn-search" type="submit">
+              <i class="fas fa-cloud mx-2 my-auto"></i>
+              Upload a video
+            </button>
+          </div>
+          <div class="nav-link navbar-buttons-item">
+            <a href="../index-signed.html" class="btn mx-1">Sign In</a>
+          </div>
+        </div>
       </div>
-      <div class="nav-link navbar-buttons-item">
-        <a href="index-signed.html" class="btn mx-1">Sign In</a>
-      </div>
-    </div>
-  </div>
-  <!--Navbar collapsible finish-->
+      <!--Navbar collapsible finish-->
 
-  <!--Navbar mobile start-->
-  <div class="d-block d-md-none nav-mobile">
-    <i class="icon-search"></i>
-    <i class="icon-user"></i>
+      <!--Navbar mobile start-->
+      <div class="d-block d-md-none nav-mobile">
+        <i class="icon-search"></i>
+        <i class="icon-user"></i>
+      </div>
+      <!--Navbar mobile finish-->
+    </nav>
   </div>
-  <!--Navbar mobile finish-->
-</nav>
+</div>
 <!--Navigation finish-->
 
 <!--Layout start-->
@@ -132,40 +137,50 @@
   <!--Content start-->
   <div class="layout-content col-12 col-lg-10">
 
-    <img src="https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-         class="category-bg">
-    <div class="category-header">
-      <a href="#" class="category-heading avatar"></a>
-      <div class="category-heading">
-        <div class="category-heading info">
-          <a href="#">Channel Name</a>
-          2,012 followers
-        </div>
-        <button class="btn btn-primary">Subscribe</button>
+    <div class="category-bcg category-header category-header__board" style="background: url('/static/img/layer-26.png')">
+      <div class="category-header__logo">
+        <a href="" style="background: url('/static/img/layer-30.png')"></a>
       </div>
-
-      <div class="d-flex flex-column-reverse flex-lg-row">
-        <ul class="nav nav-tabs category-nav" style="min-width: fit-content;">
-          <li class="nav-item">
-            <a class="nav-link active" href="/channel/art_board.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/channel/videos.html">Videos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/channel/playlists.html">Playlists</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/channel/community.html">Community</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/channel/about.html">About</a>
-          </li>
-        </ul>
-        <li class="channel-search">
-          <i class="icon-search mx-2"></i>
-          <input placeholder="Search on channel" style="width: 100%;">
-        </li>
+      <div class="category-header-user">
+        <div class="category-header-user-info">
+          <div class="category-header-user-info__name">FOX News Channel</div>
+          <div class="category-header-user-info__follow">801 followers</div>
+        </div>
+        <div class="category-header-user-sub">
+          <button class="btn btn-primary my-2 my-sm-0 btn-subscribe">Subscribe</button>
+        </div>
+      </div>
+      <div class="category-header-menu category-header-menu__board">
+        <div class="category-header-menu__board-header">
+          <div class="category-header-menu__board-links">
+            <a href="#" class="category-header-menu__link category-header-menu__board__link__active">Home</a>
+            <a href="#" class="category-header-menu__link category-header-menu__board__link">Videos</a>
+            <a href="#" class="category-header-menu__link category-header-menu__board__link">Playlists</a>
+            <a href="#" class="category-header-menu__link category-header-menu__board__link">Community</a>
+            <a href="#" class="category-header-menu__link category-header-menu__board__link">About channel</a>
+          </div>
+          <div class="category-header-menu__board-search">
+            Replace to search
+          </div>
+        </div>
+        <div class="category-header-menu__board-video">
+          <div class="category-header-menu__board-video__play">
+            <img src="/static/img/layer-26.png" alt="">
+          </div>
+          <div class="category-header-menu__board-video__info">
+            <div class="category-header-menu__board-video__info__title">
+              Did Intel CHEAT on Benchmarks?? - The WAN Show Oct 12, 2018
+            </div>
+            <div class="video-playlist-item-info-stats video-playlist-item-info-stats__channel">
+              <span>2 weeks ago</span>
+              <span>Views: 2,1 K</span>
+            </div>
+            <div class="category-header-menu__board-video__info__desc">
+              Thanks to Skillshare for sponsoring this video! First 500 people will get a 2 month FREE trial here: https://skl.sh/2KbaJDs
+            </div>
+            <a href="#" class="category-header-menu__board-video__info__more">See more</a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -184,9 +199,16 @@
               16:07
             </a>
             <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
+              <div class="video-playlist-item-info__title">
+                <a href="#">Very very very very very long video title</a>
+              </div>
+              <div class="video-playlist-item-info__name">
+                <a href="#" class="video-playlist-item-info__channel">Added by FOX News Channel</a>
+              </div>
+              <div class="video-playlist-item-info-stats">
+                <span>2 weeks ago</span>
+                <span>Views: 2,1 K</span>
+              </div>
             </div>
           </div>
           <!-- VIDEO ITEM -->
@@ -196,9 +218,16 @@
               16:07
             </a>
             <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
+              <div class="video-playlist-item-info__title">
+                <a href="#">Very very very very very long video title</a>
+              </div>
+              <div class="video-playlist-item-info__name">
+                <a href="#" class="video-playlist-item-info__channel">Added by FOX News Channel</a>
+              </div>
+              <div class="video-playlist-item-info-stats">
+                <span>2 weeks ago</span>
+                <span>Views: 2,1 K</span>
+              </div>
             </div>
           </div>
           <!-- VIDEO ITEM -->
@@ -208,9 +237,16 @@
               16:07
             </a>
             <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
+              <div class="video-playlist-item-info__title">
+                <a href="#">Very very very very very long video title</a>
+              </div>
+              <div class="video-playlist-item-info__name">
+                <a href="#" class="video-playlist-item-info__channel">Added by FOX News Channel</a>
+              </div>
+              <div class="video-playlist-item-info-stats">
+                <span>2 weeks ago</span>
+                <span>Views: 2,1 K</span>
+              </div>
             </div>
           </div>
           <!-- VIDEO ITEM -->
@@ -220,9 +256,16 @@
               16:07
             </a>
             <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
+              <div class="video-playlist-item-info__title">
+                <a href="#">Very very very very very long video title</a>
+              </div>
+              <div class="video-playlist-item-info__name">
+                <a href="#" class="video-playlist-item-info__channel">Added by FOX News Channel</a>
+              </div>
+              <div class="video-playlist-item-info-stats">
+                <span>2 weeks ago</span>
+                <span>Views: 2,1 K</span>
+              </div>
             </div>
           </div>
         </div>
@@ -241,9 +284,16 @@
               16:07
             </a>
             <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
+              <div class="video-playlist-item-info__title">
+                <a href="#">Very very very very very long video title</a>
+              </div>
+              <div class="video-playlist-item-info__name">
+                <a href="#" class="video-playlist-item-info__channel">Added by FOX News Channel</a>
+              </div>
+              <div class="video-playlist-item-info-stats">
+                <span>2 weeks ago</span>
+                <span>Views: 2,1 K</span>
+              </div>
             </div>
           </div>
           <!-- VIDEO ITEM -->
@@ -253,9 +303,16 @@
               16:07
             </a>
             <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
+              <div class="video-playlist-item-info__title">
+                <a href="#">Very very very very very long video title</a>
+              </div>
+              <div class="video-playlist-item-info__name">
+                <a href="#" class="video-playlist-item-info__channel">Added by FOX News Channel</a>
+              </div>
+              <div class="video-playlist-item-info-stats">
+                <span>2 weeks ago</span>
+                <span>Views: 2,1 K</span>
+              </div>
             </div>
           </div>
           <!-- VIDEO ITEM -->
@@ -265,9 +322,16 @@
               16:07
             </a>
             <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
+              <div class="video-playlist-item-info__title">
+                <a href="#">Very very very very very long video title</a>
+              </div>
+              <div class="video-playlist-item-info__name">
+                <a href="#" class="video-playlist-item-info__channel">Added by FOX News Channel</a>
+              </div>
+              <div class="video-playlist-item-info-stats">
+                <span>2 weeks ago</span>
+                <span>Views: 2,1 K</span>
+              </div>
             </div>
           </div>
           <!-- VIDEO ITEM -->
@@ -277,9 +341,16 @@
               16:07
             </a>
             <div class="video-playlist-item-info">
-              <a href="#">Very very very very very long video title Very very very very very long video title</a>
-              <a href="#">channel name</a>
-              Views: 2,1k
+              <div class="video-playlist-item-info__title">
+                <a href="#">Very very very very very long video title</a>
+              </div>
+              <div class="video-playlist-item-info__name">
+                <a href="#" class="video-playlist-item-info__channel">Added by FOX News Channel</a>
+              </div>
+              <div class="video-playlist-item-info-stats">
+                <span>2 weeks ago</span>
+                <span>Views: 2,1 K</span>
+              </div>
             </div>
           </div>
         </div>
