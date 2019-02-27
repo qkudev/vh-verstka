@@ -120,7 +120,7 @@ module.exports = {
           /\.jpeg/,
           /\.png/,
           /\.gif/,
-          /\.scss/,
+          /\.*css/,
           /\.(woff(2)?|woff|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/
         ],
         options: {
