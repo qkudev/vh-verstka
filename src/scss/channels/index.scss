@@ -246,12 +246,12 @@
 .channel-heading {
   display: grid;
   grid-gap: .5 * $spacer;
-  grid-template-columns: 4 * $spacer  auto 7 * $spacer;
+  grid-template-columns: 3 * $spacer  auto 7 * $spacer;
   margin-bottom: .5 * $spacer;
 
   &.avatar {
-    height: 4 * $spacer;
-    width: 4 * $spacer;
+    height: 3 * $spacer;
+    width: 3 * $spacer;
 
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
