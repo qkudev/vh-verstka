@@ -87,7 +87,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.slick-channel-playlists')
     .slick({
-      infinite: true,
+      infinite: false,
       slidesToShow: 2,
       slidesToScroll: 1,
       variableWidth: true,

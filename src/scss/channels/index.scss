@@ -292,7 +292,7 @@
 }
 
 .category-header-menu.category-header-menu__board {
-  box-shadow: 0px 8px 21px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 0px 21px 0 rgba(0, 0, 0, 0.07);
   background-color: #ffffff;
 }
 
@@ -328,7 +328,9 @@
 }
 
 .category-header-menu__board-video__play {
-  padding-right: 30px;
+  margin-right: 30px;
+  width: 380px;
+  height: 220px;
   img {
     width: 379.6px;
     height: 219.9px;
@@ -348,10 +350,6 @@
   padding-right: 33px;
 }
 
-.category-header__board {
-  max-height: 591px !important;
-}
-
 .category-bcg.category-header.category-header__board {
   background-repeat: no-repeat !important;
 }
@@ -362,6 +360,7 @@
   padding-top: 35px;
   padding-bottom: 35px;
   display: flex;
+  box-shadow: 0px 8px 21px 0 rgba(0, 0, 0, 0.07);
 }
 
 .video-playlist-item-info-stats__channel {
@@ -394,4 +393,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.category-header-menu__board-wrapper {
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+.slick-channel-playlists__play {
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  color: #6a6a6a;
+}
+
+.slick-channel-playlists__title {
+  font-size: 14px;
+  padding-bottom: 8px;
 }
