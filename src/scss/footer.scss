@@ -1,19 +1,25 @@
 @import "variables";
 
-.footer {
+.footer-wrapper {
   position: relative;
   width: 100vw;
-  padding: .5 * $spacer $spacer;
-  margin-top: $spacer;
-
-  display: grid;
-  grid-gap: .25 * $spacer;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr;
-  justify-items: center;
-
   background-color: $gray-100;
   border-top: 1px solid #DDD;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  padding: $spacer $spacer;
+  margin-top: $spacer;
+
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   &:nth-child(n) {
     color: $black;
@@ -21,6 +27,18 @@
 
   a {
     color: $black;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+
+    a, .dropdown-toggle {
+      padding: .5 * $spacer  1.5 * $spacer;
+      width: fit-content;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -33,17 +51,23 @@
 }
 
 // small devices
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .footer {
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
 
-    padding: $spacer 2.5 * $spacer;
+    .footer-item {
+      flex-direction: column;
+      margin: 0 auto;
+
+      a {
+
+      }
+    }
   }
 }
 
 // medium devices
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .footer {
     flex-direction: row;
   }
@@ -51,5 +75,5 @@
 
 // large devices
 @media (min-width: 1200px) {
-
+  padding: 3 * $spacer 1.5 * $spacer !important;
 }

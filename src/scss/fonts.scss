@@ -84,6 +84,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cog-outline:before { content: ''; }
 .icon-star:before { content: '\e800'; } /* 'î €' */
 .icon-search:before { content: '\e801'; } /* 'î ' */
 .icon-anon:before { content: '\e802'; } /* 'î ‚' */

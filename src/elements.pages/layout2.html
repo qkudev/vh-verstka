@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!-- Responsive display tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>Single Video Page</title>
+</head>
+<body>
+
+<!--Navigation start-->
+<div class=" navbar-wrapper">
+  <nav class="navbar navbar-expand-md">
+    <!-- Logo -->
+    <a href="#" class="d-md-none">
+      <i class="icon-menu" style="font-size: 1.25rem;"></i>
+    </a>
+    <a class="d-none d-md-block navbar-brand" href="/index/index.html">
+      <img class="navbar-logo" src="/static/img/logo_black@2x.png" alt="" width="160px" height="35px">
+    </a>
+    <!--Navbar collapsible start-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Search -->
+      <div class="navbar-search">
+        <i class="icon-search"></i>
+        <input type="text" placeholder="Search for videos">
+        <ul class="search-results list-group">
+        </ul>
+      </div>
+      <div class="navbar-buttons">
+        <div class="nav-link px-1">
+          <a href="#"><i class="icon-cloud navbar-upload"></i></a>
+        </div>
+
+        <div class="nav-link dropleft">
+          <button class="navbar-notifications active icon-bell" id="dropdownNotificationsButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+          <!-- NOTIFICATIONS DROPDOWN -->
+          <div class="dropdown-menu notifications-dropdown">
+            <a class="dropdown-header" href="#">Notifications</a>
+            <a class="dropdown-item" href="#">
+              <div class="notification-avatar"></div>
+              <div class="notification-info">
+
+              </div>
+            </a>
+            <a class="dropdown-item" href="#">Settings</a>
+            <a class="dropdown-item" href="#">Language</a>
+            <div class="dropdown-item"><button class="btn btn-block btn-gray">Clear all notifications</button></div>
+          </div>
+        </div>
+        <div class="nav-link dropleft">
+          <button class="navbar-user" id="dropdownUserButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+
+          <!-- USER DROPDOWN -->
+          <div class="dropdown-menu user-dropdown" aria-labelledby="dropdownUserButton">
+            <a class="dropdown-header" href="#">
+              <img src="/static/img/ava-red.png">Username
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="icon-play-1"></i>
+              Create channel
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-cog"></i>Settings</a>
+            <a class="dropdown-item" href="#">
+              <i class="icon-globe-1"></i>Language: English
+            </a>
+            <a class="dropdown-item border-top" href="#">
+              <i class="icon-clipboard"></i>Logout
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Navbar collapsible finish-->
+
+    <!--Navbar mobile start-->
+    <div class="d-block d-md-none nav-mobile">
+      <i class="icon-search"></i>
+      <i class="icon-user"></i>
+    </div>
+
+    <!--Navbar mobile finish-->
+  </nav>
+</div>
+<!--Navigation finish-->
+
+<!--Layout start-->
+<div class="layout">
+  <!--Layout Menu-->
+  <div class="d-none d-lg-block col-lg-2">
+    <div class="menu-group d-flex flex-column sidebar">
+      <div class="menu-group header sidebar__title">Main</div>
+      <ul>
+        <li>
+          <a class="sidebar__item sidebar__item--active" href="#">
+            <i class="icon-home"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-star"></i>
+            Popular
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-certificate-outline"></i>
+            New
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-random"></i>
+            Random
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu-group d-flex flex-column sidebar">
+      <div class="menu-group header sidebar__title">Popular categories</div>
+      <ul>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-onion"></i>
+            Darknet
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-anon"></i>
+            Anonymity
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-article-alt"></i>
+            All categories
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu-group d-flex flex-column sidebar">
+      <div class="menu-group header sidebar__title">Info</div>
+      <ul>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-rules"></i>
+            Rules
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__item" href="#">
+            <i class="icon-plant"></i>
+            Our Telegram
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--Content start-->
+  <div class="layout-content col-12 col-lg-10">
+    CONTENT
+  </div>
+  <!--Content finish-->
+</div>
+
+<!--Footer start-->
+<div class="footer-wrapper">
+  <div class="footer">
+    <div class="footer-item">
+      <a href="#">© 2018 dark.video</a>
+      <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="icon-globe-1"></i>
+        Language: English
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Russian</a>
+          <a class="dropdown-item active" href="#">English</a>
+          <a class="dropdown-item" href="#">Germany</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-item">
+      <a href="#">Rules and conditions</a>
+      <a href="#">Telegram channel</a>
+    </div>
+  </div>
+</div>
+<!--Footer finish-->
+</body>
+</html>

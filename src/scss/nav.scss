@@ -14,10 +14,27 @@
 }
 
 .navbar {
-  margin-bottom: $spacer;
   max-width: 1200px;
+  font-weight: 500 !important;
+
+  &-logo {
+    margin-top: 1px;
+    margin-left: 1.5 * $spacer;
+
+    height: 34px;
+  }
+
+  &-wrapper {
+    padding: .125rem 0 .125rem 0;
+    margin: 0 0 2.5 * $spacer 0;
+
+    border-bottom: 1px solid $border-color;
+  }
 
   &-search {
+    .icon-search {
+      margin-right: .5 * $spacer;
+    }
     position: relative;
     display: flex;
     flex-direction: row;
@@ -59,10 +76,24 @@
   }
 
   &-buttons {
+    display: flex;
+    flex-direction: row;
+
     width: fit-content;
     outline: none !important;
     white-space: nowrap;
     align-items: center;
+
+    .nav-link {
+      button {
+        margin: 0;
+        padding: .25 * $spacer $spacer;
+
+        img {
+          margin-right: .5 * $spacer;
+        }
+      }
+    }
 
     button {
       white-space: inherit;
@@ -90,6 +121,41 @@
       white-space: inherit;
     }
   }
+
+  &-user {
+    height: 40px;
+    width: 40px;
+
+    border: none;
+
+    background-image: url('/static/img/ava-red.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &-notifications {
+    border: none;
+    padding-left: .25 * $spacer !important;
+    padding-right: .25 * $spacer !important;
+
+    font-size: 1.25rem;
+    color: $gray-500;
+
+    margin: auto 0;
+
+    &.active {
+      color: $gray-500;
+    }
+  }
+
+  &-upload {
+    color: $gray-500;
+    font-size: 1rem !important;
+
+    padding-top: .25rem;
+    padding-left: .25 * $spacer !important;
+    padding-right: .25 * $spacer !important;
+  }
 }
 
 .navigation {
@@ -109,5 +175,12 @@
 @media (min-width: 768px) {
   .navigation {
     padding: $spacer 2.5 * $spacer;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-wrapper {
+    padding-left: 3 * $spacer;
+    padding-right: 3 * $spacer;
   }
 }
