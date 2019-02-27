@@ -1,0 +1,59 @@
+.settings {
+
+  h1,h2,h3,h4,h5,h6 {
+    color: $black;
+  }
+
+  &.content {
+    margin: 0 2.5 * $spacer 0 0;
+    padding: 2.5 * $spacer 0;
+
+    h1,h2,h3,h4,h5,h6 {
+      margin-bottom: 1.5 * $spacer;
+    }
+  }
+
+  &.sider {
+    padding: 2.5 * $spacer 1.5 * $spacer;
+    background: $light;
+  }
+
+  &-sider-item {
+    border-bottom: 1px solid $border-color;
+    padding-bottom: $spacer;
+    margin-bottom: $spacer;
+
+    color: $gray-600;
+    font-weight: 500 !important;
+
+    input {
+      margin-right: .5 * $spacer;
+    }
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: row;
+
+    min-height: 128px;
+    max-height: 128px;
+
+    &-wrapper {
+      border-bottom: 1px solid $border-color;
+
+      padding-bottom: 2.5 * $spacer;
+    }
+
+    img {
+      min-height: 128px;
+      max-height: 128px;
+
+      width: auto;
+      margin: 0 0 0 auto;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: auto 0;
+    }
+  }
+}
