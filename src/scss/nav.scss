@@ -80,6 +80,7 @@
   &-buttons {
     display: flex;
     flex-direction: row;
+    background-color: $body-bg;
 
     width: fit-content;
     outline: none !important;
@@ -87,6 +88,7 @@
     align-items: center;
 
     .nav-link {
+      background-color: inherit;
       button {
         margin: 0;
         padding: .25 * $spacer $spacer;
@@ -133,6 +135,9 @@
     background-image: url('/static/img/ava-red.png');
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
   }
 
   &-notifications {
