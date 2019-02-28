@@ -60,3 +60,13 @@ window.showNavLang = function showNavLang () {
     // })
   }
 }())
+
+window.toggleAutoPlay = function () {
+  const autoPlayButton = document.getElementById('video-autoplay')
+  const active = 'active'
+
+  if (autoPlayButton) {
+    autoPlayButton.classList.contains(active) ?
+      autoPlayButton.classList.remove(active) : autoPlayButton.classList.add(active)
+  }
+}
