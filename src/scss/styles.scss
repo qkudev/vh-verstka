@@ -179,7 +179,11 @@ a {
 }
 
 .gray {
-  color: $gray-500;
+  color: #707070 !important;
+}
+
+.gray-lighter {
+  color: #9D9D9D !important;
 }
 
 .gray-6 {
@@ -198,5 +202,9 @@ a {
 .i-button {
   border: none;
   background-color: $body-bg;
+}
+
+.blue {
+  color: $color-blue !important;
 }
 

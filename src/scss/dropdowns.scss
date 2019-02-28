@@ -7,6 +7,7 @@
   background-color: $body-bg;
 
   left: -10rem !important;
+  z-index: 10000;
 
   a {
     display: flex;
@@ -77,6 +78,7 @@
   background-color: $body-bg;
 
   left: -10rem !important;
+  z-index: 10000;
 
   a {
     display: flex;
@@ -178,4 +180,10 @@
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+
+.dropdown-language {
+  a{
+    width: 100%;
+  }
 }
