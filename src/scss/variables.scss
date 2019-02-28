@@ -1,10 +1,14 @@
 $primary: #FE0000;
 $primary-darken: #C00;
 
+$text-gray: #ACACAC;
+$font-family-base: 'OpenSans-Regular', sans-serif;
+
 $defaultColor: #495057;
 
-$font-family-base: Roboto, serif;
-$font-weight-base: 400;
+//$font-family-base: Roboto, serif;
+//$font-weight-base: 400;
+$font-size-base: .8rem;
 
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
