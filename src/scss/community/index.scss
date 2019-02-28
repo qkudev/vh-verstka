@@ -1,0 +1,71 @@
+.channel-post-message__avatar__img {
+  width: 40px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.channel-post-message-content {
+  width: 100%;
+  padding-top: 9px;
+}
+
+.channel-post-message-content__form {
+  background: #f4f4f4;
+}
+
+.channel-post-message-content__title {
+  font-family: OpenSans-SemiBold, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  padding-bottom: 10px;
+}
+
+.channel-post-message-container {
+  padding-top: 38px;
+}
+
+.channel-post-message-content__form__area {
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: left;
+  color: #000000;
+}
+
+.channel-post-message-content-buttons__cancel {
+  font-family: OpenSans-Bold, sans-serif;
+  color: #b7b7b7;
+}
+
+.channel-post-message-content-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 16px;
+}
+
+.category-header-menu__black {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  .category-header-menu__board__link__active {
+    color: #ffffff !important;
+  }
+  .category-header-menu__board__link {
+    color: rgba(255, 255, 255, 0.4) !important;
+  }
+}
+
+.channel-post-message-content__form-actions {
+  padding: 15px 15px 13px 15px;
+  i:nth-child(1) {
+    margin-right: 10px;
+  }
+  i {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
+

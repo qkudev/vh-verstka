@@ -282,7 +282,7 @@
 
 .category-header-user-info__name {
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.45);
-  font-family: Conv_TTNorms-Medium, sans-serif;
+  font-family: 'OpenSans-SemiBold', sans-serif;
   font-size: 24px;
   font-weight: normal;
   font-style: normal;
@@ -341,7 +341,6 @@
   .category-header-menu__link {
     font-size: 15px;
     color: rgba(255, 255, 255, 0.4);
-    font-family: Conv_TTNorms-Medium, sans-serif;
     &__active {
       color: #ffffff;
     }
