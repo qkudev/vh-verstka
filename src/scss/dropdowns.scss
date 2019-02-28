@@ -3,6 +3,8 @@
 .user-dropdown {
   padding: 0;
   min-width: 250px;
+  box-shadow: $box-shadow-sm;
+  background-color: $body-bg;
 
   a {
     display: flex;
@@ -16,13 +18,32 @@
     }
 
     i {
+      width: 22px;
+      height: 22px;
+      margin-left: 0;
+      margin-right: $spacer;
+    }
+
+    img {
+      width: 22px;
+      height: 22px;
       margin-left: 0;
       margin-right: $spacer;
     }
   }
 
   .dropdown-item, .dropdown-header {
-    padding: .5 * $spacer $spacer;
+    padding: .75 * $spacer $spacer;
+    min-width: 256px;
+    max-height: 43px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .dropdown-item.tail {
+    max-height: unset;
   }
 
   .dropdown-header {
@@ -30,14 +51,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: start;
+    font-size: $font-size-base;
+    //padding-top: .5 * $spacer;
+    //padding-bottom: .5 * $spacer;
 
-    background-color: $gray-100;
+    background-color: rgb(251,251,251);
 
     img {
       height: 1.5rem;
       width: 1.5rem;
 
-      margin-right: .5 *  $spacer;
+      margin-right: $spacer;
     }
   }
 }
@@ -45,6 +69,7 @@
 .notifications-dropdown {
   padding: 0;
   min-width: 250px;
+  background-color: $body-bg;
 
   a {
     display: flex;
@@ -73,7 +98,13 @@
     align-items: center;
     justify-content: center;
 
-    background-color: $gray-100;
+    font-size: $font-size-base;
+
+    background-color: #F1F1F1;
+
+    &:hover {
+      text-decoration: none;
+    }
 
     img {
       height: 1.5rem;
@@ -87,6 +118,4 @@
 .notification-avatar {
   width: 1.5rem;
   height: 1.5rem;
-
-
 }
