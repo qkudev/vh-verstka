@@ -1,6 +1,8 @@
 $primary: #FE0000;
 $primary-darken: #C00;
 
+$secondary: #E3E3E3;
+
 $text-gray: #ACACAC;
 $font-family-base: 'OpenSans-Regular', sans-serif;
 
@@ -10,7 +12,12 @@ $defaultColor: #495057;
 //$font-weight-base: 400;
 $font-size-base: (7/8) * 1rem;
 
+// Colors
 $color-blue: #0F9FFF;
+$footer-bg: #F8F8F8;
+
+// Fonts
+$semiBold: OpenSans-SemiBold, serif;
 
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";

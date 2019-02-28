@@ -34,6 +34,7 @@
     "clean-webpack-plugin": "^1.0.1",
     "file-loader": "^3.0.1",
     "html-loader": "^0.5.5",
+    "jq-keyboard": "^1.0.2",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.7",
     "slick-carousel": "^1.8.1",

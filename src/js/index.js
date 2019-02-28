@@ -6,6 +6,10 @@ import '../scss'
 import './slicks'
 import './video'
 
+$(document).ready(function () {
+  $('autoplay').addClass('active')
+})
+
 window._v = '0.1.0'
 
 window.toggleMenu = function () {
@@ -28,14 +32,14 @@ window.toggleMenu = function () {
   }
 }
 
-function toggleMenu () {
+function toggleMenu() {
   let menu = document.getElementById('layout-menu')
   if (menu) {
     menu.style.display = 'block'
   }
 }
 
-window.showNavLang = function showNavLang () {
+window.showNavLang = function showNavLang() {
   console.log('LEL')
 };
 

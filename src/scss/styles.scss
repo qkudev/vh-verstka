@@ -23,8 +23,8 @@
 @import "./upload/index";
 @import "./signin/index";
 @import "./settings/index";
-@import "./local_fonts.css";
-@import "./dropdowns";
+@import "dropdown";
+@import "./thumbnails/index";
 
 body {
 
@@ -151,6 +151,10 @@ a {
     color: $gray-600;
     font-weight: 400;
   }
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .player-example {
@@ -254,3 +258,5 @@ a {
     transition: all .2s ease-in-out;
   }
 }
+
+
