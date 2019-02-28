@@ -355,22 +355,42 @@
                   <i class="icon-addlist mr-3"></i> Add to playlist
                 </button>
                 <div class="dropdown-menu rounded-lg shadow" aria-labelledby="dropdownMenuButton">
-                  <div class="dropdown-item-text border-bottom">Add video to playlist</div>
+                  <div class="dropdown-header">Add video to playlist</div>
                   <a class="dropdown-item border-bottom" href="#">Watch later videos</a>
                   <a class="dropdown-item border-bottom" href="#">Sample playlist name</a>
                   <div class="dropdown-item">
-                    <button class="btn btn-gray px-5">Add new playlist</button>
+                    <button class="btn btn-block btn-gray">Add new playlist</button>
                   </div>
                 </div>
               </div>
-              <div class="d-flex flex-row align-items-baseline ml-2">
-                <i class="icon-upload mx-2"></i>
-                <div class="d-none d-lg-block">Share</div>
+              <div class="dropdown">
+                <button class="i-button" type="button" id="shareButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="icon-upload mx-2"></i> Share
+                </button>
+                <div class="dropdown-menu rounded-lg shadow" aria-labelledby="dropdownMenuButton">
+                  <div class="dropdown-header">Share video</div>
+                  <div class="dropdown-item d-flex flex-column">
+                    <input type="text" value="https://dark.video/v/1s678KJ">
+                    <div class="d-flex flex-row align-items-baseline">
+                      <input type="checkbox" class="input-check mr-2">
+                      Start from: <input type="text" class="ml-3 mr-5 px-1" value="37:10">
+                    </div>
+                  </div>
+                  <div class="dropdown-item">
+                    <button class="btn btn-block btn-primary">Copy link</button>
+                  </div>
+                </div>
               </div>
-              <div class="d-flex flex-row align-items-baseline ml-2 video-actions">
-                <i class="icon-dot-3 mx-2"></i>
-                <div class="d-none d-lg-block">Report</div>
-              </div>
+              <div class="dropdown">
+                <button class="i-button" type="button" id="moreButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="icon-dot-3 mx-2"></i>More
+                </button>
+                <div class="dropdown-menu more" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item border-bottom" href="#"><i class="icon-flag-empty mr-1"></i> Report video</a>
+                  <a class="dropdown-item border-bottom" href="#">Download video</a>
+                  <a class="dropdown-item border-bottom" href="#">Download audio</a>
+                  <a class="dropdown-item border-bottom" href="#"><i class="icon-replay mr-1"></i> Post a video response</a>
+                </div>
             </div>
           </div>
           <div class="d-flex flex-row justify-content-between align-items-baseline mt-4">

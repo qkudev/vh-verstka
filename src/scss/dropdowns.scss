@@ -20,6 +20,14 @@
       color: $gray-600;
     }
 
+    button {
+      display: flex !important;
+      flex-direction: row !important;
+
+      color: #8D8D8D !important;
+      align-content: baseline !important;
+    }
+
     i {
       width: 22px;
       height: 22px;
@@ -36,9 +44,11 @@
   }
 
   .dropdown-item, .dropdown-header {
-    padding: .75 * $spacer $spacer;
+    padding: .75 * $spacer $spacer !important;
     min-width: 256px;
     max-height: 43px;
+    color: #8D8D8D !important;
+    display: flex;
 
     &:hover {
       text-decoration: none;
@@ -158,7 +168,7 @@
   margin-top: auto;
   margin-bottom: auto;
 
-  &::before{
+  &::before {
     color: $white;
   }
 }
@@ -195,7 +205,7 @@
   box-shadow: $box-shadow-sm;
   cursor: pointer;
 
-  a{
+  a {
     color: inherit !important;
     width: 100%;
     text-align: center;
@@ -205,11 +215,79 @@
   .dropdown-item {
     color: #707070 !important;
     min-width: 180px;
+    padding: .5 * $spacer $spacer;
   }
 
   .dropdown-item.icon-ok {
-    &::before{
+    &::before {
       margin-right: .5 * $spacer;
     }
+  }
+}
+
+#nav-language {
+  top: 10.2rem;
+  left: -25rem;
+  box-shadow: $box-shadow-sm;
+  z-index: 10000;
+}
+
+
+.dropdown {
+  &-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-size: $font-size-base;
+    background-color: rgb(251, 251, 251);
+    height: 43px;
+
+    border-bottom: 1px solid $border-color;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+  &-menu {
+    padding: 0;
+
+    min-width: 235px;
+  }
+
+  &-item {
+    padding: .5 * $spacer $spacer;
+    color: #8D8D8D;
+
+    button {
+      padding-top: .25 * $spacer;
+      padding-bottom: .25 * $spacer;
+    }
+
+    input {
+      margin: .5 * $spacer 0;
+
+      background-color: #F1F1F1;
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid rgb(215,215,215);
+    }
+
+    &:hover {
+      color: #6D6D6D;
+    }
+  }
+
+  &-item-text {
+    padding: .5 * $spacer $spacer;
+  }
+}
+
+.dropdown-menu.more {
+  left: -10rem !important;
+
+  a {
+    text-align: center;
   }
 }
