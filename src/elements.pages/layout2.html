@@ -150,12 +150,20 @@
             </a>
             <a class="dropdown-item" href="#">
               <i class="fas fa-cog"></i>Settings</a>
-            <a class="dropdown-item" href="#">
-              <i class="icon-globe-1"></i>Language: English
-            </a>
+            <button class="dropdown-item" id="nav-language-button" onclick="showNavLang()">
+              <i class="icon-globe-1 ml-0"></i>Language: English
+            </button>
             <a class="dropdown-item tail border-top py-3" href="#">
               <img src="/static/img/logout.png" alt="">Logout
             </a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div id="nav-language" class="dropdown-menu dropdown-language">
+            <a class="dropdown-item border-bottom" href="#">Russian</a>
+            <a class="dropdown-item icon-ok border-bottom" href="#">English</a>
+            <a class="dropdown-item " href="#">Germany</a>
           </div>
         </div>
       </div>

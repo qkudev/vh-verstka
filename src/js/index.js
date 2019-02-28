@@ -34,3 +34,29 @@ function toggleMenu () {
     menu.style.display = 'block'
   }
 }
+
+window.showNavLang = function showNavLang () {
+  console.log('LEL')
+};
+
+(function f() {
+  let d = document.getElementById('nav-language-button')
+  let dropdown = document.getElementById('nav-language')
+
+  if (d && dropdown) {
+    const showLang = () => dropdown.classList.add('show')
+    const hideLang = () => dropdown.classList.remove('show')
+
+    d.addEventListener('mouseover', showLang)
+    d.addEventListener('mouseleave', hideLang)
+
+    dropdown.addEventListener('mouseover', () => {
+      d.removeEventListener('mouseleave', hideLang)
+    })
+
+    dropdown.addEventListener('mouseleave', hideLang)
+    // dropdown.addEventListener('mouseleave', () => {
+    //   d.addEventListener('mouseleave', hideLang)
+    // })
+  }
+}())
