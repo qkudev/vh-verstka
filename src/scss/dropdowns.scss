@@ -183,7 +183,25 @@
 }
 
 .dropdown-language {
+  z-index: 10000;
+  padding: 0;
+  box-shadow: $box-shadow-sm;
+
   a{
+    color: inherit !important;
     width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .dropdown-item {
+    color: #707070 !important;
+    min-width: 180px;
+  }
+
+  .dropdown-item.icon-ok {
+    &::before{
+      margin-right: .5 * $spacer;
+    }
   }
 }
