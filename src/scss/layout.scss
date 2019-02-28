@@ -61,7 +61,7 @@
 
   //padding: 0 $spacer;
   padding: 0;
-  margin: $spacer auto;
+  margin: .75rem auto;
 
   width: 100%;
   max-width: 1200px;
@@ -111,4 +111,10 @@
   .layout {
 
   }
+}
+
+.notification-container {
+  display: block;
+  max-height: 300px;
+  overflow: scroll;
 }

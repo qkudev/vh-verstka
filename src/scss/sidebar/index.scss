@@ -4,6 +4,9 @@ i {
   font-family: 'fontello', sans-serif;
 }
 .sidebar {
+
+  margin-bottom: 0 !important;
+
   li {
     margin-bottom: 25px;
   }
@@ -11,7 +14,7 @@ i {
     font-size: 14px;
     margin-top: 0;
     font-weight: bold;
-    margin-bottom: 45px !important;
+    margin-bottom: 2.5rem !important;
   }
 
   &__item {

@@ -6,6 +6,8 @@
   box-shadow: $box-shadow-sm;
   background-color: $body-bg;
 
+  left: -10rem !important;
+
   a {
     display: flex;
     flex-direction: row;
@@ -55,11 +57,14 @@
     //padding-top: .5 * $spacer;
     //padding-bottom: .5 * $spacer;
 
-    background-color: rgb(251,251,251);
+    background-color: rgb(251, 251, 251);
 
     img {
       height: 1.5rem;
       width: 1.5rem;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
 
       margin-right: $spacer;
     }
@@ -70,6 +75,8 @@
   padding: 0;
   min-width: 250px;
   background-color: $body-bg;
+
+  left: -10rem !important;
 
   a {
     display: flex;
@@ -90,6 +97,12 @@
 
   .dropdown-item, .dropdown-header {
     padding: .5 * $spacer $spacer;
+
+    max-width: 256px;
+
+    .gray {
+      width: fit-content;
+    }
   }
 
   .dropdown-header {
@@ -99,8 +112,8 @@
     justify-content: center;
 
     font-size: $font-size-base;
-
-    background-color: #F1F1F1;
+    background-color: rgb(251, 251, 251);
+    height: 43px;
 
     &:hover {
       text-decoration: none;
@@ -116,6 +129,53 @@
 }
 
 .notification-avatar {
-  width: 1.5rem;
-  height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  background-color: #DDD;
+
+  min-width: 2rem;
+  min-height: 2rem;
+  max-width: 2rem;
+  max-height: 2rem;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+  margin-right: .5 * $spacer;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  &::before{
+    color: $white;
+  }
+}
+
+.notification-info {
+  width: 11rem;
+
+  &.title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  small {
+    color: #BDBDBD;
+  }
+}
+
+.notification-circle {
+  margin-top: .5rem;
+  min-height: .5 * $spacer;
+  max-height: .5 * $spacer;
+  min-width: .5 * $spacer;
+  max-width: .5 * $spacer;
+  background-color: #FF0000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
