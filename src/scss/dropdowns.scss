@@ -60,6 +60,11 @@
 
     background-color: rgb(251, 251, 251);
 
+    &:hover {
+      color: #8D8D8D;
+      cursor: default;
+    }
+
     img {
       height: 1.5rem;
       width: 1.5rem;
@@ -119,6 +124,8 @@
 
     &:hover {
       text-decoration: none;
+      color: #8D8D8D;
+      cursor: default;
     }
 
     img {
@@ -186,6 +193,7 @@
   z-index: 10000;
   padding: 0;
   box-shadow: $box-shadow-sm;
+  cursor: pointer;
 
   a{
     color: inherit !important;
