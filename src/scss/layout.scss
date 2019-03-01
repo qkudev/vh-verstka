@@ -56,10 +56,10 @@
 }
 
 .layout {
+  position: relative;
   display: flex;
   flex-direction: row;
 
-  //padding: 0 $spacer;
   padding: 0;
   margin: .75rem auto;
 
@@ -86,8 +86,28 @@
   }
 
   &.alt {
-    padding: 0!important;
+    padding: 0 !important;
     margin: 0 $spacer;
+  }
+
+  &.overlay {
+    z-index: -1;
+    &::before {
+      display: block;
+    }
+  }
+
+  &::before {
+    display: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(0,0,0, .3);
+    z-index: 10000;
   }
 }
 

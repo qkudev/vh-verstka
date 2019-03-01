@@ -11,6 +11,54 @@
 
   margin: .5 * $spacer 0;
 
+  .icon-dot-3 {
+    font-size: 1.05rem;
+    color: #bfbfbf;
+  }
+
+  .attachment {
+    border: none;
+    .video {
+      background: #f4f4f4;
+    }
+    img {
+      max-width: 255px;
+      max-height: 157px;
+    }
+    .category-header-menu__board-video__play {
+      height: 100%;
+    }
+    .category-header-menu__board-video__info__title {
+      font-size: 1.13 * $spacer;
+      font-family: OpenSans-Bold, sans-serif;
+    }
+    .video-playlist-item-info-stats__channel {
+      span {
+        padding-right: 30px;
+        color: #6a6a6a;
+        font-size: 0.8rem;
+        font-family: OpenSans-SemiBold, sans-serif;
+        &:nth-last-child(1) {
+          padding-right: 0;
+        }
+      }
+    }
+    .category-header-menu__board-video__info__desc {
+      font-size: 0.8rem;
+      padding-bottom: 0;
+    }
+    .category-header-menu__board-video {
+      padding: 20px !important;
+      box-shadow: none;
+    }
+  }
+
+  .dropleft.ml-auto.my-auto.show {
+    .icon-dot-3 {
+      color: #000;
+    }
+  }
+
   &-header {
     display: grid;
     grid-gap: .25 * $spacer;
