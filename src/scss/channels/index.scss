@@ -430,7 +430,8 @@
   }
 
   &-content {
-    overflow: scroll;
+    max-height: 400px;
+    overflow: auto;
   }
 }
 
@@ -462,4 +463,12 @@
     min-height: 33px;
     max-height: 33px;
   }
+}
+
+*::-webkit-scrollbar {
+  width: .5rem;
+  background-color: #E3E3E3;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #FF0000;
 }
