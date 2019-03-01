@@ -95,13 +95,13 @@
     font-size: 14px;
     font-weight: 500;
     padding-bottom: 11px;
+    font-family: OpenSans-Bold, sans-serif;
   }
   &-info {
     padding-left: 35px;
     width: 100%;
     &__text {
       background: #fbfbfb;
-      padding: 21px;
       border-top: 2px solid #d6d6d6;
       border-bottom: 2px solid #d6d6d6;
       line-height: 1.4;
@@ -197,7 +197,7 @@
       }
     }
     &-settings {
-      margin-top: 47px;
+      margin-top: 42px;
       .upload-post-settings-item__title {
         padding-bottom: 0;
       }
@@ -298,4 +298,5 @@
   font-size: 13px;
   line-height: 1.62;
   color: #474747;
+  padding: 21px;
 }
