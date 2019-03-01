@@ -95,7 +95,7 @@
       //white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      font-family: $semiBold;
+      font-family: $ff-semi-bold;
     }
 
     .channel {
@@ -110,7 +110,7 @@
 
       a {
         color: #6A6A6A !important;
-        font-family: $semiBold !important;
+        font-family: $ff-semi-bold !important;
       }
     }
 
@@ -140,7 +140,7 @@
 
     a {
       color: $black;
-      font-family: $semiBold;
+      font-family: $ff-semi-bold;
 
       &:hover {
         text-decoration: none;

@@ -374,6 +374,13 @@
 }
 
 .category-content {
+  &.about {
+    margin-top: 2.5 * $spacer;
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
   .slick-slide {
     div {
       height: 100% !important;

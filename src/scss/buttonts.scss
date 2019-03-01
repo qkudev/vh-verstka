@@ -1,0 +1,12 @@
+@import "variables";
+
+.btn-white {
+  background-color: $white;
+  border: none;
+  color: #9A9A9A;
+
+  &:hover {
+    background-color: $white;
+    color: #9A9A9A;
+  }
+}

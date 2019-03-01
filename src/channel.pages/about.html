@@ -13,44 +13,46 @@
 <body>
 
 <!--Navigation start-->
-<nav class="navbar navbar-expand-md px-3 px-md-5">
-  <!-- Logo -->
-  <a href="#" class="d-md-none">
-    <i class="icon-menu" style="font-size: 1.25rem;"></i>
-  </a>
-  <a class="d-none d-md-block navbar-brand" href="index.html">
-    <img src="/static/img/logo_black@2x.png" alt="" width="170px" height="35px">
-  </a>
-  <!--Navbar collapsible start-->
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <!-- Search -->
-    <div class="navbar-search">
-      <i class="icon-search"></i>
-      <input type="text" placeholder="Search for videos">
-      <ul class="search-results list-group">
-      </ul>
-    </div>
-    <div class="d-inline-flex navbar-buttons flex-row-reverse">
-      <div class="nav-link pr-0">
-        <button class="btn btn-primary my-2 my-sm-0 btn-search" type="submit">
-          <i class="fas fa-cloud mx-2 my-auto"></i>
-          Upload a video
-        </button>
+<div class=" navbar-wrapper">
+  <nav class="navbar navbar-expand-md">
+    <!-- Logo -->
+    <a href="#" class="d-md-none">
+      <i class="icon-menu" style="font-size: 1.25rem;"></i>
+    </a>
+    <a class="d-none d-md-block navbar-brand" href="/index/index.html">
+      <img class="navbar-logo" src="/static/img/logo_black@2x.png" alt="" width="160px" height="35px">
+    </a>
+    <!--Navbar collapsible start-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Search -->
+      <div class="navbar-search">
+        <i class="icon-search"></i>
+        <input type="text" placeholder="Search for videos">
+        <ul class="search-results list-group">
+        </ul>
       </div>
-      <div class="nav-link navbar-buttons-item">
-        <a href="index-signed.html" class="btn mx-1">Sign In</a>
+      <div class="navbar-buttons">
+        <div class="nav-link">
+          <a href="/index/index-signed.html" class="btn">Sign In</a>
+        </div>
+        <div class="nav-link">
+          <button class="btn btn-primary btn-search" type="submit">
+            <img src="/static/img/cloud.png" style="">
+            Upload a video
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  <!--Navbar collapsible finish-->
+    <!--Navbar collapsible finish-->
 
-  <!--Navbar mobile start-->
-  <div class="d-block d-md-none nav-mobile">
-    <i class="icon-search"></i>
-    <i class="icon-user"></i>
-  </div>
-  <!--Navbar mobile finish-->
-</nav>
+    <!--Navbar mobile start-->
+    <div class="d-block d-md-none nav-mobile">
+      <i class="icon-search"></i>
+      <i class="icon-user"></i>
+    </div>
+    <!--Navbar mobile finish-->
+  </nav>
+</div>
 <!--Navigation finish-->
 
 <!--Layout start-->
@@ -121,7 +123,7 @@
           </a>
         </li>
         <li>
-          <a class="sidebar__item" href="#">
+          <a class="sidebar__item blue" href="#">
             <i class="icon-plant"></i>
             Our Telegram
           </a>
@@ -129,60 +131,122 @@
       </ul>
     </div>
   </div>
+
   <!--Content start-->
   <div class="layout-content col-12 col-lg-10">
 
-    <img src="https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="category-bg">
-    <div class="category-header">
-      <a href="#" class="category-heading avatar"></a>
-      <div class="category-heading">
-        <div class="category-heading info">
-          <a href="#">Channel Name</a>
-          2,012 followers
-        </div>
-        <button class="btn btn-primary">Subscribe</button>
+    <div class="category-bcg category-header category-header__board" style="background: url('/static/img/layer-26.png')">
+      <div class="category-header__logo">
+        <a href="" style="background: url('/static/img/layer-30.png')"></a>
       </div>
-
-      <div class="d-flex flex-column-reverse flex-lg-row">
-        <ul class="nav nav-tabs category-nav" style="min-width: fit-content;">
-          <li class="nav-item">
-            <a class="nav-link" href="/channel/art_board.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/channel/videos.html">Videos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/channel/playlists.html">Playlists</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/channel/community.html">Community</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="/channel/about.html">About</a>
-          </li>
-        </ul>
-        <li class="channel-search">
-          <i class="icon-search mx-2"></i>
-          <input placeholder="Search on channel" style="width: 100%;">
-        </li>
+      <div class="category-header-user">
+        <div class="category-header-user-info">
+          <div class="category-header-user-info__name">FOX News Channel</div>
+          <div class="category-header-user-info__follow">801 followers</div>
+        </div>
+        <div class="category-header-user-sub">
+          <button class="btn btn-primary my-2 my-sm-0 btn-subscribe">Subscribe</button>
+        </div>
+      </div>
+      <div class="category-header-menu category-header-menu__board">
+        <div class="category-header-menu__board-header border-bottom">
+          <div class="category-header-menu__board-links">
+            <a href="#" class="category-header-menu__link category-header-menu__board__link__active">Home</a>
+            <a href="#" class="category-header-menu__link category-header-menu__board__link">Videos</a>
+            <a href="#" class="category-header-menu__link category-header-menu__board__link">Playlists</a>
+            <a href="#" class="category-header-menu__link category-header-menu__board__link">Community</a>
+            <a href="#" class="category-header-menu__link category-header-menu__board__link">About channel</a>
+          </div>
+          <div class="category-header-menu__board-search">
+            Replace to search
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="category-content">
-      <div class="d-flex flex-column flex-lg-row">
-        <div class="category-about-text mr-lg-3">
-          <h5 class="font-weight-bold">About "Channel Name" channel</h5>
-          <p>Some text some text some text some text some text some text some text some text some text some text some
-            text some text some text some text some text some text some text some text some text some text some text
-            some text some text some text some text some text some text some text some text some text some text some
-            text</p>
+    <div class="category-content about">
+      <div class="row">
+        <div class="col-9 channel-about">
+          <div class="mb-3">
+            <b>About channel</b>
+          </div>
+          <p>
+            The REACT Channel (from FBE) features a diverse lineup show formats including gaming, food, music, and game shows that feature people across generations and the FBE Staff that make all the videos! For newcomers, we’ve been making some of the web’s most popular series on this channel and across the web for over a decade, and recently have broken into TV & Feature Films as well! Subscribe today!
+          </p>
+          <p>
+            SCHEDULE - New Videos DAILY
+            SUN: Do They Know It?
+            MON: Guess That or The 10's or NEW Shows
+            TUES: REACT Gaming (& DTKI? OR Lyric Breakdown)
+            WEDS: Challenge Chalice
+            THURS: People vs. Food
+            FRIDAY: Laugh Challenge
+            SATURDAY: Staff Reacts
+          </p>
+          <p>
+            SSave there are 2nd uploads, they release at 10am.
+          </p>
+          <p class="mb-4">
+            Other channels by FBE
+            FBE: http://www.youtube.com/FBE - Award-winning REACT series, scripted, unscripted, animation, interactive, sketch comedy, and more.
+            FBE2: https://www.youtube.com/FBE2 - Daily Vlogs, and BTS from the studio
+            TWITCH http://www.twitch.tv/fbelive
+          </p>
         </div>
-        <div class="category-about-info">
-          <div>Statistics</div>
+        <div class="col-3 px-0 channel-about">
+          <div class="mb-3">
+            <b>Statistics</b>
+          </div>
           <div class="border-bottom my-2">Created Aug 10, 2018</div>
           <div>801 followers</div>
         </div>
       </div>
+
+      <!-- Button trigger modal -->
+      <button class="btn btn-primary btn-lg px-3" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal modal-about fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body p-4">
+              <div class="modal-about-content">
+                <p>
+                  The REACT Channel (from FBE) features a diverse lineup show formats including gaming, food, music, and game shows that feature people across generations and the FBE Staff that make all the videos! For newcomers, we’ve been making some of the web’s most popular series on this channel and across the web for over a decade, and recently have broken into TV & Feature Films as well! Subscribe today!
+                </p>
+                <p>
+                  SCHEDULE - New Videos DAILY
+                  SUN: Do They Know It?
+                  MON: Guess That or The 10's or NEW Shows
+                  TUES: REACT Gaming (& DTKI? OR Lyric Breakdown)
+                  WEDS: Challenge Chalice
+                  THURS: People vs. Food
+                  FRIDAY: Laugh Challenge
+                  SATURDAY: Staff Reacts
+                </p>
+                <p>
+                  SSave there are 2nd uploads, they release at 10am.
+                </p>
+                <p class="mb-4">
+                  Other channels by FBE
+                  FBE: http://www.youtube.com/FBE - Award-winning REACT series, scripted, unscripted, animation, interactive, sketch comedy, and more.
+                  FBE2: https://www.youtube.com/FBE2 - Daily Vlogs, and BTS from the studio
+                  TWITCH http://www.twitch.tv/fbelive
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer align-items-baseline modal-about-footer-wrapper">
+              <div class="modal-about-footer">
+                <button type="button" class="btn btn-secondary btn-white" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary btn-block">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </div>
@@ -190,19 +254,25 @@
 </div>
 
 <!--Footer start-->
-<div class="footer">
-  <a href="#">© 2018 dark.video</a>
-  <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <i class="icon-globe-1"></i>
-    Language: English
+<div class="footer-wrapper">
+  <div class="footer">
+    <div class="footer-item">
+      <a href="#" class="gray">© 2018 dark.video</a>
+      <div class="dropdown-toggle gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="icon-globe-1"></i>
+        Language: <b>English</b>
+        <div class="dropdown-menu dropdown-language">
+          <a class="dropdown-item border-bottom" href="#">Russian</a>
+          <a class="dropdown-item icon-ok border-bottom" href="#">English</a>
+          <a class="dropdown-item " href="#">Germany</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-item">
+      <a href="#" class="gray-lighter">Rules and conditions</a>
+      <a href="#" class="blue">Telegram channel</a>
+    </div>
   </div>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Russian</a>
-    <a class="dropdown-item active" href="#">English</a>
-    <a class="dropdown-item" href="#">Germany</a>
-  </div>
-  <a href="#">Rules and conditions</a>
-  <a href="#">Telegram channel</a>
 </div>
 <!--Footer finish-->
 

@@ -413,3 +413,53 @@
   font-size: 14px;
   padding-bottom: 8px;
 }
+
+.channel-about {
+  color: #707070;
+
+  b {
+    color: $black;
+  }
+}
+
+.modal-about {
+  min-width: 625px;
+
+  .modal-content {
+    min-width: 537px;
+  }
+
+  &-content {
+    overflow: scroll;
+  }
+}
+
+.modal-about-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  width: 100%;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  border-top: 1px solid $border-color;
+
+  &-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+  }
+
+  .btn-white {
+    padding-right: 41px;
+    padding-left: 41px;
+  }
+  .btn-primary {
+    min-width: 177px;
+    max-width: 177px;
+    min-height: 33px;
+    max-height: 33px;
+  }
+}
