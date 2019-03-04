@@ -10,3 +10,50 @@
     color: #9A9A9A;
   }
 }
+
+.btn {
+
+  &-large {
+    border: unset;
+    min-width: 348px;
+    min-height: 47px;
+
+    width: fit-content;
+  }
+
+  &-medium {
+    border: unset;
+    min-width: 169px;
+    min-height: 36px;
+    width: fit-content;
+  }
+
+  &-small {
+    border: unset;
+    min-width: 112px;
+    min-height: 33px;
+    width: fit-content;
+  }
+}
+
+.btn-primary {
+  &:hover {
+    background-color: #B42020;
+  }
+}
+
+.btn-gray-light {
+  min-width: 87px;
+  min-height: 24px;
+  background-color: #E3E3E3;
+  color: #939393;
+
+  &:hover {
+    background-color: #B5B5B5;
+    color: #5B5B5B;
+  }
+}
+
+.bdg {
+
+}

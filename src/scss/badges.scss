@@ -1,0 +1,65 @@
+@import "variables";
+
+.bdg {
+  font-size: .75rem;
+  padding: 0;
+  border: none;
+  min-height: 18px;
+  max-height: 18px;
+  -webkit-border-radius: .15rem;
+  -moz-border-radius: .15rem;
+  border-radius: .15rem;
+  transition: all .1s ease-in-out;
+
+  &__new {
+    min-width: 44px;
+    max-width: 44px;
+    color: #6A6A6A;
+    background-color: #E3E3E3;
+
+    &:hover {
+      color: darken(#6A6A6A, $darken);
+      background-color: darken(#E3E3E3, $darken);
+    }
+  }
+
+  &__popular {
+    min-width: 73px;
+    max-width: 73px;
+    color: #916a00;
+    background-color: #FFBA00;
+
+    &:hover {
+      color: darken(#916a00, $darken);
+      background-color: darken(#FFBA00, $darken);
+    }
+  }
+
+  &__hot {
+    position: relative;
+    min-width: 58px;
+    max-width: 58px;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    padding-left: 10px;
+
+    &::before {
+      position: absolute;
+      left: 8px;
+      content: '\e814';
+      height: 11px;
+      width: 10px;
+
+      color: inherit;
+      font-family: "fontello", sans-serif;
+    }
+
+    &:hover {
+      color: darken(#FFFFFF, $darken);
+      background-color: darken(#FF0000, $darken);
+      //&::before {
+      //  color: darken(#FFFFFF, 15%);
+      //}
+    }
+  }
+}

@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!-- Responsive display tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>Single Video Page</title>
+</head>
+<body>
+
+<!--Navigation start-->
+<div class=" navbar-wrapper">
+  <nav class="navbar navbar-expand-md">
+    <!-- Logo -->
+    <a href="#" class="d-md-none">
+      <i class="icon-menu" style="font-size: 1.25rem;"></i>
+    </a>
+    <a class="d-none d-md-block navbar-brand" href="/index/index.html">
+      <img class="navbar-logo" src="/static/img/logo_black@2x.png" alt="" width="160px" height="35px">
+    </a>
+    <!--Navbar collapsible start-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Search -->
+      <div class="navbar-search">
+        <i class="icon-search"></i>
+        <input type="text" placeholder="Search for videos">
+        <ul class="search-results list-group">
+        </ul>
+      </div>
+      <div class="navbar-buttons">
+        <div class="nav-link px-1">
+          <a href="#"><i class="icon-cloud navbar-upload"></i></a>
+        </div>
+
+        <div class="nav-link dropdown">
+          <button class="navbar-notifications active icon-bell" id="dropdownNotificationsButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false"></button>
+          <!-- NOTIFICATIONS DROPDOWN -->
+          <div class="dropdown-menu notifications-dropdown">
+            <a class="dropdown-header" href="#">Notifications</a>
+
+            <div class="notification-container">
+              <!-- NOTIFICATION -->
+              <a class="dropdown-item border-bottom" href="#">
+                <div class="notification-avatar icon-like"></div>
+                <div class="notification-info">
+                  <div class="notification-info title">New video from FOX channel FOX channel</div>
+                  <small class="notification-info subtitle">10 minutes ago</small>
+                </div>
+                <div class="notification-circle"></div>
+              </a>
+              <!-- NOTIFICATION -->
+              <a class="dropdown-item border-bottom" href="#">
+                <div class="notification-avatar icon-like"></div>
+                <div class="notification-info">
+                  <div class="notification-info title">New video from FOX channel FOX channel</div>
+                  <small class="notification-info subtitle">10 minutes ago</small>
+                </div>
+                <div class="notification-circle"></div>
+              </a>
+              <!-- NOTIFICATION -->
+              <a class="dropdown-item border-bottom" href="#">
+                <div class="notification-avatar icon-like"></div>
+                <div class="notification-info">
+                  <div class="notification-info title">New video from FOX channel FOX channel</div>
+                  <small class="notification-info subtitle">10 minutes ago</small>
+                </div>
+                <div class="notification-circle"></div>
+              </a>
+              <!-- NOTIFICATION -->
+              <a class="dropdown-item border-bottom" href="#">
+                <div class="notification-avatar icon-like"></div>
+                <div class="notification-info">
+                  <div class="notification-info title">New video from FOX channel FOX channel</div>
+                  <small class="notification-info subtitle">10 minutes ago</small>
+                </div>
+                <div class="notification-circle"></div>
+              </a>
+              <!-- NOTIFICATION -->
+              <a class="dropdown-item border-bottom" href="#">
+                <div class="notification-avatar icon-like"></div>
+                <div class="notification-info">
+                  <div class="notification-info title">New video</div>
+                  <small class="notification-info subtitle">10 minutes ago</small>
+                </div>
+                <div class="notification-circle"></div>
+              </a>
+              <!-- NOTIFICATION -->
+              <a class="dropdown-item border-bottom" href="#">
+                <div class="notification-avatar icon-like"></div>
+                <div class="notification-info">
+                  <div class="notification-info title">New video from FOX channel FOX channel</div>
+                  <small class="notification-info subtitle">10 minutes ago</small>
+                </div>
+                <div class="notification-circle"></div>
+              </a>
+              <!-- NOTIFICATION -->
+              <a class="dropdown-item border-bottom" href="#">
+                <div class="notification-avatar icon-like"></div>
+                <div class="notification-info">
+                  <div class="notification-info title">New video from FOX channel FOX channel</div>
+                  <small class="notification-info subtitle">10 minutes ago</small>
+                </div>
+                <div class="notification-circle"></div>
+              </a>
+              <!-- NOTIFICATION -->
+              <a class="dropdown-item border-bottom" href="#">
+                <div class="notification-avatar icon-like"></div>
+                <div class="notification-info">
+                  <div class="notification-info title">New video from FOX channel FOX channel</div>
+                  <small class="notification-info subtitle">10 minutes ago</small>
+                </div>
+                <div class="notification-circle"></div>
+              </a>
+              <!-- NOTIFICATION -->
+              <a class="dropdown-item border-bottom" href="#">
+                <div class="notification-avatar icon-like"></div>
+                <div class="notification-info">
+                  <div class="notification-info title">New video from FOX channel FOX channel</div>
+                  <small class="notification-info subtitle">10 minutes ago</small>
+                </div>
+                <div class="notification-circle"></div>
+              </a>
+
+            </div>
+
+            <div class="dropdown-item">
+              <div class="gray mx-auto">No notifications</div>
+            </div>
+            <div class="dropdown-item">
+              <button class="btn btn-block btn-gray">Clear all notifications</button>
+            </div>
+          </div>
+        </div>
+        <div class="nav-link dropdown">
+          <button class="navbar-user" id="dropdownUserButton" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false"></button>
+
+          <!-- USER DROPDOWN -->
+          <div class="dropdown-menu user-dropdown" aria-labelledby="dropdownUserButton">
+            <a class="dropdown-header" href="#">
+              <img src="/static/img/ava-red.png">Username
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="icon-play-1"></i>
+              Create channel
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-cog"></i>Settings</a>
+            <button class="dropdown-item" id="nav-language-button" onclick="showNavLang()">
+              <i class="icon-globe-1 ml-0"></i>Language: English
+            </button>
+            <a class="dropdown-item tail border-top py-3" href="#">
+              <img src="/static/img/logout.png" alt="">Logout
+            </a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div id="nav-language" class="dropdown-menu dropdown-language">
+            <a class="dropdown-item border-bottom" href="#">Russian</a>
+            <a class="dropdown-item icon-ok border-bottom" href="#">English</a>
+            <a class="dropdown-item " href="#">Germany</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Navbar collapsible finish-->
+
+    <!--Navbar mobile start-->
+    <div class="d-block d-md-none nav-mobile">
+      <i class="icon-search"></i>
+      <i class="icon-user"></i>
+    </div>
+
+    <!--Navbar mobile finish-->
+  </nav>
+</div>
+<!--Navigation finish-->
+
+<!--Layout start-->
+<div class="layout">
+  <!--Content start-->
+  <div class="layout-content col-12">
+
+    <section class="d-flex flex-row w-100">
+      <!-- BUTTONS -->
+      <div class="d-flex flex-column">
+        <button class="btn btn-primary btn-large">btn</button>
+        <span class="my-1"></span>
+        <button class="btn btn-primary btn-medium">btn</button>
+        <span class="my-1"></span>
+        <button class="btn btn-primary btn-small">btn</button>
+
+        <div class="d-flex flex-row my-2">
+          <button class="btn btn-gray-light">btn</button>
+        </div>
+      </div>
+      <div class="d-flex flex-row mx-3">
+        <button class="bdg bdg__new">NEW</button>
+        <span class="mx-1"></span>
+        <button class="bdg bdg__popular">POPULAR</button>
+        <span class="mx-1"></span>
+        <button class="bdg bdg__hot">HOT</button>
+      </div>
+    </section>
+
+    <section>
+      <h1>Video Thumbnails</h1>
+      <div class="d-flex flex-row">
+        <!-- VIDEO THUMBNAIL LG-->
+        <div class="thumbnail-video lg">
+          <a class="cover" href="#">
+            <img src="/static/img/layer-26.png" alt="">
+            <small>16:07</small>
+          </a>
+          <div class="title">
+            <a href="#">Video title Video title Video title Video title Video title Video title Video title Video title Video title Video title Video title</a>
+          </div>
+          <div class="channel">
+            added by <a href="#">channel channel channel channel channel </a>
+          </div>
+          <div class="meta">
+            <div class="time">2 weeks ago</div>
+            <div class="views">Views: 2,1K</div>
+          </div>
+        </div>
+
+        <span class="mx-1"></span>
+
+        <!-- VIDEO THUMBNAIL DEFAULT-->
+        <div class="thumbnail-video">
+          <a class="cover" href="#">
+            <img src="/static/img/layer-26.png" alt="">
+            <small>16:07</small>
+          </a>
+          <div class="title">
+            <a href="#">Video title Video title Video title Video title Video title Video title Video title Video title Video title Video title Video title</a>
+          </div>
+          <div class="channel">
+            added by <a href="#">channel channel channel channel channel </a>
+          </div>
+          <div class="meta">
+            <div class="time">2 weeks ago</div>
+            <div class="views">Views: 2,1K</div>
+          </div>
+        </div>
+
+        <span class="mx-1"></span>
+
+        <!-- VIDEO THUMBNAIL SM-->
+        <div class="thumbnail-video sm">
+          <a class="cover" href="#">
+            <img src="/static/img/layer-26.png" alt="">
+            <small>16:07</small>
+          </a>
+          <div class="title">
+            <a href="#">Video title Video title Video title Video title Video title Video title Video title Video title Video title Video title Video title</a>
+          </div>
+          <div class="channel">
+            added by <a href="#">channel channel channel channel channel </a>
+          </div>
+          <div class="meta">
+            <div class="time">2 weeks ago</div>
+            <div class="views">Views: 2,1K</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="d-flex flex-row">
+      <div>
+        <h1>Channel thumbnail</h1>
+        <div class="channel-wrapper mb-3">
+          <div class="channel-item-middle">
+            <div class="channel-preview"></div>
+            <div class="channel-avatar"></div>
+            <div class="channel-info">
+              <a href="#">channel name</a>
+              <small>2,012 followers</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1>Channel thumbnail</h1>
+        <div class="channel-wrapper mb-3">
+          <div class="channel-item-right">
+            <div class="channel-preview"></div>
+            <div class="channel-avatar"></div>
+            <div class="channel-info">
+              <a href="#">channel name</a>
+              <small>2,012 followers</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!--Content finish-->
+</div>
+
+<!--Footer start-->
+<div class="footer-wrapper">
+  <div class="footer">
+    <div class="footer-item">
+      <a href="#" class="gray">© 2018 dark.video</a>
+      <div class="dropdown-toggle gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="icon-globe-1"></i>
+        Language: <b>English</b>
+        <div class="dropdown-menu dropdown-language">
+          <a class="dropdown-item border-bottom" href="#">Russian</a>
+          <a class="dropdown-item icon-ok border-bottom" href="#">English</a>
+          <a class="dropdown-item " href="#">Germany</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-item">
+      <a href="#" class="gray-lighter">Rules and conditions</a>
+      <a href="#" class="blue">Telegram channel</a>
+    </div>
+  </div>
+</div>
+<!--Footer finish-->
+</body>
+</html>

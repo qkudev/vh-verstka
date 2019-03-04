@@ -27,6 +27,8 @@
 @import "./thumbnails/index";
 @import './community/index';
 @import "buttonts";
+@import "./buttonts";
+@import "./badges";
 
 body {
 
@@ -257,6 +259,10 @@ a {
 
 b{
   font-family: $ff-bold;
+}
+
+.video-autoplay {
+  margin-left: 1rem !important;
 }
 
 

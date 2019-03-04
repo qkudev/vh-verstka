@@ -28,8 +28,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
 
-    width: 180px;
-    height: 140px;
+    min-width: 207px;
+    max-width: 207px;
+    min-height: 104px;
+    max-height: 104px;
 
     &.lg {
       display: grid;
@@ -45,8 +47,14 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(8, 1fr);
 
-      width: 180px;
+      min-width: 207px;
+      max-width: 207px;
       height: 180px;
+
+      .channel-avatar {
+        grid-column: 1/3;
+        margin: 7px auto auto auto !important;
+      }
     }
 
     &-right {
@@ -54,12 +62,18 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(8, 1fr);
 
-      width: 180px;
+      min-width: 207px;
+      max-width: 207px;
       height: 180px;
     }
   }
 
   &-preview {
+    min-width: 207px;
+    max-width: 207px;
+    min-height: 104px;
+    max-height: 104px;
+
     grid-row: 1/6;
     grid-column: 1/5;
     background: $gray-900;
@@ -71,9 +85,11 @@
   }
 
   &-avatar {
-    margin: auto .5 * $spacer auto auto;
-    width: 58px;
-    height: 58px;
+    margin: 8px 14px auto auto;
+    min-width: 58px;
+    max-width: 58px;
+    min-height: 58px;
+    max-height: 58px;
 
     grid-column: 2/3;
     grid-row: 4/8;
@@ -84,6 +100,7 @@
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+    box-shadow: $box-shadow;
 
     cursor: pointer;
 
@@ -107,6 +124,14 @@
       border-radius: 50%;
 
       cursor: pointer;
+
+      .channel-info {
+        justify-items: center !important;
+        justify-content: center !important;
+        a, small {
+          grid-column: 1/3 !important;
+        }
+      }
     }
 
     &.right {
@@ -136,6 +161,15 @@
 
     margin: .25 * $spacer 0;
     justify-items: start;
+
+    a {
+      font-family: $ff-semi-bold;
+      color: $black !important;
+    }
+
+    small {
+      margin-bottom: 8px;
+    }
 
     &.middle {
       grid-row: 7/9;
