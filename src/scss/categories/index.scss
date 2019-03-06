@@ -341,9 +341,10 @@
   .category-header-menu__link {
     font-size: 15px;
     color: rgba(255, 255, 255, 0.4);
-    &__active {
-      color: #ffffff;
-    }
+  }
+
+  .category-header-menu__link.active {
+    color: #ffffff;
   }
 }
 
