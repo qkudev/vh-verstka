@@ -39,8 +39,19 @@
 
 .channel-post-message-content-buttons {
   display: flex;
-  flex-direction: row-reverse;
   padding-top: 16px;
+  justify-content: space-between;
+}
+
+.channel-post-message-content-actions {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+}
+
+.channel-post-message-content-list__item {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e5e8;
 }
 
 .category-header-menu__black {
@@ -62,6 +73,25 @@
     &:hover {
       cursor: pointer;
     }
+  }
+}
+
+.state-comment__action {
+  color: #fe0000;
+  font-family: OpenSans-SemiBold, sans-serif;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.state-comment__action__icon {
+  margin-left: 7px;
+  padding-top: 1px;
+  &__hide {
+    transform: rotate(-90deg);
+  }
+  &__show {
+    transform: rotate(90deg);
   }
 }
 
