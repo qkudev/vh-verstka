@@ -88,17 +88,6 @@
 }
 
 #video-watch {
-  min-width: 920px;
-  max-width: 920px;
-  min-height: 535px;
-  max-height: 535px;
-
-  video {
-    min-width: 920px;
-    max-width: 920px;
-    min-height: 535px;
-    max-height: 535px;
-  }
 
   &.vjs-fullscreen {
     min-width: unset !important;
