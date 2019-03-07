@@ -64,6 +64,7 @@
     grid-column: 1/5;
     background: $gray-900;
     cursor: pointer;
+    border-radius: 3px;
 
     &.right {
       grid-row: 1/5;
