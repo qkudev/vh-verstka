@@ -264,4 +264,18 @@ b{
   z-index: 99;
 }
 
+.popular-info__title {
+  font-family: OpenSans-Bold, sans-serif;
+  color: #000000;
+  line-height: 1.29;
+}
+
+.popular-info__channel {
+  color: #6a6a6a;
+  a {
+    color: #6a6a6a;
+    font-family: OpenSans-Bold, sans-serif;
+  }
+}
+
 
