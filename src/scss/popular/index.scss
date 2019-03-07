@@ -22,6 +22,9 @@
     color: $white;
     background: $gray-900;
     cursor: pointer;
+    &:hover {
+      color: #ffffff;
+    }
   }
 
   &-info {
@@ -41,13 +44,14 @@
     small {
       font-weight: 600;
       color: $gray-500;
-      padding-right: 35px;
+      //padding-right: 35px;
     }
 
     &-footer {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
+      margin-top: 5px;
     }
   }
 }
