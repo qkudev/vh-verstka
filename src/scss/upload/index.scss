@@ -138,6 +138,9 @@
     position: relative;
     background-repeat: no-repeat;
     border-radius: 4px;
+    flex: 1 1 25%;
+    max-width: 185px;
+    margin-bottom: 15px;
     &-add {
       display: flex;
       flex-direction: column;
