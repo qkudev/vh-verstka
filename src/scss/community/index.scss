@@ -95,6 +95,46 @@
   }
 }
 
+.category-bcg.category-header {
+  position: relative;
+}
+
+.category-bcg.category-header:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.category-header-user-info {
+  z-index: 9;
+}
+
+.category-header__logo a {
+  z-index: 9;
+}
+
+.category-header-user-sub {
+  z-index: 9;
+}
+
+.category-header-menu__board-links {
+  z-index: 9;
+}
+
+.category-header-menu__board-search {
+  z-index: 9;
+}
+
+.category-header-menu {
+  position: relative;
+  z-index: 9;
+}
+
 
 
 
